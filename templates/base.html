@@ -16,8 +16,21 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
+
   <body>
-    <div class="navbar bg-base-100">
+    {% with messages = get_flashed_messages() %} {% if messages %}
+    <ul>
+      {% for message in messages %}
+      <div class="toast toast-end">
+        <div class="alert alert-error">
+          <span>{{ message }}</span>
+        </div>
+      </div>
+      {% endfor %}
+    </ul>
+    {% endif %} {% endwith %}
+
+    <div class="navbar bg-base-100" style="position: absolute">
       <div class="navbar-start">
         <a class="btn btn-ghost text-xl" href="/">Senalysis</a>
       </div>
