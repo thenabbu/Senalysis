@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="flex min-h-screen">
+  <!-- Left Section: Add Product Form -->
+  <div class="w-2/5 p-6 border-r">
+    <h2 class="text-lg font-bold mb-4">Add New Product</h2>
+    <form action="{{ url_for('company_profile', cid=cid) }}" method="POST" class="space-y-4">
+      <div>
+        <label for="product_name" class="block font-medium mb-1">Product Name</label>
+        <input
+          type="text"
+          id="product_name"
+          name="product_name"
+          class="input w-full max-w-full"
+          placeholder="Enter product name"
+          required
+        />
+      </div>
+      <div>
+        <label for="thumbnail_url" class="block font-medium mb-1">Product Thumbnail URL</label>
+        <input
+          type="text"
+          id="thumbnail_url"
+          name="thumbnail_url"
+          class="input w-full max-w-full"
+          placeholder="Enter thumbnail URL"
+          required
+        />
+      </div>
+      <button type="submit" class="btn w-full">
+        Add Product
+      </button>
+    </form>
+  </div>
+
+  <!-- Right Section: Products -->
+  <div class="w-3/5 p-6">
+    <h2 class="text-lg font-bold mb-4">Your Products</h2>
+    <div class="grid grid-cols-3 gap-4">
+      {% if products %}
+        {% for product in products %}
+          <div class="card bg-primary-content">
+            <div class="card-body">
+              <h2 class="text-base-content card-title">{{ product.product }}</h2>
+              <img src="{{ product.thumbnail }}" alt="{{ product.product }}" class="w-full h-40 object-cover mb-4">
+              <div class="card-actions justify-end">
+                <button class="btn btn-neutral-content">View Feedback</button>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      {% else %}
+        <p class="text-gray-600 col-span-3">No products added yet.</p>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endblock %}

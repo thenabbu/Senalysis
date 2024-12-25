@@ -181,20 +181,45 @@ def submit_feedback():
     flash("Feedback submitted successfully!")
     return redirect(url_for('profile', uid=uid))
 
-# Company Profile Route
-@app.route('/company/<cid>')
+# Company Profile Route (with Product Viewing)
+@app.route('/company/<cid>', methods=['GET', 'POST'])
 def company_profile(cid):
     conn = get_db_connection()
     cursor = conn.cursor()
 
+    # Get company info
     cursor.execute("SELECT company FROM companies WHERE cid = ?", (cid,))
     company = cursor.fetchone()
-    conn.close()
 
-    if company:
-        return f"Welcome, {company['company']}"
-    else:
+    if not company:
+        conn.close()
         return "Company not found", 404
+
+    # Get products for this company
+    cursor.execute("SELECT pid, product, thumbnail FROM products WHERE cid = ?", (cid,))
+    products = cursor.fetchall()
+
+    if request.method == 'POST':
+        # Adding a new product
+        product_name = request.form['product_name']
+        product_thumbnail = request.form['thumbnail_url']
+
+        # Generate unique product ID
+        cursor.execute("SELECT COUNT(*) FROM products")
+        pid = f"p{cursor.fetchone()[0] + 1:04d}"
+
+        cursor.execute("""
+            INSERT INTO products (pid, cid, product, thumbnail)
+            VALUES (?, ?, ?, ?)
+        """, (pid, cid, product_name, product_thumbnail))
+        conn.commit()
+        flash("Product added successfully!")
+        return redirect(url_for('company_profile', cid=cid))
+
+    conn.close()
+    return render_template('company.html', company=company, products=products)
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)
