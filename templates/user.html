@@ -3,7 +3,7 @@
 {% block content %}
 <div class="flex min-h-screen">
   <!-- Left Section: Feedback Form -->
-  <div class="w-2/5 p-6 border-r">
+  <div class="w-2/5 p-8">
     <h2 class="text-lg font-bold mb-4">Submit Feedback</h2>
     <form action="/submit_feedback" method="post" class="space-y-4">
       <div>
@@ -37,23 +37,38 @@
     </form>
   </div>
 
+  <div class="divider lg:divider-horizontal"></div>
+
   <!-- Right Section: Previous Feedbacks -->
   <div class="w-3/5 p-6">
     <h2 class="text-lg font-bold mb-4">Your Previous Feedbacks</h2>
-    <div class="grid grid-cols-3 gap-4">
-      {% for feedback in feedbacks %}
-      <div class="card bg-primary-content">
-        <div class="card-body">
-          <h2 class="text-base-content card-title">{{ feedback.product }}</h2>
-          <p class="text-primary">{{ feedback.feedback }}</p>
-          <div class="card-actions justify-end">
-            <button class="btn btn-neutral-content">{{ feedback.sentiment }}</button>
-          </div>
-        </div>
-      </div>
-      {% else %}
-      <p class="text-gray-600 col-span-3">No feedback submitted yet.</p>
-      {% endfor %}
+    <div class="overflow-x-auto">
+      <table class="table w-full">
+        <!-- Table Head -->
+        <thead>
+          <tr>
+            <th></th>
+            <th>Product</th>
+            <th>Feedback</th>
+            <th>Sentiment</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for feedback in feedbacks %}
+          <tr>
+            <th>{{ loop.index }}</th>
+            <td><b>{{ feedback.product }}</b></td>
+            <td>{{ feedback.feedback }}</td>
+            <td><kbd class="kbd">{{ feedback.sentiment }}</kbd>
+            </td>
+          </tr>
+          {% else %}
+          <tr>
+            <td colspan="4" class="text-center text-gray-600">No feedback submitted yet.</td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
     </div>
   </div>
 </div>

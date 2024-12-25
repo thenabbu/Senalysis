@@ -1,0 +1,380 @@
+[
+    {
+        "cid": "c0001",
+        "company": "Gucci",
+        "email": "gucci@gmail.com",
+        "pwd": "gucci"
+    },
+    {
+        "cid": "c0002",
+        "company": "Samsung",
+        "email": "samsung@gmail.com",
+        "pwd": "samsung"
+    },
+    {
+        "cid": "c0003",
+        "company": "SnapTech",
+        "email": "snaptech@gmail.com",
+        "pwd": "snaptech"
+    },
+    {
+        "cid": "c0004",
+        "company": "Chic Cosmetics",
+        "email": "chiccosmetics@gmail.com",
+        "pwd": "chic.cosmetics"
+    },
+    {
+        "cid": "c0005",
+        "company": "Fashion Diva",
+        "email": "fashiondiva@gmail.com",
+        "pwd": "fashion.diva"
+    },
+    {
+        "cid": "c0006",
+        "company": "Fashion Gold",
+        "email": "fashiongold@gmail.com",
+        "pwd": "fashion.gold"
+    },
+    {
+        "cid": "c0007",
+        "company": "GadgetMaster",
+        "email": "gadgetmaster@gmail.com",
+        "pwd": "gadgetmaster"
+    },
+    {
+        "cid": "c0008",
+        "company": "Velvet Touch",
+        "email": "velvettouch@gmail.com",
+        "pwd": "velvet.touch"
+    },
+    {
+        "cid": "c0009",
+        "company": "Dior",
+        "email": "dior@gmail.com",
+        "pwd": "dior"
+    },
+    {
+        "cid": "c0010",
+        "company": "Casual Comfort",
+        "email": "casualcomfort@gmail.com",
+        "pwd": "casual.comfort"
+    },
+    {
+        "cid": "c0011",
+        "company": "ScootMaster",
+        "email": "scootmaster@gmail.com",
+        "pwd": "scootmaster"
+    },
+    {
+        "cid": "c0012",
+        "company": "Attitude",
+        "email": "attitude@gmail.com",
+        "pwd": "attitude"
+    },
+    {
+        "cid": "c0013",
+        "company": "Comfort Trends",
+        "email": "comforttrends@gmail.com",
+        "pwd": "comfort.trends"
+    },
+    {
+        "cid": "c0014",
+        "company": "Elegance Collection",
+        "email": "elegancecollection@gmail.com",
+        "pwd": "elegance.collection"
+    },
+    {
+        "cid": "c0015",
+        "company": "Annibale Colombo",
+        "email": "annibalecolombo@gmail.com",
+        "pwd": "annibale.colombo"
+    },
+    {
+        "cid": "c0016",
+        "company": "Lenovo",
+        "email": "lenovo@gmail.com",
+        "pwd": "lenovo"
+    },
+    {
+        "cid": "c0017",
+        "company": "Furniture Co.",
+        "email": "furnitureco.@gmail.com",
+        "pwd": "furniture.co."
+    },
+    {
+        "cid": "c0018",
+        "company": "Nike",
+        "email": "nike@gmail.com",
+        "pwd": "nike"
+    },
+    {
+        "cid": "c0019",
+        "company": "Puma",
+        "email": "puma@gmail.com",
+        "pwd": "puma"
+    },
+    {
+        "cid": "c0020",
+        "company": "SpeedMaster",
+        "email": "speedmaster@gmail.com",
+        "pwd": "speedmaster"
+    },
+    {
+        "cid": "c0021",
+        "company": "Prada",
+        "email": "prada@gmail.com",
+        "pwd": "prada"
+    },
+    {
+        "cid": "c0022",
+        "company": "MotoGP",
+        "email": "motogp@gmail.com",
+        "pwd": "motogp"
+    },
+    {
+        "cid": "c0023",
+        "company": "Gigabyte",
+        "email": "gigabyte@gmail.com",
+        "pwd": "gigabyte"
+    },
+    {
+        "cid": "c0024",
+        "company": "Fashion Express",
+        "email": "fashionexpress@gmail.com",
+        "pwd": "fashion.express"
+    },
+    {
+        "cid": "c0025",
+        "company": "Bath Trends",
+        "email": "bathtrends@gmail.com",
+        "pwd": "bath.trends"
+    },
+    {
+        "cid": "c0026",
+        "company": "Fashion Fun",
+        "email": "fashionfun@gmail.com",
+        "pwd": "fashion.fun"
+    },
+    {
+        "cid": "c0027",
+        "company": "Vaseline",
+        "email": "vaseline@gmail.com",
+        "pwd": "vaseline"
+    },
+    {
+        "cid": "c0028",
+        "company": "Beats",
+        "email": "beats@gmail.com",
+        "pwd": "beats"
+    },
+    {
+        "cid": "c0029",
+        "company": "Realme",
+        "email": "realme@gmail.com",
+        "pwd": "realme"
+    },
+    {
+        "cid": "c0030",
+        "company": "Fashion Timepieces",
+        "email": "fashiontimepieces@gmail.com",
+        "pwd": "fashion.timepieces"
+    },
+    {
+        "cid": "c0031",
+        "company": "Heshe",
+        "email": "heshe@gmail.com",
+        "pwd": "heshe"
+    },
+    {
+        "cid": "c0032",
+        "company": "Calvin Klein",
+        "email": "calvinklein@gmail.com",
+        "pwd": "calvin.klein"
+    },
+    {
+        "cid": "c0033",
+        "company": "TechGear",
+        "email": "techgear@gmail.com",
+        "pwd": "techgear"
+    },
+    {
+        "cid": "c0034",
+        "company": "Knoll",
+        "email": "knoll@gmail.com",
+        "pwd": "knoll"
+    },
+    {
+        "cid": "c0035",
+        "company": "Glamour Beauty",
+        "email": "glamourbeauty@gmail.com",
+        "pwd": "glamour.beauty"
+    },
+    {
+        "cid": "c0036",
+        "company": "Generic Motors",
+        "email": "genericmotors@gmail.com",
+        "pwd": "generic.motors"
+    },
+    {
+        "cid": "c0037",
+        "company": "Olay",
+        "email": "olay@gmail.com",
+        "pwd": "olay"
+    },
+    {
+        "cid": "c0038",
+        "company": "IWC",
+        "email": "iwc@gmail.com",
+        "pwd": "iwc"
+    },
+    {
+        "cid": "c0039",
+        "company": "Dodge",
+        "email": "dodge@gmail.com",
+        "pwd": "dodge"
+    },
+    {
+        "cid": "c0040",
+        "company": "Chanel",
+        "email": "chanel@gmail.com",
+        "pwd": "chanel"
+    },
+    {
+        "cid": "c0041",
+        "company": "Pampi",
+        "email": "pampi@gmail.com",
+        "pwd": "pampi"
+    },
+    {
+        "cid": "c0042",
+        "company": "Classic Wear",
+        "email": "classicwear@gmail.com",
+        "pwd": "classic.wear"
+    },
+    {
+        "cid": "c0043",
+        "company": "Apple",
+        "email": "apple@gmail.com",
+        "pwd": "apple"
+    },
+    {
+        "cid": "c0044",
+        "company": "Fashionista",
+        "email": "fashionista@gmail.com",
+        "pwd": "fashionista"
+    },
+    {
+        "cid": "c0045",
+        "company": "Urban Chic",
+        "email": "urbanchic@gmail.com",
+        "pwd": "urban.chic"
+    },
+    {
+        "cid": "c0046",
+        "company": "Fashion Trends",
+        "email": "fashiontrends@gmail.com",
+        "pwd": "fashion.trends"
+    },
+    {
+        "cid": "c0047",
+        "company": "Dell",
+        "email": "dell@gmail.com",
+        "pwd": "dell"
+    },
+    {
+        "cid": "c0048",
+        "company": "ProVision",
+        "email": "provision@gmail.com",
+        "pwd": "provision"
+    },
+    {
+        "cid": "c0049",
+        "company": "Oppo",
+        "email": "oppo@gmail.com",
+        "pwd": "oppo"
+    },
+    {
+        "cid": "c0050",
+        "company": "Nail Couture",
+        "email": "nailcouture@gmail.com",
+        "pwd": "nail.couture"
+    },
+    {
+        "cid": "c0051",
+        "company": "Rolex",
+        "email": "rolex@gmail.com",
+        "pwd": "rolex"
+    },
+    {
+        "cid": "c0052",
+        "company": "Dolce & Gabbana",
+        "email": "dolce&gabbana@gmail.com",
+        "pwd": "dolce.&.gabbana"
+    },
+    {
+        "cid": "c0053",
+        "company": "Chrysler",
+        "email": "chrysler@gmail.com",
+        "pwd": "chrysler"
+    },
+    {
+        "cid": "c0054",
+        "company": "Fashion Co.",
+        "email": "fashionco.@gmail.com",
+        "pwd": "fashion.co."
+    },
+    {
+        "cid": "c0055",
+        "company": "Kawasaki",
+        "email": "kawasaki@gmail.com",
+        "pwd": "kawasaki"
+    },
+    {
+        "cid": "c0056",
+        "company": "Vivo",
+        "email": "vivo@gmail.com",
+        "pwd": "vivo"
+    },
+    {
+        "cid": "c0057",
+        "company": "Amazon",
+        "email": "amazon@gmail.com",
+        "pwd": "amazon"
+    },
+    {
+        "cid": "c0058",
+        "company": "Huawei",
+        "email": "huawei@gmail.com",
+        "pwd": "huawei"
+    },
+    {
+        "cid": "c0059",
+        "company": "Off White",
+        "email": "offwhite@gmail.com",
+        "pwd": "off.white"
+    },
+    {
+        "cid": "c0060",
+        "company": "Fashion Shades",
+        "email": "fashionshades@gmail.com",
+        "pwd": "fashion.shades"
+    },
+    {
+        "cid": "c0061",
+        "company": "Longines",
+        "email": "longines@gmail.com",
+        "pwd": "longines"
+    },
+    {
+        "cid": "c0062",
+        "company": "Asus",
+        "email": "asus@gmail.com",
+        "pwd": "asus"
+    },
+    {
+        "cid": "c0063",
+        "company": "Essence",
+        "email": "essence@gmail.com",
+        "pwd": "essence"
+    }
+]

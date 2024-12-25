@@ -18,9 +18,9 @@ def index():
 
 # User Registration Route
 @app.route('/register/user', methods=['GET', 'POST'])
-def register_user():
+def registerUser():
     if request.method == 'POST':
-        user_data = {
+        userData = {
             'fname': request.form['fname'],
             'lname': request.form['lname'],
             'email': request.form['email'],
@@ -40,18 +40,18 @@ def register_user():
         uid = f"u{cursor.fetchone()[0] + 1:04d}"
 
         # Check if email already exists
-        cursor.execute("SELECT email FROM users WHERE email = ?", (user_data['email'],))
+        cursor.execute("SELECT email FROM users WHERE email = ?", (userData['email'],))
         if cursor.fetchone():
             flash("Email already registered!")
-            return redirect(url_for('register_user'))
+            return redirect(url_for('registerUser'))
 
         # Insert user data
         cursor.execute("""
             INSERT INTO users (uid, fname, lname, email, pwd, gender, height, weight, dob, state, city)
             VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-        """, (uid, user_data['fname'], user_data['lname'], user_data['email'], user_data['password'], 
-              user_data['gender'], user_data['height'], user_data['weight'], user_data['dob'], 
-              user_data['state'], user_data['city']))
+        """, (uid, userData['fname'], userData['lname'], userData['email'], userData['password'], 
+              userData['gender'], userData['height'], userData['weight'], userData['dob'], 
+              userData['state'], userData['city']))
         conn.commit()
         conn.close()
 
@@ -62,10 +62,10 @@ def register_user():
 
 # Company Registration Route
 @app.route('/register/company', methods=['GET', 'POST'])
-def register_company():
+def registerCompany():
     if request.method == 'POST':
-        company_data = {
-            'company_name': request.form['company'],
+        companyData = {
+            'name': request.form['company'],
             'email': request.form['email'],
             'password': request.form['password']
         }
@@ -74,17 +74,17 @@ def register_company():
         cursor = conn.cursor()
 
         # Check if company email already exists
-        cursor.execute("SELECT email FROM companies WHERE email = ?", (company_data['email'],))
+        cursor.execute("SELECT email FROM companies WHERE email = ?", (companyData['email'],))
         if cursor.fetchone():
             flash("Company with this email already registered!")
             conn.close()
-            return redirect(url_for('register_company'))
+            return redirect(url_for('registerCompany'))
 
         # Insert company data
         cursor.execute("""
             INSERT INTO companies (company, email, pwd)
             VALUES (?, ?, ?)
-        """, (company_data['company_name'], company_data['email'], company_data['password']))
+        """, (companyData['name'], companyData['email'], companyData['password']))
         conn.commit()
         conn.close()
 
@@ -95,7 +95,7 @@ def register_company():
 
 # User Login Route
 @app.route('/login/user', methods=['POST'])
-def user_login():
+def userLogin():
     email = request.form['email']
     password = request.form['password']
 
@@ -114,7 +114,7 @@ def user_login():
 
 # Company Login Route
 @app.route('/login/company', methods=['POST'])
-def company_login():
+def companyLogin():
     email = request.form['email']
     password = request.form['password']
 
@@ -126,7 +126,7 @@ def company_login():
 
     if result:
         cid = result['cid']
-        return redirect(url_for('company_profile', cid=cid))
+        return redirect(url_for('companyProfile', cid=cid))
     else:
         flash("Invalid credentials, please try again.")
         return redirect(url_for('index'))
@@ -161,7 +161,7 @@ def profile(uid):
 
 # Submit Feedback Route
 @app.route('/submit_feedback', methods=['POST'])
-def submit_feedback():
+def submitFeedback():
     uid = request.form['uid']
     pid = request.form['product']
     feedback = request.form['feedback']
@@ -183,7 +183,7 @@ def submit_feedback():
 
 # Company Profile Route (with Product Viewing)
 @app.route('/company/<cid>', methods=['GET', 'POST'])
-def company_profile(cid):
+def companyProfile(cid):
     conn = get_db_connection()
     cursor = conn.cursor()
 
@@ -199,10 +199,32 @@ def company_profile(cid):
     cursor.execute("SELECT pid, product, thumbnail FROM products WHERE cid = ?", (cid,))
     products = cursor.fetchall()
 
+    # If you need to add sentiment score and feedback count, create new list
+    productList = []
+    for product in products:
+        # Fetch the feedbacks for this product
+        cursor.execute("""
+            SELECT COUNT(*) as feedback_count, 
+                   SUM(CASE WHEN sentiment = 'POSITIVE' THEN 1 ELSE 0 END) AS positive_count
+            FROM feedback WHERE pid = ?
+        """, (product['pid'],))
+        feedbackData = cursor.fetchone()
+
+        # Compute sentiment score as percentage of positive feedback
+        totalFeedbacks = feedbackData['feedback_count']
+        sentimentScore = (feedbackData['positive_count'] / totalFeedbacks) * 100 if totalFeedbacks > 0 else 0
+
+        # Add sentiment score and feedback count to the product data
+        productDict = dict(product)  # Convert Row to dict
+        productDict['feedback_count'] = feedbackData['feedback_count']
+        productDict['sentiment_score'] = sentimentScore
+
+        productList.append(productDict)
+
+    # Handle new product addition form submission
     if request.method == 'POST':
-        # Adding a new product
-        product_name = request.form['product_name']
-        product_thumbnail = request.form['thumbnail_url']
+        productName = request.form['product_name']
+        productThumbnail = request.form['thumbnail_url']
 
         # Generate unique product ID
         cursor.execute("SELECT COUNT(*) FROM products")
@@ -211,16 +233,70 @@ def company_profile(cid):
         cursor.execute("""
             INSERT INTO products (pid, cid, product, thumbnail)
             VALUES (?, ?, ?, ?)
-        """, (pid, cid, product_name, product_thumbnail))
+        """, (pid, cid, productName, productThumbnail))
         conn.commit()
         flash("Product added successfully!")
-        return redirect(url_for('company_profile', cid=cid))
+        return redirect(url_for('companyProfile', cid=cid))
 
     conn.close()
-    return render_template('company.html', company=company, products=products)
+    return render_template('company.html', company=company, products=productList)
 
+from flask import jsonify
 
+@app.route('/feedbacks/<pid>')
+def feedbacks(pid):
+    conn = get_db_connection()
+    cursor = conn.cursor()
+
+    # Get all feedback for the product
+    cursor.execute("""
+        SELECT f.fid, f.uid, f.feedback, f.sentiment, f.timestamp, u.email
+        FROM feedback f
+        JOIN users u ON f.uid = u.uid
+        WHERE f.pid = ?
+        ORDER BY f.timestamp DESC
+    """, (pid,))
+    feedbacks = cursor.fetchall()
+    conn.close()
+
+    return render_template('feedbacks.html', pid=pid, feedbacks=feedbacks)
+
+# API Endpoint for live updates
+@app.route('/api/feedbacks/<pid>', methods=['GET'])
+def feedbacks_api(pid):
+    sentiment = request.args.get('sentiment')  # Positive, Negative, or All
+    start_date = request.args.get('start_date')
+    end_date = request.args.get('end_date')
+    sort_order = request.args.get('sort_order', 'desc')  # asc or desc
+
+    conn = get_db_connection()
+    cursor = conn.cursor()
+
+    query = """
+        SELECT f.fid, f.uid, f.feedback, f.sentiment, f.timestamp, u.email
+        FROM feedback f
+        JOIN users u ON f.uid = u.uid
+        WHERE f.pid = ?
+    """
+    params = [pid]
+
+    # Add filters
+    if sentiment and sentiment.lower() != 'all':
+        query += " AND f.sentiment = ?"
+        params.append(sentiment.upper())
+
+    if start_date and end_date:
+        query += " AND f.timestamp BETWEEN ? AND ?"
+        params.extend([start_date, end_date])
+
+    # Add sorting
+    query += f" ORDER BY f.timestamp {sort_order.upper()}"
+
+    cursor.execute(query, params)
+    feedbacks = cursor.fetchall()
+    conn.close()
+
+    return jsonify([dict(row) for row in feedbacks])
 
 if __name__ == '__main__':
     app.run(debug=True)
-

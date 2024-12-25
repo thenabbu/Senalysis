@@ -1,59 +1,95 @@
 {% extends "base.html" %}
-
 {% block content %}
-<div class="flex min-h-screen">
+<div class="flex flex-col lg:flex-row min-h-screen">
   <!-- Left Section: Add Product Form -->
-  <div class="w-2/5 p-6 border-r">
-    <h2 class="text-lg font-bold mb-4">Add New Product</h2>
-    <form action="{{ url_for('company_profile', cid=cid) }}" method="POST" class="space-y-4">
+  <div class="lg:w-2/5 p-8">
+    <h2 class="text-2xl font-semibold mb-6">Add New Product</h2>
+    <form
+      action="{{ url_for('companyProfile', cid=cid) }}"
+      method="POST"
+      class="space-y-6"
+    >
       <div>
-        <label for="product_name" class="block font-medium mb-1">Product Name</label>
+        <label for="product_name" class="block text-sm font-medium mb-2">
+          Product Name
+        </label>
         <input
           type="text"
           id="product_name"
           name="product_name"
-          class="input w-full max-w-full"
+          class="input w-full"
           placeholder="Enter product name"
           required
         />
       </div>
       <div>
-        <label for="thumbnail_url" class="block font-medium mb-1">Product Thumbnail URL</label>
+        <label for="thumbnail_url" class="block text-sm font-medium mb-2">
+          Product Thumbnail URL
+        </label>
         <input
           type="text"
           id="thumbnail_url"
           name="thumbnail_url"
-          class="input w-full max-w-full"
+          class="input w-full"
           placeholder="Enter thumbnail URL"
           required
         />
       </div>
-      <button type="submit" class="btn w-full">
-        Add Product
-      </button>
+      <button type="submit" class="btn w-full">Add Product</button>
     </form>
   </div>
 
+  <div class="divider lg:divider-horizontal"></div>
+
   <!-- Right Section: Products -->
-  <div class="w-3/5 p-6">
-    <h2 class="text-lg font-bold mb-4">Your Products</h2>
-    <div class="grid grid-cols-3 gap-4">
-      {% if products %}
-        {% for product in products %}
-          <div class="card bg-primary-content">
-            <div class="card-body">
-              <h2 class="text-base-content card-title">{{ product.product }}</h2>
-              <img src="{{ product.thumbnail }}" alt="{{ product.product }}" class="w-full h-40 object-cover mb-4">
-              <div class="card-actions justify-end">
-                <button class="btn btn-neutral-content">View Feedback</button>
-              </div>
-            </div>
-          </div>
-        {% endfor %}
-      {% else %}
-        <p class="text-gray-600 col-span-3">No products added yet.</p>
-      {% endif %}
+  <div class="lg:w-3/5 p-8">
+    <h2 class="text-2xl font-semibold mb-6 text-center">Your Products</h2>
+    {% if products %}
+    <div class="overflow-x-auto">
+      <table class="table w-full">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>No. of Feedbacks</th>
+            <th>Positive %</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for product in products %}
+          <tr>
+            <td>
+                <div class="flex items-center gap-3">
+                    <div class="avatar">
+                        <div class="mask mask-squircle h-12 w-12">
+                            <img
+                                src="{{ product.thumbnail }}"
+                                alt="Product Thumbnail"
+                            />
+                        </div>
+                    </div>
+                    <div class="font-bold">
+                        <!-- Link to feedback page for the product -->
+                        <a href="{{ url_for('feedbacks', pid=product.pid) }}">
+                            {{ product.product }}
+                        </a>
+                    </div>
+                </div>
+            </td>
+            <td>{{ product.feedback_count }}</td>
+            <td>
+                <progress class="progress w-40" value="{{ product.sentiment_score | round(2) }}" max="100">
+                    {{ product.sentiment_score | round(2) }}%
+                </progress>
+            </td>
+        </tr>
+        
+          {% endfor %}
+        </tbody>
+      </table>
     </div>
+    {% else %}
+    <p class="text-center">No products added yet.</p>
+    {% endif %}
   </div>
 </div>
 {% endblock %}

@@ -1,0 +1,716 @@
+[
+    {
+        "pid": "p0001",
+        "cid": "c0063",
+        "product": "Essence Mascara Lash Princess",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/beauty/Essence%20Mascara%20Lash%20Princess/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/9164035109868?"
+    },
+    {
+        "pid": "p0002",
+        "cid": "c0035",
+        "product": "Eyeshadow Palette with Mirror",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/beauty/Eyeshadow%20Palette%20with%20Mirror/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/2817839095220?"
+    },
+    {
+        "pid": "p0003",
+        "cid": "c0008",
+        "product": "Powder Canister",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/beauty/Powder%20Canister/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/0516267971277?"
+    },
+    {
+        "pid": "p0004",
+        "cid": "c0004",
+        "product": "Red Lipstick",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/beauty/Red%20Lipstick/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/9444582199406?"
+    },
+    {
+        "pid": "p0005",
+        "cid": "c0050",
+        "product": "Red Nail Polish",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/beauty/Red%20Nail%20Polish/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/3212847902461?"
+    },
+    {
+        "pid": "p0006",
+        "cid": "c0032",
+        "product": "Calvin Klein CK One",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/fragrances/Calvin%20Klein%20CK%20One/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/2210136215089?"
+    },
+    {
+        "pid": "p0007",
+        "cid": "c0040",
+        "product": "Chanel Coco Noir Eau De",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/fragrances/Chanel%20Coco%20Noir%20Eau%20De/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/1435582999795?"
+    },
+    {
+        "pid": "p0008",
+        "cid": "c0009",
+        "product": "Dior J'adore",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/fragrances/Dior%20J'adore/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/0887083199279?"
+    },
+    {
+        "pid": "p0009",
+        "cid": "c0052",
+        "product": "Dolce Shine Eau de",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/fragrances/Dolce%20Shine%20Eau%20de/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/1939383392674?"
+    },
+    {
+        "pid": "p0010",
+        "cid": "c0001",
+        "product": "Gucci Bloom Eau de",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/fragrances/Gucci%20Bloom%20Eau%20de/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/8232190382069?"
+    },
+    {
+        "pid": "p0011",
+        "cid": "c0015",
+        "product": "Annibale Colombo Bed",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/furniture/Annibale%20Colombo%20Bed/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/7113807059215?"
+    },
+    {
+        "pid": "p0012",
+        "cid": "c0015",
+        "product": "Annibale Colombo Sofa",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/furniture/Annibale%20Colombo%20Sofa/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/0426785817074?"
+    },
+    {
+        "pid": "p0013",
+        "cid": "c0017",
+        "product": "Bedside Table African Cherry",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/furniture/Bedside%20Table%20African%20Cherry/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/2913244159666?"
+    },
+    {
+        "pid": "p0014",
+        "cid": "c0034",
+        "product": "Knoll Saarinen Executive Conference Chair",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/furniture/Knoll%20Saarinen%20Executive%20Conference%20Chair/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/0726316339746?"
+    },
+    {
+        "pid": "p0015",
+        "cid": "c0025",
+        "product": "Wooden Bathroom Sink With Mirror",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/furniture/Wooden%20Bathroom%20Sink%20With%20Mirror/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/7839797529453?"
+    },
+    {
+        "pid": "p0016",
+        "cid": "c0043",
+        "product": "Apple MacBook Pro 14 Inch Space Grey",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/laptops/Apple%20MacBook%20Pro%2014%20Inch%20Space%20Grey/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/3883623063065?"
+    },
+    {
+        "pid": "p0017",
+        "cid": "c0062",
+        "product": "Asus Zenbook Pro Dual Screen Laptop",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/laptops/Asus%20Zenbook%20Pro%20Dual%20Screen%20Laptop/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/2899455033799?"
+    },
+    {
+        "pid": "p0018",
+        "cid": "c0058",
+        "product": "Huawei Matebook X Pro",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/laptops/Huawei%20Matebook%20X%20Pro/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/1232723732298?"
+    },
+    {
+        "pid": "p0019",
+        "cid": "c0016",
+        "product": "Lenovo Yoga 920",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/laptops/Lenovo%20Yoga%20920/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/9590995785298?"
+    },
+    {
+        "pid": "p0020",
+        "cid": "c0047",
+        "product": "New DELL XPS 13 9300 Laptop",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/laptops/New%20DELL%20XPS%2013%209300%20Laptop/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/0358629687929?"
+    },
+    {
+        "pid": "p0021",
+        "cid": "c0046",
+        "product": "Blue & Black Check Shirt",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/mens-shirts/Blue%20&%20Black%20Check%20Shirt/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/8840720880947?"
+    },
+    {
+        "pid": "p0022",
+        "cid": "c0023",
+        "product": "Gigabyte Aorus Men Tshirt",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/mens-shirts/Gigabyte%20Aorus%20Men%20Tshirt/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/3072645939073?"
+    },
+    {
+        "pid": "p0023",
+        "cid": "c0042",
+        "product": "Man Plaid Shirt",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/mens-shirts/Man%20Plaid%20Shirt/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/9383795178668?"
+    },
+    {
+        "pid": "p0024",
+        "cid": "c0010",
+        "product": "Man Short Sleeve Shirt",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/mens-shirts/Man%20Short%20Sleeve%20Shirt/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/8162805546713?"
+    },
+    {
+        "pid": "p0025",
+        "cid": "c0045",
+        "product": "Men Check Shirt",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/mens-shirts/Men%20Check%20Shirt/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/1360512025227?"
+    },
+    {
+        "pid": "p0026",
+        "cid": "c0018",
+        "product": "Nike Air Jordan 1 Red And Black",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/mens-shoes/Nike%20Air%20Jordan%201%20Red%20And%20Black/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/0098559139691?"
+    },
+    {
+        "pid": "p0027",
+        "cid": "c0018",
+        "product": "Nike Baseball Cleats",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/mens-shoes/Nike%20Baseball%20Cleats/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/0517654748946?"
+    },
+    {
+        "pid": "p0028",
+        "cid": "c0019",
+        "product": "Puma Future Rider Trainers",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/mens-shoes/Puma%20Future%20Rider%20Trainers/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/3562849555769?"
+    },
+    {
+        "pid": "p0029",
+        "cid": "c0059",
+        "product": "Sports Sneakers Off White & Red",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/mens-shoes/Sports%20Sneakers%20Off%20White%20&%20Red/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/3784445385582?"
+    },
+    {
+        "pid": "p0030",
+        "cid": "c0059",
+        "product": "Sports Sneakers Off White Red",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/mens-shoes/Sports%20Sneakers%20Off%20White%20Red/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/0839375107303?"
+    },
+    {
+        "pid": "p0031",
+        "cid": "c0030",
+        "product": "Brown Leather Belt Watch",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/mens-watches/Brown%20Leather%20Belt%20Watch/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/9559180055872?"
+    },
+    {
+        "pid": "p0032",
+        "cid": "c0061",
+        "product": "Longines Master Collection",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/mens-watches/Longines%20Master%20Collection/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/1865008250672?"
+    },
+    {
+        "pid": "p0033",
+        "cid": "c0051",
+        "product": "Rolex Cellini Date Black Dial",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/mens-watches/Rolex%20Cellini%20Date%20Black%20Dial/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/8917585155737?"
+    },
+    {
+        "pid": "p0034",
+        "cid": "c0051",
+        "product": "Rolex Cellini Moonphase",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/mens-watches/Rolex%20Cellini%20Moonphase/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/0330714338454?"
+    },
+    {
+        "pid": "p0035",
+        "cid": "c0051",
+        "product": "Rolex Datejust",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/mens-watches/Rolex%20Datejust/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/4957618378388?"
+    },
+    {
+        "pid": "p0036",
+        "cid": "c0051",
+        "product": "Rolex Submariner Watch",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/mens-watches/Rolex%20Submariner%20Watch/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/6567997358364?"
+    },
+    {
+        "pid": "p0037",
+        "cid": "c0057",
+        "product": "Amazon Echo Plus",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/mobile-accessories/Amazon%20Echo%20Plus/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/0697313083842?"
+    },
+    {
+        "pid": "p0038",
+        "cid": "c0043",
+        "product": "Apple Airpods",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20Airpods/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/3925144121840?"
+    },
+    {
+        "pid": "p0039",
+        "cid": "c0043",
+        "product": "Apple AirPods Max Silver",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20AirPods%20Max%20Silver/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/9261269777547?"
+    },
+    {
+        "pid": "p0040",
+        "cid": "c0043",
+        "product": "Apple Airpower Wireless Charger",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20Airpower%20Wireless%20Charger/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/6981066059882?"
+    },
+    {
+        "pid": "p0041",
+        "cid": "c0043",
+        "product": "Apple HomePod Mini Cosmic Grey",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20HomePod%20Mini%20Cosmic%20Grey/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/3484370545271?"
+    },
+    {
+        "pid": "p0042",
+        "cid": "c0043",
+        "product": "Apple iPhone Charger",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20iPhone%20Charger/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/9483427398580?"
+    },
+    {
+        "pid": "p0043",
+        "cid": "c0043",
+        "product": "Apple MagSafe Battery Pack",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20MagSafe%20Battery%20Pack/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/1850091228580?"
+    },
+    {
+        "pid": "p0044",
+        "cid": "c0043",
+        "product": "Apple Watch Series 4 Gold",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/mobile-accessories/Apple%20Watch%20Series%204%20Gold/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/4492482209885?"
+    },
+    {
+        "pid": "p0045",
+        "cid": "c0028",
+        "product": "Beats Flex Wireless Earphones",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/mobile-accessories/Beats%20Flex%20Wireless%20Earphones/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/4068884711976?"
+    },
+    {
+        "pid": "p0046",
+        "cid": "c0043",
+        "product": "iPhone 12 Silicone Case with MagSafe Plum",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/mobile-accessories/iPhone%2012%20Silicone%20Case%20with%20MagSafe%20Plum/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/4106912332105?"
+    },
+    {
+        "pid": "p0047",
+        "cid": "c0033",
+        "product": "Monopod",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/mobile-accessories/Monopod/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/2270380444574?"
+    },
+    {
+        "pid": "p0048",
+        "cid": "c0007",
+        "product": "Selfie Lamp with iPhone",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/mobile-accessories/Selfie%20Lamp%20with%20iPhone/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/6205123036707?"
+    },
+    {
+        "pid": "p0049",
+        "cid": "c0003",
+        "product": "Selfie Stick Monopod",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/mobile-accessories/Selfie%20Stick%20Monopod/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/2854098561118?"
+    },
+    {
+        "pid": "p0050",
+        "cid": "c0048",
+        "product": "TV Studio Camera Pedestal",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/mobile-accessories/TV%20Studio%20Camera%20Pedestal/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/4797157680929?"
+    },
+    {
+        "pid": "p0051",
+        "cid": "c0036",
+        "product": "Generic Motorcycle",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/motorcycle/Generic%20Motorcycle/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/3727788887261?"
+    },
+    {
+        "pid": "p0052",
+        "cid": "c0055",
+        "product": "Kawasaki Z800",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/motorcycle/Kawasaki%20Z800/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/0537669788973?"
+    },
+    {
+        "pid": "p0053",
+        "cid": "c0022",
+        "product": "MotoGP CI.H1",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/motorcycle/MotoGP%20CI.H1/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/0702250890221?"
+    },
+    {
+        "pid": "p0054",
+        "cid": "c0011",
+        "product": "Scooter Motorcycle",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/motorcycle/Scooter%20Motorcycle/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/5433184150501?"
+    },
+    {
+        "pid": "p0055",
+        "cid": "c0020",
+        "product": "Sportbike Motorcycle",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/motorcycle/Sportbike%20Motorcycle/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/0047068612003?"
+    },
+    {
+        "pid": "p0056",
+        "cid": "c0012",
+        "product": "Attitude Super Leaves Hand Soap",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/skin-care/Attitude%20Super%20Leaves%20Hand%20Soap/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/4295199431696?"
+    },
+    {
+        "pid": "p0057",
+        "cid": "c0037",
+        "product": "Olay Ultra Moisture Shea Butter Body Wash",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/skin-care/Olay%20Ultra%20Moisture%20Shea%20Butter%20Body%20Wash/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/7184195298854?"
+    },
+    {
+        "pid": "p0058",
+        "cid": "c0027",
+        "product": "Vaseline Men Body and Face Lotion",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/skin-care/Vaseline%20Men%20Body%20and%20Face%20Lotion/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/7128996084231?"
+    },
+    {
+        "pid": "p0059",
+        "cid": "c0043",
+        "product": "iPhone 5s",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/smartphones/iPhone%205s/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/2903942810911?"
+    },
+    {
+        "pid": "p0060",
+        "cid": "c0043",
+        "product": "iPhone 6",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/smartphones/iPhone%206/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/2517230562429?"
+    },
+    {
+        "pid": "p0061",
+        "cid": "c0043",
+        "product": "iPhone 13 Pro",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/smartphones/iPhone%2013%20Pro/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/2986724589988?"
+    },
+    {
+        "pid": "p0062",
+        "cid": "c0043",
+        "product": "iPhone X",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/smartphones/iPhone%20X/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/4331405454760?"
+    },
+    {
+        "pid": "p0063",
+        "cid": "c0049",
+        "product": "Oppo A57",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/smartphones/Oppo%20A57/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/1743445108634?"
+    },
+    {
+        "pid": "p0064",
+        "cid": "c0049",
+        "product": "Oppo F19 Pro Plus",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/smartphones/Oppo%20F19%20Pro%20Plus/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/7451360954140?"
+    },
+    {
+        "pid": "p0065",
+        "cid": "c0049",
+        "product": "Oppo K1",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/smartphones/Oppo%20K1/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/7535531820285?"
+    },
+    {
+        "pid": "p0066",
+        "cid": "c0029",
+        "product": "Realme C35",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/smartphones/Realme%20C35/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/3119744926904?"
+    },
+    {
+        "pid": "p0067",
+        "cid": "c0029",
+        "product": "Realme X",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/smartphones/Realme%20X/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/0139612574728?"
+    },
+    {
+        "pid": "p0068",
+        "cid": "c0029",
+        "product": "Realme XT",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/smartphones/Realme%20XT/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/3985844484131?"
+    },
+    {
+        "pid": "p0069",
+        "cid": "c0002",
+        "product": "Samsung Galaxy S7",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/smartphones/Samsung%20Galaxy%20S7/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/8841359359362?"
+    },
+    {
+        "pid": "p0070",
+        "cid": "c0002",
+        "product": "Samsung Galaxy S8",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/smartphones/Samsung%20Galaxy%20S8/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/1337599403784?"
+    },
+    {
+        "pid": "p0071",
+        "cid": "c0002",
+        "product": "Samsung Galaxy S10",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/smartphones/Samsung%20Galaxy%20S10/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/0311929399881?"
+    },
+    {
+        "pid": "p0072",
+        "cid": "c0056",
+        "product": "Vivo S1",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/smartphones/Vivo%20S1/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/4070349673041?"
+    },
+    {
+        "pid": "p0073",
+        "cid": "c0056",
+        "product": "Vivo V9",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/smartphones/Vivo%20V9/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/1506104702332?"
+    },
+    {
+        "pid": "p0074",
+        "cid": "c0056",
+        "product": "Vivo X21",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/smartphones/Vivo%20X21/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/2543504494043?"
+    },
+    {
+        "pid": "p0075",
+        "cid": "c0060",
+        "product": "Black Sun Glasses",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/sunglasses/Black%20Sun%20Glasses/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/5882136939141?"
+    },
+    {
+        "pid": "p0076",
+        "cid": "c0060",
+        "product": "Classic Sun Glasses",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/sunglasses/Classic%20Sun%20Glasses/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/8441015763783?"
+    },
+    {
+        "pid": "p0077",
+        "cid": "c0060",
+        "product": "Green and Black Glasses",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/sunglasses/Green%20and%20Black%20Glasses/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/3645259229399?"
+    },
+    {
+        "pid": "p0078",
+        "cid": "c0026",
+        "product": "Party Glasses",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/sunglasses/Party%20Glasses/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/0425848276443?"
+    },
+    {
+        "pid": "p0079",
+        "cid": "c0060",
+        "product": "Sunglasses",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/sunglasses/Sunglasses/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/9189532411470?"
+    },
+    {
+        "pid": "p0080",
+        "cid": "c0043",
+        "product": "iPad Mini 2021 Starlight",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/tablets/iPad%20Mini%202021%20Starlight/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/6190943900668?"
+    },
+    {
+        "pid": "p0081",
+        "cid": "c0002",
+        "product": "Samsung Galaxy Tab S8 Plus Grey",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/tablets/Samsung%20Galaxy%20Tab%20S8%20Plus%20Grey/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/7204800760083?"
+    },
+    {
+        "pid": "p0082",
+        "cid": "c0002",
+        "product": "Samsung Galaxy Tab White",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/tablets/Samsung%20Galaxy%20Tab%20White/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/1952499482706?"
+    },
+    {
+        "pid": "p0083",
+        "cid": "c0053",
+        "product": "300 Touring",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/vehicle/300%20Touring/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/4354670429851?"
+    },
+    {
+        "pid": "p0084",
+        "cid": "c0039",
+        "product": "Charger SXT RWD",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/vehicle/Charger%20SXT%20RWD/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/3076808951073?"
+    },
+    {
+        "pid": "p0085",
+        "cid": "c0039",
+        "product": "Dodge Hornet GT Plus",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/vehicle/Dodge%20Hornet%20GT%20Plus/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/5552996682784?"
+    },
+    {
+        "pid": "p0086",
+        "cid": "c0039",
+        "product": "Durango SXT RWD",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/vehicle/Durango%20SXT%20RWD/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/0325066634371?"
+    },
+    {
+        "pid": "p0087",
+        "cid": "c0053",
+        "product": "Pacifica Touring",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/vehicle/Pacifica%20Touring/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/0423919231919?"
+    },
+    {
+        "pid": "p0088",
+        "cid": "c0044",
+        "product": "Blue Women's Handbag",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/womens-bags/Blue%20Women's%20Handbag/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/5830586302839?"
+    },
+    {
+        "pid": "p0089",
+        "cid": "c0031",
+        "product": "Heshe Women's Leather Bag",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/womens-bags/Heshe%20Women's%20Leather%20Bag/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/4736917854821?"
+    },
+    {
+        "pid": "p0090",
+        "cid": "c0021",
+        "product": "Prada Women Bag",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/womens-bags/Prada%20Women%20Bag/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/4590351278063?"
+    },
+    {
+        "pid": "p0091",
+        "cid": "c0045",
+        "product": "White Faux Leather Backpack",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/womens-bags/White%20Faux%20Leather%20Backpack/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/2451119128549?"
+    },
+    {
+        "pid": "p0092",
+        "cid": "c0014",
+        "product": "Women Handbag Black",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/womens-bags/Women%20Handbag%20Black/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/4391376510493?"
+    },
+    {
+        "pid": "p0093",
+        "cid": "c0013",
+        "product": "Black & Brown Slipper",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/womens-shoes/Black%20&%20Brown%20Slipper/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/7641648910463?"
+    },
+    {
+        "pid": "p0094",
+        "cid": "c0032",
+        "product": "Calvin Klein Heel Shoes",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/womens-shoes/Calvin%20Klein%20Heel%20Shoes/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/0909273919848?"
+    },
+    {
+        "pid": "p0095",
+        "cid": "c0005",
+        "product": "Golden Shoes Woman",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/womens-shoes/Golden%20Shoes%20Woman/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/0008484295237?"
+    },
+    {
+        "pid": "p0096",
+        "cid": "c0041",
+        "product": "Pampi Shoes",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/womens-shoes/Pampi%20Shoes/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/9067128136436?"
+    },
+    {
+        "pid": "p0097",
+        "cid": "c0024",
+        "product": "Red Shoes",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/womens-shoes/Red%20Shoes/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/6076832823797?"
+    },
+    {
+        "pid": "p0098",
+        "cid": "c0038",
+        "product": "IWC Ingenieur Automatic Steel",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/womens-watches/IWC%20Ingenieur%20Automatic%20Steel/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/3417342002384?"
+    },
+    {
+        "pid": "p0099",
+        "cid": "c0051",
+        "product": "Rolex Cellini Moonphase",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/womens-watches/Rolex%20Cellini%20Moonphase/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/3517608890772?"
+    },
+    {
+        "pid": "p0100",
+        "cid": "c0051",
+        "product": "Rolex Datejust Women",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/womens-watches/Rolex%20Datejust%20Women/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/6032534220602?"
+    },
+    {
+        "pid": "p0101",
+        "cid": "c0006",
+        "product": "Watch Gold for Women",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/womens-watches/Watch%20Gold%20for%20Women/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/0793324106392?"
+    },
+    {
+        "pid": "p0102",
+        "cid": "c0054",
+        "product": "Women's Wrist Watch",
+        "thumbnail": "https://cdn.dummyjson.com/products/images/womens-watches/Women's%20Wrist%20Watch/thumbnail.png",
+        "barcode": "https://barcodeapi.org/api/codabar/7588684177028?"
+    }
+]

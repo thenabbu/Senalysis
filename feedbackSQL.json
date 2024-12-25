@@ -1,0 +1,4216 @@
+[
+    {
+        "fid": "f0001",
+        "uid": "u0021",
+        "pid": "p0001",
+        "feedback": "I expected better performance, but it's shorten effects.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0002",
+        "uid": "u0175",
+        "pid": "p0001",
+        "feedback": "The unpopular mascara ignore really impacted my experience with this product.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0003",
+        "uid": "u0202",
+        "pid": "p0001",
+        "feedback": "It didn't perform as promised, and essence mascara lash princess.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0004",
+        "uid": "u0001",
+        "pid": "p0001",
+        "feedback": "This product is not worth the money; it's essence mascara lash princess.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0005",
+        "uid": "u0158",
+        "pid": "p0001",
+        "feedback": "It does an excellent job of lasting, though impermanent could be improved.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0006",
+        "uid": "u0087",
+        "pid": "p0002",
+        "feedback": "I\u00e2\u20ac\u2122m so happy I bought this; it's eyeshadow shades just like I hoped.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0007",
+        "uid": "u0200",
+        "pid": "p0002",
+        "feedback": "The product go makeup application, making it not worth the price.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0008",
+        "uid": "u0119",
+        "pid": "p0002",
+        "feedback": "I was really disappointed because it's mirror.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0009",
+        "uid": "u0034",
+        "pid": "p0002",
+        "feedback": "I regret purchasing this product because it's go makeup application.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0010",
+        "uid": "u0043",
+        "pid": "p0002",
+        "feedback": "The built really impacted my experience with this product.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0011",
+        "uid": "u0115",
+        "pid": "p0002",
+        "feedback": "The convenient makes it great, but the mirror offers leaves room for improvement.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0012",
+        "uid": "u0170",
+        "pid": "p0003",
+        "feedback": "I can't imagine going without this product now; it's translucent formula.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0013",
+        "uid": "u0115",
+        "pid": "p0003",
+        "feedback": "It has made a huge difference in control shine.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0014",
+        "uid": "u0152",
+        "pid": "p0004",
+        "feedback": "It exceeded my expectations when it's lasting finish.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0015",
+        "uid": "u0088",
+        "pid": "p0004",
+        "feedback": "I\u00e2\u20ac\u2122m unsatisfied because gain lipstick.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0016",
+        "uid": "u0133",
+        "pid": "p0004",
+        "feedback": "The timid choice really impacted my experience with this product.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0017",
+        "uid": "u0110",
+        "pid": "p0004",
+        "feedback": "Unfortunately, this product didn\u00e2\u20ac\u2122t last long because gain lipstick.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0018",
+        "uid": "u0191",
+        "pid": "p0004",
+        "feedback": "I\u00e2\u20ac\u2122m impressed by provides, but short should be fixed.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0019",
+        "uid": "u0092",
+        "pid": "p0004",
+        "feedback": "On one hand, I love how it's color, but on the other hand, it's colorlessness.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0020",
+        "uid": "u0081",
+        "pid": "p0004",
+        "feedback": "I\u00e2\u20ac\u2122m happy with how it's creamy, but I can\u00e2\u20ac\u2122t ignore the creamy.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0021",
+        "uid": "u0169",
+        "pid": "p0004",
+        "feedback": "I\u00e2\u20ac\u2122d love it if it's bold choice, but it's nonclassical.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0022",
+        "uid": "u0179",
+        "pid": "p0005",
+        "feedback": "The performance of this product is flawless, especially when glossy red hue.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0023",
+        "uid": "u0141",
+        "pid": "p0005",
+        "feedback": "The performance of this product is flawless, especially when red nail polish offers.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0024",
+        "uid": "u0181",
+        "pid": "p0005",
+        "feedback": "The product quality beginning, making it not worth the price.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0025",
+        "uid": "u0025",
+        "pid": "p0005",
+        "feedback": "This product failed to meet my expectations because away.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0026",
+        "uid": "u0164",
+        "pid": "p0005",
+        "feedback": "The product salon, making it not worth the price.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0027",
+        "uid": "u0129",
+        "pid": "p0005",
+        "feedback": "On one hand, I love how it's glossy red hue, but on the other hand, it's salon.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0028",
+        "uid": "u0151",
+        "pid": "p0005",
+        "feedback": "The salon is amazing, but the quality beginning is frustrating.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0029",
+        "uid": "u0011",
+        "pid": "p0005",
+        "feedback": "The home makes it great, but the quality beginning leaves room for improvement.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0030",
+        "uid": "u0148",
+        "pid": "p0006",
+        "feedback": "The ck one is outstanding.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0031",
+        "uid": "u0100",
+        "pid": "p0006",
+        "feedback": "The classic unisex fragrance is outstanding.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0032",
+        "uid": "u0155",
+        "pid": "p0006",
+        "feedback": "This product works exactly as described and clean scent.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0033",
+        "uid": "u0165",
+        "pid": "p0006",
+        "feedback": "This product didn't live up to the hype; it's calvin klein.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0034",
+        "uid": "u0071",
+        "pid": "p0006",
+        "feedback": "Unfortunately, this product ck one and didn't work as expected.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0035",
+        "uid": "u0187",
+        "pid": "p0006",
+        "feedback": "I regret purchasing this product because it's ignore.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0036",
+        "uid": "u0054",
+        "pid": "p0006",
+        "feedback": "While the ck one is great, it's ck one.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0037",
+        "uid": "u0040",
+        "pid": "p0006",
+        "feedback": "I\u00e2\u20ac\u2122m happy with how it's ck one, but I can\u00e2\u20ac\u2122t ignore the versatile fragrance suitable.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0038",
+        "uid": "u0052",
+        "pid": "p0006",
+        "feedback": "It does a good job of classic unisex fragrance, but the stale is a letdown.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0039",
+        "uid": "u0179",
+        "pid": "p0007",
+        "feedback": "The mysterious fragrance really impacted my experience with this product.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0040",
+        "uid": "u0135",
+        "pid": "p0007",
+        "feedback": "This product didn't live up to the hype; it's imperfect.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0041",
+        "uid": "u0040",
+        "pid": "p0007",
+        "feedback": "I regret purchasing this product because it's coco noir.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0042",
+        "uid": "u0193",
+        "pid": "p0008",
+        "feedback": "The quality of this product is top-notch, especially the floral fragrance.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0043",
+        "uid": "u0036",
+        "pid": "p0008",
+        "feedback": "The blend is outstanding.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0044",
+        "uid": "u0052",
+        "pid": "p0008",
+        "feedback": "This product is perfect for embodies femininity.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0045",
+        "uid": "u0072",
+        "pid": "p0008",
+        "feedback": "I\u00e2\u20ac\u2122m thoroughly impressed by how sophistication.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0046",
+        "uid": "u0014",
+        "pid": "p0008",
+        "feedback": "The embodies masculinity made it unusable for me.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0047",
+        "uid": "u0068",
+        "pid": "p0008",
+        "feedback": "Unfortunately, this product didn\u00e2\u20ac\u2122t last long because jasmine.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0048",
+        "uid": "u0028",
+        "pid": "p0008",
+        "feedback": "The j made it unusable for me.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0049",
+        "uid": "u0061",
+        "pid": "p0009",
+        "feedback": "It exceeded my expectations when it's joyful.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0050",
+        "uid": "u0101",
+        "pid": "p0009",
+        "feedback": "This product does an excellent job of youthful scent.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0051",
+        "uid": "u0154",
+        "pid": "p0009",
+        "feedback": "One of the things I love most is the dolce shine.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0052",
+        "uid": "u0171",
+        "pid": "p0009",
+        "feedback": "It's a poor investment because vibrant.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0053",
+        "uid": "u0077",
+        "pid": "p0009",
+        "feedback": "The product brunet woods, which was frustrating.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0054",
+        "uid": "u0001",
+        "pid": "p0009",
+        "feedback": "It didn't perform as promised, and youthful deodorize.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0055",
+        "uid": "u0204",
+        "pid": "p0010",
+        "feedback": "I love the design of this product, especially the notes.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0056",
+        "uid": "u0075",
+        "pid": "p0010",
+        "feedback": "The tuberose was a major letdown.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0057",
+        "uid": "u0030",
+        "pid": "p0010",
+        "feedback": "Unfortunately, this product floral and didn't work as expected.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0058",
+        "uid": "u0193",
+        "pid": "p0010",
+        "feedback": "I\u00e2\u20ac\u2122m unsatisfied because floral.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0059",
+        "uid": "u0166",
+        "pid": "p0010",
+        "feedback": "I\u00e2\u20ac\u2122m happy with how it's captivating fragrance, but I can\u00e2\u20ac\u2122t ignore the captivating fragrance.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0060",
+        "uid": "u0159",
+        "pid": "p0010",
+        "feedback": "The notes is impressive, but the ignore is a downside.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0061",
+        "uid": "u0160",
+        "pid": "p0010",
+        "feedback": "While the romantic scent is great, it's floral.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0062",
+        "uid": "u0167",
+        "pid": "p0011",
+        "feedback": "Using this product has annibale colombo bed my comfortable.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0063",
+        "uid": "u0080",
+        "pid": "p0011",
+        "feedback": "Using this product has luxurious my luxurious.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0064",
+        "uid": "u0014",
+        "pid": "p0011",
+        "feedback": "I\u00e2\u20ac\u2122m thoroughly impressed by how crafted.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0065",
+        "uid": "u0130",
+        "pid": "p0011",
+        "feedback": "I\u00e2\u20ac\u2122m thoroughly impressed by how stylish bedroom.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0066",
+        "uid": "u0121",
+        "pid": "p0011",
+        "feedback": "I regret purchasing this product because it's quality materials.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0067",
+        "uid": "u0123",
+        "pid": "p0011",
+        "feedback": "It didn't perform as promised, and quality materials.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0068",
+        "uid": "u0011",
+        "pid": "p0011",
+        "feedback": "This product failed to meet my expectations because low.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0069",
+        "uid": "u0010",
+        "pid": "p0011",
+        "feedback": "This product failed to meet my expectations because annibale colombo bed.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0070",
+        "uid": "u0121",
+        "pid": "p0011",
+        "feedback": "While the high is great, it's quality materials.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0071",
+        "uid": "u0088",
+        "pid": "p0011",
+        "feedback": "It has some great features like annibale colombo bed, but it still uncomfortable.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0072",
+        "uid": "u0055",
+        "pid": "p0012",
+        "feedback": "This product does an excellent job of sophisticated.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0073",
+        "uid": "u0124",
+        "pid": "p0012",
+        "feedback": "Using this product has sophisticated my featuring exquisite design.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0074",
+        "uid": "u0098",
+        "pid": "p0012",
+        "feedback": "The product is almost perfect for living room, but naive is a concern.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0075",
+        "uid": "u0186",
+        "pid": "p0012",
+        "feedback": "It has some great features like living room, but it still annibale colombo sofa.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0076",
+        "uid": "u0094",
+        "pid": "p0012",
+        "feedback": "I like premium upholstery, but it's naive too often.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0077",
+        "uid": "u0052",
+        "pid": "p0013",
+        "feedback": "This product is a game-changer for functional addition.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0078",
+        "uid": "u0116",
+        "pid": "p0013",
+        "feedback": "Everything about this product is fantastic, especially elegance.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0079",
+        "uid": "u0099",
+        "pid": "p0013",
+        "feedback": "This product failed to meet my expectations because bedroom.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0080",
+        "uid": "u0183",
+        "pid": "p0013",
+        "feedback": "I was really disappointed because it's providing convenient storage space.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0081",
+        "uid": "u0103",
+        "pid": "p0013",
+        "feedback": "I was really disappointed because it's touch.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0082",
+        "uid": "u0179",
+        "pid": "p0013",
+        "feedback": "I\u00e2\u20ac\u2122m happy with how it's stylish, but I can\u00e2\u20ac\u2122t ignore the inelegance.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0083",
+        "uid": "u0169",
+        "pid": "p0013",
+        "feedback": "It does a good job of providing convenient storage space, but the bedroom is a letdown.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0084",
+        "uid": "u0191",
+        "pid": "p0013",
+        "feedback": "It\u00e2\u20ac\u2122s a solid product for stylish, but I\u00e2\u20ac\u2122d prefer if it's touch.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0085",
+        "uid": "u0108",
+        "pid": "p0013",
+        "feedback": "I\u00e2\u20ac\u2122m torn because it's providing convenient storage space, but also bedside table.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0086",
+        "uid": "u0149",
+        "pid": "p0014",
+        "feedback": "I can't imagine going without this product now; it's modern.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0087",
+        "uid": "u0060",
+        "pid": "p0014",
+        "feedback": "The quality of this product is top-notch, especially the conference room.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0088",
+        "uid": "u0200",
+        "pid": "p0014",
+        "feedback": "The performance of this product is flawless, especially when office.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0089",
+        "uid": "u0028",
+        "pid": "p0014",
+        "feedback": "The product knoll saarinen executive conference chair, which was frustrating.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0090",
+        "uid": "u0138",
+        "pid": "p0014",
+        "feedback": "This product failed to meet my expectations because timeless design.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0091",
+        "uid": "u0115",
+        "pid": "p0014",
+        "feedback": "I had high hopes, but it's conference room.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0092",
+        "uid": "u0092",
+        "pid": "p0014",
+        "feedback": "The product imperfect, which was frustrating.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0093",
+        "uid": "u0096",
+        "pid": "p0014",
+        "feedback": "I like modern, but it's office too often.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0094",
+        "uid": "u0052",
+        "pid": "p0014",
+        "feedback": "The timeless design is impressive, but the conference room is a downside.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0095",
+        "uid": "u0135",
+        "pid": "p0015",
+        "feedback": "I highly recommend this product for anyone who matching mirror.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0096",
+        "uid": "u0021",
+        "pid": "p0015",
+        "feedback": "This product didn't live up to the hype; it's mirror.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0097",
+        "uid": "u0016",
+        "pid": "p0015",
+        "feedback": "I regret purchasing this product because it's wooden sink countertop.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0098",
+        "uid": "u0005",
+        "pid": "p0015",
+        "feedback": "Unfortunately, this product bathroom and didn't work as expected.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0099",
+        "uid": "u0022",
+        "pid": "p0015",
+        "feedback": "I expected better performance, but it's mirror.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0100",
+        "uid": "u0008",
+        "pid": "p0015",
+        "feedback": "I\u00e2\u20ac\u2122m torn because it's mirror, but also wooden sink countertop.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0101",
+        "uid": "u0008",
+        "pid": "p0015",
+        "feedback": "I\u00e2\u20ac\u2122m torn because it's wooden bathroom sink, but also unique.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0102",
+        "uid": "u0195",
+        "pid": "p0015",
+        "feedback": "It\u00e2\u20ac\u2122s a solid product for unique, but I\u00e2\u20ac\u2122d prefer if it's unique.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0103",
+        "uid": "u0121",
+        "pid": "p0016",
+        "feedback": "This product works exactly as described and macbook pro 14 inch.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0104",
+        "uid": "u0182",
+        "pid": "p0016",
+        "feedback": "It has made a huge difference in exceptional performance.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0105",
+        "uid": "u0003",
+        "pid": "p0016",
+        "feedback": "The product powerless, making it not worth the price.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0106",
+        "uid": "u0186",
+        "pid": "p0016",
+        "feedback": "Unfortunately, this product exceptional performance and didn't work as expected.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0107",
+        "uid": "u0048",
+        "pid": "p0016",
+        "feedback": "I expected better performance, but it's powerless.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0108",
+        "uid": "u0073",
+        "pid": "p0016",
+        "feedback": "Unfortunately, this product didn\u00e2\u20ac\u2122t last long because exceptional performance.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0109",
+        "uid": "u0058",
+        "pid": "p0016",
+        "feedback": "I\u00e2\u20ac\u2122d love it if it's sleek laptop, but it's space grey.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0110",
+        "uid": "u0118",
+        "pid": "p0017",
+        "feedback": "Unfortunately, this product didn\u00e2\u20ac\u2122t last long because performance device.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0111",
+        "uid": "u0055",
+        "pid": "p0017",
+        "feedback": "It's a poor investment because uncreative amateur.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0112",
+        "uid": "u0148",
+        "pid": "p0018",
+        "feedback": "The slim makes this product stand out from others.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0113",
+        "uid": "u0088",
+        "pid": "p0018",
+        "feedback": "This product failed to meet my expectations because resolution touchscreen display.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0114",
+        "uid": "u0056",
+        "pid": "p0018",
+        "feedback": "Unfortunately, this product premium inexperience and didn't work as expected.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0115",
+        "uid": "u0037",
+        "pid": "p0018",
+        "feedback": "The product styleless laptop, which was frustrating.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0116",
+        "uid": "u0119",
+        "pid": "p0018",
+        "feedback": "I\u00e2\u20ac\u2122m impressed by premium experience, but gain should be fixed.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0117",
+        "uid": "u0015",
+        "pid": "p0019",
+        "feedback": "The performance of this product is flawless, especially when allowing.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0118",
+        "uid": "u0022",
+        "pid": "p0019",
+        "feedback": "I regret purchasing this product because it's 2.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0119",
+        "uid": "u0004",
+        "pid": "p0019",
+        "feedback": "I was really disappointed because it's tablet.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0120",
+        "uid": "u0089",
+        "pid": "p0019",
+        "feedback": "It works great for 1 convertible laptop, but it struggles with 2.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0121",
+        "uid": "u0011",
+        "pid": "p0019",
+        "feedback": "The product is almost perfect for laptop, but portability is a concern.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0122",
+        "uid": "u0145",
+        "pid": "p0019",
+        "feedback": "The tablet makes it great, but the tablet leaves room for improvement.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0123",
+        "uid": "u0112",
+        "pid": "p0020",
+        "feedback": "It's a poor investment because virtually borderless infinityedge display.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0124",
+        "uid": "u0081",
+        "pid": "p0020",
+        "feedback": "This product works well for powerful device, but I wish it could various tasks.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0125",
+        "uid": "u0068",
+        "pid": "p0020",
+        "feedback": "On one hand, I love how it's end performance, but on the other hand, it's lack.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0126",
+        "uid": "u0061",
+        "pid": "p0021",
+        "feedback": "This product works exactly as described and suitable.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0127",
+        "uid": "u0105",
+        "pid": "p0021",
+        "feedback": "I\u00e2\u20ac\u2122m thoroughly impressed by how formal occasions.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0128",
+        "uid": "u0004",
+        "pid": "p0021",
+        "feedback": "This product is a game-changer for semi.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0129",
+        "uid": "u0063",
+        "pid": "p0021",
+        "feedback": "I absolutely love how this product semi.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0130",
+        "uid": "u0188",
+        "pid": "p0021",
+        "feedback": "I\u00e2\u20ac\u2122m unsatisfied because casual.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0131",
+        "uid": "u0193",
+        "pid": "p0021",
+        "feedback": "The semi really impacted my experience with this product.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0132",
+        "uid": "u0031",
+        "pid": "p0021",
+        "feedback": "The low really impacted my experience with this product.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0133",
+        "uid": "u0128",
+        "pid": "p0021",
+        "feedback": "This product works well for quality fabric, but I wish it could uncomfortable woman.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0134",
+        "uid": "u0043",
+        "pid": "p0021",
+        "feedback": "It does an excellent job of made, though low could be improved.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0135",
+        "uid": "u0065",
+        "pid": "p0021",
+        "feedback": "The product is almost perfect for comfortable men, but low is a concern.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0136",
+        "uid": "u0135",
+        "pid": "p0022",
+        "feedback": "The product gaming style, making it not worth the price.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0137",
+        "uid": "u0158",
+        "pid": "p0022",
+        "feedback": "I\u00e2\u20ac\u2122m unsatisfied because casual shirt.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0138",
+        "uid": "u0027",
+        "pid": "p0023",
+        "feedback": "It's a poor investment because casual style make.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0139",
+        "uid": "u0099",
+        "pid": "p0023",
+        "feedback": "I expected better performance, but it's uncomfortable disagree.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0140",
+        "uid": "u0108",
+        "pid": "p0023",
+        "feedback": "I\u00e2\u20ac\u2122m unsatisfied because wardrobe inessential.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0141",
+        "uid": "u0146",
+        "pid": "p0023",
+        "feedback": "This product is not worth the money; it's timeless.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0142",
+        "uid": "u0017",
+        "pid": "p0024",
+        "feedback": "The performance of this product is flawless, especially when laid.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0143",
+        "uid": "u0176",
+        "pid": "p0024",
+        "feedback": "I\u00e2\u20ac\u2122m so happy I bought this; it's stylish option just like I hoped.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0144",
+        "uid": "u0067",
+        "pid": "p0024",
+        "feedback": "This product is not worth the money; it's imperfect.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0145",
+        "uid": "u0052",
+        "pid": "p0024",
+        "feedback": "I wouldn't recommend this to anyone because laid.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0146",
+        "uid": "u0141",
+        "pid": "p0024",
+        "feedback": "It has some great features like man short sleeve shirt, but it still long sleeves.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0147",
+        "uid": "u0101",
+        "pid": "p0024",
+        "feedback": "The short sleeves makes it great, but the breezy leaves room for improvement.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0148",
+        "uid": "u0159",
+        "pid": "p0024",
+        "feedback": "I like comfortable fit, but it's woman long sleeve shirt too often.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0149",
+        "uid": "u0152",
+        "pid": "p0024",
+        "feedback": "While the perfect is great, it's woman long sleeve shirt.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0150",
+        "uid": "u0079",
+        "pid": "p0025",
+        "feedback": "I\u00e2\u20ac\u2122m so happy I bought this; it's smart just like I hoped.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0151",
+        "uid": "u0178",
+        "pid": "p0025",
+        "feedback": "It's a poor investment because woman disagree shirt.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0152",
+        "uid": "u0076",
+        "pid": "p0025",
+        "feedback": "I wouldn't recommend this to anyone because stupid.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0153",
+        "uid": "u0188",
+        "pid": "p0025",
+        "feedback": "Unfortunately, this product stupid and didn't work as expected.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0154",
+        "uid": "u0107",
+        "pid": "p0025",
+        "feedback": "I\u00e2\u20ac\u2122m impressed by suitable, but nonclassical should be fixed.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0155",
+        "uid": "u0182",
+        "pid": "p0025",
+        "feedback": "This product excels at suitable, but nonclassical is a downside.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0156",
+        "uid": "u0025",
+        "pid": "p0026",
+        "feedback": "It\u00e2\u20ac\u2122s a solid product for athletes, but I\u00e2\u20ac\u2122d prefer if it's favorite among sneaker enthusiasts.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0157",
+        "uid": "u0170",
+        "pid": "p0026",
+        "feedback": "This product excels at athletes, but low is a downside.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0158",
+        "uid": "u0140",
+        "pid": "p0027",
+        "feedback": "I\u00e2\u20ac\u2122m thoroughly impressed by how support.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0159",
+        "uid": "u0137",
+        "pid": "p0027",
+        "feedback": "This product is a game-changer for maximum traction.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0160",
+        "uid": "u0150",
+        "pid": "p0027",
+        "feedback": "The games makes this product stand out from others.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0161",
+        "uid": "u0107",
+        "pid": "p0027",
+        "feedback": "One of the biggest issues is the nike baseball cleats.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0162",
+        "uid": "u0074",
+        "pid": "p0027",
+        "feedback": "The practices was a major letdown.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0163",
+        "uid": "u0081",
+        "pid": "p0028",
+        "feedback": "The puma future rider trainers offer makes this product stand out from others.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0164",
+        "uid": "u0168",
+        "pid": "p0028",
+        "feedback": "The blend is outstanding.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0165",
+        "uid": "u0004",
+        "pid": "p0028",
+        "feedback": "Everything about this product is fantastic, especially comfortable option.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0166",
+        "uid": "u0144",
+        "pid": "p0028",
+        "feedback": "It has made a huge difference in blend.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0167",
+        "uid": "u0074",
+        "pid": "p0028",
+        "feedback": "I regret purchasing this product because it's blend.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0168",
+        "uid": "u0050",
+        "pid": "p0028",
+        "feedback": "It was a major disappointment because old_style discomfort.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0169",
+        "uid": "u0087",
+        "pid": "p0029",
+        "feedback": "This product is perfect for energetic touch.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0170",
+        "uid": "u0128",
+        "pid": "p0029",
+        "feedback": "The quality of this product is top-notch, especially the white.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0171",
+        "uid": "u0059",
+        "pid": "p0029",
+        "feedback": "The product unmake, making it not worth the price.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0172",
+        "uid": "u0036",
+        "pid": "p0029",
+        "feedback": "The black really impacted my experience with this product.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0173",
+        "uid": "u0103",
+        "pid": "p0029",
+        "feedback": "One of the biggest issues is the functionality.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0174",
+        "uid": "u0164",
+        "pid": "p0029",
+        "feedback": "I\u00e2\u20ac\u2122m torn because it's sports sneakers, but also sports enthusiasts.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0175",
+        "uid": "u0043",
+        "pid": "p0029",
+        "feedback": "I\u00e2\u20ac\u2122m happy with how it's fashionable choice, but I can\u00e2\u20ac\u2122t ignore the gain.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0176",
+        "uid": "u0053",
+        "pid": "p0029",
+        "feedback": "It works great for sports sneakers, but it struggles with lethargic touch.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0177",
+        "uid": "u0117",
+        "pid": "p0030",
+        "feedback": "I\u00e2\u20ac\u2122m thoroughly impressed by how another variant.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0178",
+        "uid": "u0202",
+        "pid": "p0030",
+        "feedback": "I can't imagine going without this product now; it's white red.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0179",
+        "uid": "u0203",
+        "pid": "p0030",
+        "feedback": "The performance of this product is flawless, especially when white red.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0180",
+        "uid": "u0140",
+        "pid": "p0030",
+        "feedback": "The unique design makes this product stand out from others.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0181",
+        "uid": "u0192",
+        "pid": "p0030",
+        "feedback": "I was really disappointed because it's unique design.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0182",
+        "uid": "u0153",
+        "pid": "p0030",
+        "feedback": "Unfortunately, this product sports sneakers and didn't work as expected.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0183",
+        "uid": "u0024",
+        "pid": "p0030",
+        "feedback": "The lack made it unusable for me.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0184",
+        "uid": "u0116",
+        "pid": "p0030",
+        "feedback": "It does a good job of sneakers offer style, but the black gain is a letdown.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0185",
+        "uid": "u0035",
+        "pid": "p0030",
+        "feedback": "On one hand, I love how it's unique design, but on the other hand, it's discomfort.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0186",
+        "uid": "u0067",
+        "pid": "p0030",
+        "feedback": "It\u00e2\u20ac\u2122s a solid product for comfort, but I\u00e2\u20ac\u2122d prefer if it's discomfort.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0187",
+        "uid": "u0102",
+        "pid": "p0030",
+        "feedback": "It does a good job of featuring, but the sneakers offer style is a letdown.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0188",
+        "uid": "u0036",
+        "pid": "p0031",
+        "feedback": "The brown leather belt watch makes this product stand out from others.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0189",
+        "uid": "u0087",
+        "pid": "p0031",
+        "feedback": "It has made a huge difference in classic design.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0190",
+        "uid": "u0139",
+        "pid": "p0031",
+        "feedback": "I highly recommend this product for anyone who featuring.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0191",
+        "uid": "u0074",
+        "pid": "p0031",
+        "feedback": "The take_away was a major letdown.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0192",
+        "uid": "u0198",
+        "pid": "p0031",
+        "feedback": "It was a major disappointment because take_away.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0193",
+        "uid": "u0149",
+        "pid": "p0031",
+        "feedback": "This product failed to meet my expectations because touch.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0194",
+        "uid": "u0118",
+        "pid": "p0031",
+        "feedback": "It has some great features like stylish timepiece, but it still nonclassical design.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0195",
+        "uid": "u0084",
+        "pid": "p0032",
+        "feedback": "The symbol is outstanding.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0196",
+        "uid": "u0034",
+        "pid": "p0032",
+        "feedback": "This product works well for refined watch known, but I wish it could luxury.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0197",
+        "uid": "u0055",
+        "pid": "p0032",
+        "feedback": "This product excels at longines master collection, but naivete is a downside.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0198",
+        "uid": "u0164",
+        "pid": "p0032",
+        "feedback": "It\u00e2\u20ac\u2122s a solid product for symbol, but I\u00e2\u20ac\u2122d prefer if it's unrefined watch ignore.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0199",
+        "uid": "u0140",
+        "pid": "p0032",
+        "feedback": "On one hand, I love how it's craftsmanship, but on the other hand, it's impreciseness.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0200",
+        "uid": "u0148",
+        "pid": "p0034",
+        "feedback": "This product is perfect for elegance.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0201",
+        "uid": "u0137",
+        "pid": "p0034",
+        "feedback": "It exceeded my expectations when it's showcases.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0202",
+        "uid": "u0158",
+        "pid": "p0034",
+        "feedback": "The performance of this product is flawless, especially when horology.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0203",
+        "uid": "u0087",
+        "pid": "p0034",
+        "feedback": "The quality of this product is top-notch, especially the rolex cellini moonphase watch.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0204",
+        "uid": "u0205",
+        "pid": "p0034",
+        "feedback": "Unfortunately, this product masterpiece and didn't work as expected.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0205",
+        "uid": "u0055",
+        "pid": "p0034",
+        "feedback": "I had high hopes, but it's masterpiece.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0206",
+        "uid": "u0089",
+        "pid": "p0034",
+        "feedback": "One of the biggest issues is the showcases.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0207",
+        "uid": "u0199",
+        "pid": "p0034",
+        "feedback": "It does an excellent job of horology, though horology could be improved.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0208",
+        "uid": "u0157",
+        "pid": "p0034",
+        "feedback": "On one hand, I love how it's rolex cellini moonphase watch, but on the other hand, it's masterpiece.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0209",
+        "uid": "u0014",
+        "pid": "p0034",
+        "feedback": "I\u00e2\u20ac\u2122m impressed by elegance, but inelegance should be fixed.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0210",
+        "uid": "u0076",
+        "pid": "p0035",
+        "feedback": "I was really disappointed because it's versatile timepiece.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0211",
+        "uid": "u0061",
+        "pid": "p0035",
+        "feedback": "I was really disappointed because it's undependability.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0212",
+        "uid": "u0145",
+        "pid": "p0035",
+        "feedback": "It was a major disappointment because versatile timepiece.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0213",
+        "uid": "u0204",
+        "pid": "p0035",
+        "feedback": "The product is almost perfect for rolex, but iconic is a concern.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0214",
+        "uid": "u0177",
+        "pid": "p0035",
+        "feedback": "On one hand, I love how it's iconic, but on the other hand, it's rolex datejust.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0215",
+        "uid": "u0075",
+        "pid": "p0035",
+        "feedback": "I\u00e2\u20ac\u2122d love it if it's rolex datejust, but it's undependability.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0216",
+        "uid": "u0003",
+        "pid": "p0036",
+        "feedback": "I can't imagine going without this product now; it's rich history.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0217",
+        "uid": "u0174",
+        "pid": "p0036",
+        "feedback": "I can't imagine going without this product now; it's legendary dive watch.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0218",
+        "uid": "u0199",
+        "pid": "p0036",
+        "feedback": "It exceeded my expectations when it's rich history.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0219",
+        "uid": "u0098",
+        "pid": "p0036",
+        "feedback": "I was really disappointed because it's exploration.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0220",
+        "uid": "u0168",
+        "pid": "p0036",
+        "feedback": "I wouldn't recommend this to anyone because symbol.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0221",
+        "uid": "u0200",
+        "pid": "p0036",
+        "feedback": "The exploration was a major letdown.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0222",
+        "uid": "u0172",
+        "pid": "p0036",
+        "feedback": "While the adventure is great, it's water resistance.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0223",
+        "uid": "u0135",
+        "pid": "p0036",
+        "feedback": "While the legendary dive watch is great, it's water resistance.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0224",
+        "uid": "u0093",
+        "pid": "p0037",
+        "feedback": "Everything about this product is fantastic, especially smart speaker.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0225",
+        "uid": "u0171",
+        "pid": "p0037",
+        "feedback": "This product is a game-changer for serves.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0226",
+        "uid": "u0001",
+        "pid": "p0037",
+        "feedback": "I absolutely love how this product serves.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0227",
+        "uid": "u0074",
+        "pid": "p0037",
+        "feedback": "One of the biggest issues is the lack premium silence quality.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0228",
+        "uid": "u0062",
+        "pid": "p0037",
+        "feedback": "I\u00e2\u20ac\u2122m happy with how it's alexa voice control, but I can\u00e2\u20ac\u2122t ignore the built.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0229",
+        "uid": "u0123",
+        "pid": "p0037",
+        "feedback": "While the alexa voice control is great, it's controlling stupid away devices.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0230",
+        "uid": "u0021",
+        "pid": "p0037",
+        "feedback": "This product excels at alexa voice control, but alexa devoice unrestraint is a downside.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0231",
+        "uid": "u0137",
+        "pid": "p0038",
+        "feedback": "I highly recommend this product for anyone who high.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0232",
+        "uid": "u0021",
+        "pid": "p0038",
+        "feedback": "I can't imagine going without this product now; it's perfect.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0233",
+        "uid": "u0020",
+        "pid": "p0038",
+        "feedback": "The seamless wireless audio experience is outstanding.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0234",
+        "uid": "u0045",
+        "pid": "p0038",
+        "feedback": "I love the design of this product, especially the seamless wireless audio experience.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0235",
+        "uid": "u0037",
+        "pid": "p0038",
+        "feedback": "It's a poor investment because low.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0236",
+        "uid": "u0199",
+        "pid": "p0038",
+        "feedback": "The perfect is impressive, but the low is a downside.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0237",
+        "uid": "u0092",
+        "pid": "p0039",
+        "feedback": "It exceeded my expectations when it's experience immersive sound.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0238",
+        "uid": "u0176",
+        "pid": "p0039",
+        "feedback": "I absolutely love how this product ear headphones.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0239",
+        "uid": "u0121",
+        "pid": "p0039",
+        "feedback": "This product is a game-changer for adaptive eq.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0240",
+        "uid": "u0064",
+        "pid": "p0039",
+        "feedback": "It exceeded my expectations when it's ear headphones.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0241",
+        "uid": "u0090",
+        "pid": "p0039",
+        "feedback": "Unfortunately, this product didn\u00e2\u20ac\u2122t last long because style.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0242",
+        "uid": "u0058",
+        "pid": "p0039",
+        "feedback": "Unfortunately, this product didn\u00e2\u20ac\u2122t last long because low.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0243",
+        "uid": "u0065",
+        "pid": "p0039",
+        "feedback": "I had high hopes, but it's inexperience immersive silence.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0244",
+        "uid": "u0005",
+        "pid": "p0039",
+        "feedback": "The silver is amazing, but the low is frustrating.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0245",
+        "uid": "u0198",
+        "pid": "p0039",
+        "feedback": "It\u00e2\u20ac\u2122s a solid product for style, but I\u00e2\u20ac\u2122d prefer if it's active noise cancellation.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0246",
+        "uid": "u0041",
+        "pid": "p0039",
+        "feedback": "I\u00e2\u20ac\u2122m happy with how it's high, but I can\u00e2\u20ac\u2122t ignore the maladaptive eq.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0247",
+        "uid": "u0053",
+        "pid": "p0039",
+        "feedback": "It has some great features like adaptive eq, but it still ear headphones.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0248",
+        "uid": "u0114",
+        "pid": "p0040",
+        "feedback": "I expected better performance, but it's inconvenient way.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0249",
+        "uid": "u0159",
+        "pid": "p0040",
+        "feedback": "I was really disappointed because it's effortful discharge.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0250",
+        "uid": "u0064",
+        "pid": "p0040",
+        "feedback": "I had high hopes, but it's devices.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0251",
+        "uid": "u0154",
+        "pid": "p0040",
+        "feedback": "It was a major disappointment because apple airpower wireless charger provides.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0252",
+        "uid": "u0161",
+        "pid": "p0040",
+        "feedback": "This product excels at apple airpower wireless charger provides, but effortful discharge is a downside.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0253",
+        "uid": "u0029",
+        "pid": "p0041",
+        "feedback": "I love the design of this product, especially the apple homepod mini.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0254",
+        "uid": "u0018",
+        "pid": "p0041",
+        "feedback": "The delivers impressive audio is outstanding.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0255",
+        "uid": "u0136",
+        "pid": "p0041",
+        "feedback": "It was a major disappointment because decompress stupid speaker.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0256",
+        "uid": "u0077",
+        "pid": "p0041",
+        "feedback": "I expected better performance, but it's stupid away inexperience.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0257",
+        "uid": "u0031",
+        "pid": "p0041",
+        "feedback": "The product stupid away inexperience, which was frustrating.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0258",
+        "uid": "u0046",
+        "pid": "p0041",
+        "feedback": "I\u00e2\u20ac\u2122m unsatisfied because stupid away inexperience.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0259",
+        "uid": "u0095",
+        "pid": "p0041",
+        "feedback": "The delivers impressive audio was exactly what I wanted, but decompress stupid speaker holds it back.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0260",
+        "uid": "u0038",
+        "pid": "p0042",
+        "feedback": "I absolutely love how this product efficient charging.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0261",
+        "uid": "u0051",
+        "pid": "p0042",
+        "feedback": "I\u00e2\u20ac\u2122m so happy I bought this; it's iphone just like I hoped.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0262",
+        "uid": "u0098",
+        "pid": "p0042",
+        "feedback": "I love the design of this product, especially the efficient charging.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0263",
+        "uid": "u0103",
+        "pid": "p0042",
+        "feedback": "I\u00e2\u20ac\u2122m so happy I bought this; it's high just like I hoped.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0264",
+        "uid": "u0139",
+        "pid": "p0042",
+        "feedback": "It was a major disappointment because stay_in_place.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0265",
+        "uid": "u0177",
+        "pid": "p0042",
+        "feedback": "I expected better performance, but it's stay_in_place.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0266",
+        "uid": "u0016",
+        "pid": "p0042",
+        "feedback": "I wouldn't recommend this to anyone because low.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0267",
+        "uid": "u0066",
+        "pid": "p0042",
+        "feedback": "This product works well for iphone, but I wish it could ensure.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0268",
+        "uid": "u0135",
+        "pid": "p0042",
+        "feedback": "It does an excellent job of quality charger designed, though unready could be improved.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0269",
+        "uid": "u0172",
+        "pid": "p0042",
+        "feedback": "I\u00e2\u20ac\u2122m happy with how it's go, but I can\u00e2\u20ac\u2122t ignore the inefficient discharge.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0270",
+        "uid": "u0152",
+        "pid": "p0043",
+        "feedback": "This product does an excellent job of apple magsafe battery pack.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0271",
+        "uid": "u0172",
+        "pid": "p0043",
+        "feedback": "This product is perfect for add extra battery life.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0272",
+        "uid": "u0108",
+        "pid": "p0043",
+        "feedback": "I highly recommend this product for anyone who add extra battery life.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0273",
+        "uid": "u0185",
+        "pid": "p0043",
+        "feedback": "This product works exactly as described and apple magsafe battery pack.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0274",
+        "uid": "u0069",
+        "pid": "p0043",
+        "feedback": "One of the biggest issues is the inconvenient way.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0275",
+        "uid": "u0070",
+        "pid": "p0043",
+        "feedback": "The product apple magsafe battery pack, which was frustrating.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0276",
+        "uid": "u0017",
+        "pid": "p0043",
+        "feedback": "I had high hopes, but it's inconvenient way.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0277",
+        "uid": "u0088",
+        "pid": "p0043",
+        "feedback": "The product is almost perfect for apple magsafe battery pack, but detach is a concern.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0278",
+        "uid": "u0171",
+        "pid": "p0043",
+        "feedback": "I\u00e2\u20ac\u2122m happy with how it's convenient way, but I can\u00e2\u20ac\u2122t ignore the magsafe.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0279",
+        "uid": "u0084",
+        "pid": "p0043",
+        "feedback": "The magnetically makes it great, but the unfasten unconnectedness leaves room for improvement.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0280",
+        "uid": "u0115",
+        "pid": "p0043",
+        "feedback": "This product excels at convenient way, but incompatible iphone is a downside.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0281",
+        "uid": "u0176",
+        "pid": "p0044",
+        "feedback": "One of the things I love most is the advanced smartwatch.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0282",
+        "uid": "u0191",
+        "pid": "p0044",
+        "feedback": "I\u00e2\u20ac\u2122m thoroughly impressed by how stylish.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0283",
+        "uid": "u0133",
+        "pid": "p0044",
+        "feedback": "Using this product has apple watch series 4 my stylish.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0284",
+        "uid": "u0081",
+        "pid": "p0044",
+        "feedback": "I had high hopes, but it's recede smartwatch.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0285",
+        "uid": "u0034",
+        "pid": "p0044",
+        "feedback": "I had high hopes, but it's apple watch series 4.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0286",
+        "uid": "u0075",
+        "pid": "p0044",
+        "feedback": "This product is not worth the money; it's styleless.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0287",
+        "uid": "u0022",
+        "pid": "p0044",
+        "feedback": "I wouldn't recommend this to anyone because lack dislike heart rate monitoring.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0288",
+        "uid": "u0066",
+        "pid": "p0045",
+        "feedback": "It didn't perform as promised, and battery life.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0289",
+        "uid": "u0149",
+        "pid": "p0045",
+        "feedback": "I regret purchasing this product because it's beats straighten wired earphones offer.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0290",
+        "uid": "u0128",
+        "pid": "p0045",
+        "feedback": "It's a poor investment because uncomfortable.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0291",
+        "uid": "u0190",
+        "pid": "p0045",
+        "feedback": "The beats straighten wired earphones offer really impacted my experience with this product.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0292",
+        "uid": "u0208",
+        "pid": "p0046",
+        "feedback": "One of the biggest issues is the styleless.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0293",
+        "uid": "u0083",
+        "pid": "p0047",
+        "feedback": "The product versatile camera accessory, making it not worth the price.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0294",
+        "uid": "u0090",
+        "pid": "p0047",
+        "feedback": "I had high hopes, but it's videos.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0295",
+        "uid": "u0160",
+        "pid": "p0047",
+        "feedback": "This product is not worth the money; it's unstable.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0296",
+        "uid": "u0182",
+        "pid": "p0047",
+        "feedback": "It's a poor investment because group photos.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0297",
+        "uid": "u0140",
+        "pid": "p0047",
+        "feedback": "The perfect was exactly what I wanted, but group photos holds it back.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0298",
+        "uid": "u0119",
+        "pid": "p0047",
+        "feedback": "The product is almost perfect for ease, but group photos is a concern.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0299",
+        "uid": "u0017",
+        "pid": "p0047",
+        "feedback": "The product is almost perfect for monopod, but difficulty is a concern.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0300",
+        "uid": "u0059",
+        "pid": "p0047",
+        "feedback": "The product is almost perfect for perfect, but unstable is a concern.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0301",
+        "uid": "u0112",
+        "pid": "p0048",
+        "feedback": "Everything about this product is fantastic, especially selfie lamp.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0302",
+        "uid": "u0153",
+        "pid": "p0048",
+        "feedback": "The quality of this product is top-notch, especially the iphone.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0303",
+        "uid": "u0051",
+        "pid": "p0048",
+        "feedback": "This product works exactly as described and lit photos.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0304",
+        "uid": "u0031",
+        "pid": "p0048",
+        "feedback": "It's a poor investment because selfies.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0305",
+        "uid": "u0012",
+        "pid": "p0048",
+        "feedback": "I\u00e2\u20ac\u2122m happy with how it's portable, but I can\u00e2\u20ac\u2122t ignore the adjustable follow dark undesigned.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0306",
+        "uid": "u0127",
+        "pid": "p0049",
+        "feedback": "The selfie stick monopod is outstanding.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0307",
+        "uid": "u0171",
+        "pid": "p0049",
+        "feedback": "Everything about this product is fantastic, especially perfect selfie.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0308",
+        "uid": "u0104",
+        "pid": "p0049",
+        "feedback": "The product is almost perfect for compatible, but incompatible is a concern.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0309",
+        "uid": "u0159",
+        "pid": "p0049",
+        "feedback": "This product excels at group photo, but foldable device is a downside.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0310",
+        "uid": "u0148",
+        "pid": "p0049",
+        "feedback": "While the compatible is great, it's imperfect selfie.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0311",
+        "uid": "u0205",
+        "pid": "p0050",
+        "feedback": "I\u00e2\u20ac\u2122m so happy I bought this; it's studio setting just like I hoped.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0312",
+        "uid": "u0129",
+        "pid": "p0050",
+        "feedback": "The ideal made it unusable for me.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0313",
+        "uid": "u0044",
+        "pid": "p0050",
+        "feedback": "I\u00e2\u20ac\u2122m unsatisfied because roughen.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0314",
+        "uid": "u0074",
+        "pid": "p0050",
+        "feedback": "This product excels at smooth, but ideal is a downside.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0315",
+        "uid": "u0155",
+        "pid": "p0050",
+        "feedback": "This product excels at production, but ideal is a downside.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0316",
+        "uid": "u0009",
+        "pid": "p0050",
+        "feedback": "It\u00e2\u20ac\u2122s a solid product for ideal, but I\u00e2\u20ac\u2122d prefer if it's production.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0317",
+        "uid": "u0170",
+        "pid": "p0050",
+        "feedback": "I like smooth, but it's grade camera support system too often.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0318",
+        "uid": "u0140",
+        "pid": "p0051",
+        "feedback": "This product is a game-changer for comfortable.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0319",
+        "uid": "u0092",
+        "pid": "p0051",
+        "feedback": "The efficient riding experience makes this product stand out from others.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0320",
+        "uid": "u0084",
+        "pid": "p0051",
+        "feedback": "I regret purchasing this product because it's varietal motorcycle.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0321",
+        "uid": "u0011",
+        "pid": "p0051",
+        "feedback": "It was a major disappointment because uncomfortable.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0322",
+        "uid": "u0179",
+        "pid": "p0051",
+        "feedback": "I was really disappointed because it's provides.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0323",
+        "uid": "u0007",
+        "pid": "p0051",
+        "feedback": "Unfortunately, this product didn\u00e2\u20ac\u2122t last long because varietal motorcycle.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0324",
+        "uid": "u0004",
+        "pid": "p0051",
+        "feedback": "I like versatile, but it's uncomfortable too often.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0325",
+        "uid": "u0008",
+        "pid": "p0051",
+        "feedback": "It\u00e2\u20ac\u2122s a solid product for provides, but I\u00e2\u20ac\u2122d prefer if it's versatile.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0326",
+        "uid": "u0170",
+        "pid": "p0051",
+        "feedback": "The reliable bike suitable is amazing, but the inefficient walk inexperience is frustrating.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0327",
+        "uid": "u0119",
+        "pid": "p0052",
+        "feedback": "I regret purchasing this product because it's agile sportbike known.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0328",
+        "uid": "u0021",
+        "pid": "p0052",
+        "feedback": "I was really disappointed because it's unmake.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0329",
+        "uid": "u0169",
+        "pid": "p0052",
+        "feedback": "It works great for making, but it struggles with powerless.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0330",
+        "uid": "u0207",
+        "pid": "p0052",
+        "feedback": "The favorite among motorcycle enthusiasts is amazing, but the favorite among motorcycle enthusiasts is frustrating.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0331",
+        "uid": "u0055",
+        "pid": "p0052",
+        "feedback": "It works great for agile sportbike known, but it struggles with powerless.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0332",
+        "uid": "u0015",
+        "pid": "p0053",
+        "feedback": "This product is a game-changer for exhilarating riding experience.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0333",
+        "uid": "u0110",
+        "pid": "p0053",
+        "feedback": "One of the biggest issues is the low.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0334",
+        "uid": "u0157",
+        "pid": "p0053",
+        "feedback": "This product works well for high, but I wish it could motogp racing technology.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0335",
+        "uid": "u0111",
+        "pid": "p0053",
+        "feedback": "I\u00e2\u20ac\u2122m happy with how it's motogp racing technology, but I can\u00e2\u20ac\u2122t ignore the impreciseness engineering.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0336",
+        "uid": "u0102",
+        "pid": "p0053",
+        "feedback": "I\u00e2\u20ac\u2122d love it if it's performance motorcycle inspired, but it's exhilarating walk inexperience.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0337",
+        "uid": "u0184",
+        "pid": "p0053",
+        "feedback": "I\u00e2\u20ac\u2122m torn because it's offers cutting, but also low.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0338",
+        "uid": "u0019",
+        "pid": "p0054",
+        "feedback": "I regret purchasing this product because it's fuel.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0339",
+        "uid": "u0047",
+        "pid": "p0054",
+        "feedback": "This product is not worth the money; it's user.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0340",
+        "uid": "u0164",
+        "pid": "p0054",
+        "feedback": "It was a major disappointment because scooter motorcycle.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0341",
+        "uid": "u0078",
+        "pid": "p0054",
+        "feedback": "It does a good job of fuel, but the step is a letdown.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0342",
+        "uid": "u0104",
+        "pid": "p0054",
+        "feedback": "The step makes it great, but the efficient bike ideal leaves room for improvement.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0343",
+        "uid": "u0112",
+        "pid": "p0055",
+        "feedback": "It's a poor investment because undesigned.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0344",
+        "uid": "u0106",
+        "pid": "p0055",
+        "feedback": "I\u00e2\u20ac\u2122d love it if it's sportbike motorcycle, but it's linger.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0345",
+        "uid": "u0203",
+        "pid": "p0055",
+        "feedback": "It works great for sportbike motorcycle, but it struggles with thrilling walk inexperience.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0346",
+        "uid": "u0115",
+        "pid": "p0055",
+        "feedback": "I\u00e2\u20ac\u2122m torn because it's speed, but also undesigned.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0347",
+        "uid": "u0120",
+        "pid": "p0056",
+        "feedback": "Everything about this product is fantastic, especially attitude super leaves hand soap.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0348",
+        "uid": "u0142",
+        "pid": "p0056",
+        "feedback": "The quality of this product is top-notch, especially the natural.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0349",
+        "uid": "u0012",
+        "pid": "p0056",
+        "feedback": "The soft makes this product stand out from others.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0350",
+        "uid": "u0189",
+        "pid": "p0056",
+        "feedback": "Using this product has natural my nourishing hand soap enriched.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0351",
+        "uid": "u0033",
+        "pid": "p0056",
+        "feedback": "This product failed to meet my expectations because feeling stale.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0352",
+        "uid": "u0083",
+        "pid": "p0056",
+        "feedback": "One of the biggest issues is the hard.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0353",
+        "uid": "u0073",
+        "pid": "p0056",
+        "feedback": "It has some great features like goodness, but it still feeling stale.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0354",
+        "uid": "u0053",
+        "pid": "p0057",
+        "feedback": "Everything about this product is fantastic, especially smooth skin.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0355",
+        "uid": "u0116",
+        "pid": "p0057",
+        "feedback": "This product does an excellent job of rich lather.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0356",
+        "uid": "u0196",
+        "pid": "p0057",
+        "feedback": "Everything about this product is fantastic, especially smooth skin.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0357",
+        "uid": "u0063",
+        "pid": "p0057",
+        "feedback": "The dehydrate really impacted my experience with this product.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0358",
+        "uid": "u0066",
+        "pid": "p0057",
+        "feedback": "It didn't perform as promised, and dehumidify powerlessness.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0359",
+        "uid": "u0028",
+        "pid": "p0057",
+        "feedback": "This product works well for enjoy, but I wish it could dehumidify powerlessness.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0360",
+        "uid": "u0028",
+        "pid": "p0057",
+        "feedback": "It does a good job of smooth skin, but the shea butter is a letdown.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0361",
+        "uid": "u0002",
+        "pid": "p0057",
+        "feedback": "I\u00e2\u20ac\u2122m impressed by smooth skin, but skin should be fixed.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0362",
+        "uid": "u0094",
+        "pid": "p0058",
+        "feedback": "It exceeded my expectations when it's men.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0363",
+        "uid": "u0085",
+        "pid": "p0058",
+        "feedback": "The performance of this product is flawless, especially when vaseline men body.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0364",
+        "uid": "u0188",
+        "pid": "p0058",
+        "feedback": "The vaseline men body makes this product stand out from others.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0365",
+        "uid": "u0134",
+        "pid": "p0058",
+        "feedback": "I was really disappointed because it's skin.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0366",
+        "uid": "u0153",
+        "pid": "p0058",
+        "feedback": "Unfortunately, this product impermanent moisture and didn't work as expected.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0367",
+        "uid": "u0088",
+        "pid": "p0058",
+        "feedback": "The emit slowly really impacted my experience with this product.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0368",
+        "uid": "u0073",
+        "pid": "p0059",
+        "feedback": "The advanced features makes this product stand out from others.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0369",
+        "uid": "u0026",
+        "pid": "p0059",
+        "feedback": "The quality of this product is top-notch, especially the compact design.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0370",
+        "uid": "u0166",
+        "pid": "p0059",
+        "feedback": "It exceeded my expectations when it's reliable user experience.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0371",
+        "uid": "u0128",
+        "pid": "p0059",
+        "feedback": "The iphone 5s made it unusable for me.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0372",
+        "uid": "u0126",
+        "pid": "p0059",
+        "feedback": "I expected better performance, but it's recede lack.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0373",
+        "uid": "u0030",
+        "pid": "p0059",
+        "feedback": "The recede lack was a major letdown.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0374",
+        "uid": "u0203",
+        "pid": "p0059",
+        "feedback": "It does a good job of classic smartphone known, but the iphone 5s is a letdown.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0375",
+        "uid": "u0014",
+        "pid": "p0059",
+        "feedback": "It does a good job of still provides, but the agitate provides is a letdown.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0376",
+        "uid": "u0049",
+        "pid": "p0059",
+        "feedback": "It does a good job of reliable user experience, but the young model is a letdown.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0377",
+        "uid": "u0125",
+        "pid": "p0059",
+        "feedback": "It\u00e2\u20ac\u2122s a solid product for compact design, but I\u00e2\u20ac\u2122d prefer if it's agitate provides.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0378",
+        "uid": "u0022",
+        "pid": "p0060",
+        "feedback": "The introduced new features is amazing, but the small display is frustrating.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0379",
+        "uid": "u0063",
+        "pid": "p0060",
+        "feedback": "I\u00e2\u20ac\u2122d love it if it's popular choice, but it's time.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0380",
+        "uid": "u0115",
+        "pid": "p0061",
+        "feedback": "I can't imagine going without this product now; it's offers advanced features.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0381",
+        "uid": "u0104",
+        "pid": "p0061",
+        "feedback": "I had high hopes, but it's performance chip.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0382",
+        "uid": "u0055",
+        "pid": "p0061",
+        "feedback": "I\u00e2\u20ac\u2122m unsatisfied because performance chip.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0383",
+        "uid": "u0115",
+        "pid": "p0061",
+        "feedback": "Unfortunately, this product offers recede lack and didn't work as expected.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0384",
+        "uid": "u0097",
+        "pid": "p0061",
+        "feedback": "I had high hopes, but it's low.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0385",
+        "uid": "u0179",
+        "pid": "p0061",
+        "feedback": "This product excels at notch technology, but low is a downside.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0386",
+        "uid": "u0122",
+        "pid": "p0062",
+        "feedback": "I absolutely love how this product iphone design.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0387",
+        "uid": "u0050",
+        "pid": "p0062",
+        "feedback": "It was a major disappointment because iphone x.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0388",
+        "uid": "u0207",
+        "pid": "p0062",
+        "feedback": "This product didn't live up to the hype; it's face id ),.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0389",
+        "uid": "u0206",
+        "pid": "p0062",
+        "feedback": "On one hand, I love how it's flagship smartphone featuring, but on the other hand, it's prosecute.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0390",
+        "uid": "u0126",
+        "pid": "p0062",
+        "feedback": "The milestone was exactly what I wanted, but facial recognition technology holds it back.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0391",
+        "uid": "u0197",
+        "pid": "p0062",
+        "feedback": "It does an excellent job of iphone design, though milestone could be improved.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0392",
+        "uid": "u0076",
+        "pid": "p0062",
+        "feedback": "The iphone design was exactly what I wanted, but iphone design holds it back.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0393",
+        "uid": "u0181",
+        "pid": "p0063",
+        "feedback": "I expected better performance, but it's performance.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0394",
+        "uid": "u0139",
+        "pid": "p0063",
+        "feedback": "The product affordability, which was frustrating.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0395",
+        "uid": "u0120",
+        "pid": "p0063",
+        "feedback": "Unfortunately, this product performance and didn't work as expected.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0396",
+        "uid": "u0164",
+        "pid": "p0063",
+        "feedback": "I like oppo a57, but it's oppo a57 too often.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0397",
+        "uid": "u0204",
+        "pid": "p0063",
+        "feedback": "I\u00e2\u20ac\u2122m happy with how it's making, but I can\u00e2\u20ac\u2122t ignore the unmake.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0398",
+        "uid": "u0047",
+        "pid": "p0063",
+        "feedback": "The mid is impressive, but the sleek design is a downside.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0399",
+        "uid": "u0185",
+        "pid": "p0064",
+        "feedback": "I highly recommend this product for anyone who powerful performance.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0400",
+        "uid": "u0200",
+        "pid": "p0064",
+        "feedback": "I regret purchasing this product because it's premium user experience.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0401",
+        "uid": "u0075",
+        "pid": "p0064",
+        "feedback": "It's a poor investment because blur.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0402",
+        "uid": "u0111",
+        "pid": "p0064",
+        "feedback": "The product is almost perfect for oppo f19 pro plus, but premium user experience is a concern.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0403",
+        "uid": "u0207",
+        "pid": "p0064",
+        "feedback": "I\u00e2\u20ac\u2122m happy with how it's powerful performance, but I can\u00e2\u20ac\u2122t ignore the lack.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0404",
+        "uid": "u0057",
+        "pid": "p0064",
+        "feedback": "I\u00e2\u20ac\u2122d love it if it's powerful performance, but it's lack.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0405",
+        "uid": "u0098",
+        "pid": "p0064",
+        "feedback": "It has some great features like oppo f19 pro plus, but it still poor_people smartphone.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0406",
+        "uid": "u0075",
+        "pid": "p0065",
+        "feedback": "It exceeded my expectations when it's stylish design.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0407",
+        "uid": "u0074",
+        "pid": "p0065",
+        "feedback": "The oppo k1 series offers is outstanding.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0408",
+        "uid": "u0134",
+        "pid": "p0065",
+        "feedback": "I\u00e2\u20ac\u2122m so happy I bought this; it's known just like I hoped.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0409",
+        "uid": "u0043",
+        "pid": "p0065",
+        "feedback": "Unfortunately, this product didn\u00e2\u20ac\u2122t last long because ignore.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0410",
+        "uid": "u0157",
+        "pid": "p0065",
+        "feedback": "The various lack really impacted my experience with this product.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0411",
+        "uid": "u0094",
+        "pid": "p0065",
+        "feedback": "It was a major disappointment because various lack.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0412",
+        "uid": "u0099",
+        "pid": "p0065",
+        "feedback": "It has some great features like specifications, but it still various lack.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0413",
+        "uid": "u0197",
+        "pid": "p0065",
+        "feedback": "It works great for reliable performance, but it struggles with diverse user preferences.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0414",
+        "uid": "u0114",
+        "pid": "p0065",
+        "feedback": "On one hand, I love how it's specifications, but on the other hand, it's diverse user preferences.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0415",
+        "uid": "u0033",
+        "pid": "p0066",
+        "feedback": "This product is a game-changer for user.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0416",
+        "uid": "u0102",
+        "pid": "p0066",
+        "feedback": "This product is perfect for realme c35.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0417",
+        "uid": "u0040",
+        "pid": "p0066",
+        "feedback": "This product does an excellent job of everyday use.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0418",
+        "uid": "u0120",
+        "pid": "p0066",
+        "feedback": "The performance of this product is flawless, especially when offers.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0419",
+        "uid": "u0153",
+        "pid": "p0066",
+        "feedback": "The blur was a major letdown.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0420",
+        "uid": "u0192",
+        "pid": "p0066",
+        "feedback": "I was really disappointed because it's budget.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0421",
+        "uid": "u0087",
+        "pid": "p0066",
+        "feedback": "On one hand, I love how it's friendly experience, but on the other hand, it's realme c35.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0422",
+        "uid": "u0019",
+        "pid": "p0066",
+        "feedback": "It does a good job of providing essential features, but the user is a letdown.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0423",
+        "uid": "u0080",
+        "pid": "p0067",
+        "feedback": "The performance of this product is flawless, especially when realme x.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0424",
+        "uid": "u0196",
+        "pid": "p0067",
+        "feedback": "It has made a huge difference in performance.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0425",
+        "uid": "u0154",
+        "pid": "p0067",
+        "feedback": "This product is perfect for quality device.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0426",
+        "uid": "u0107",
+        "pid": "p0067",
+        "feedback": "This product excels at offers, but unimpressive display is a downside.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0427",
+        "uid": "u0010",
+        "pid": "p0068",
+        "feedback": "Unfortunately, this product blur and didn't work as expected.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0428",
+        "uid": "u0161",
+        "pid": "p0068",
+        "feedback": "I\u00e2\u20ac\u2122d love it if it's delivering high, but it's videos.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0429",
+        "uid": "u0032",
+        "pid": "p0068",
+        "feedback": "It works great for focus, but it struggles with quality photos.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0430",
+        "uid": "u0097",
+        "pid": "p0069",
+        "feedback": "I absolutely love how this product sleek design.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0431",
+        "uid": "u0088",
+        "pid": "p0069",
+        "feedback": "I\u00e2\u20ac\u2122m thoroughly impressed by how resolution display.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0432",
+        "uid": "u0046",
+        "pid": "p0069",
+        "feedback": "I was really disappointed because it's irresoluteness display.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0433",
+        "uid": "u0036",
+        "pid": "p0069",
+        "feedback": "I\u00e2\u20ac\u2122m unsatisfied because low.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0434",
+        "uid": "u0075",
+        "pid": "p0069",
+        "feedback": "It's a poor investment because low.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0435",
+        "uid": "u0169",
+        "pid": "p0069",
+        "feedback": "This product works well for robust performance, but I wish it could low.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0436",
+        "uid": "u0163",
+        "pid": "p0070",
+        "feedback": "This product works exactly as described and samsung galaxy s8.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0437",
+        "uid": "u0113",
+        "pid": "p0070",
+        "feedback": "This product is a game-changer for samsung galaxy s8.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0438",
+        "uid": "u0019",
+        "pid": "p0070",
+        "feedback": "This product is perfect for boasts advanced camera capabilities.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0439",
+        "uid": "u0134",
+        "pid": "p0070",
+        "feedback": "Unfortunately, this product didn\u00e2\u20ac\u2122t last long because boasts recede camera incapability.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0440",
+        "uid": "u0079",
+        "pid": "p0070",
+        "feedback": "I was really disappointed because it's samsung galaxy s8.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0441",
+        "uid": "u0204",
+        "pid": "p0070",
+        "feedback": "It didn't perform as promised, and switch_on.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0442",
+        "uid": "u0006",
+        "pid": "p0070",
+        "feedback": "It didn't perform as promised, and stunning visual experience.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0443",
+        "uid": "u0039",
+        "pid": "p0070",
+        "feedback": "I like boasts advanced camera capabilities, but it's stunning visual experience too often.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0444",
+        "uid": "u0058",
+        "pid": "p0070",
+        "feedback": "The edge technology was exactly what I wanted, but edge technology holds it back.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0445",
+        "uid": "u0165",
+        "pid": "p0071",
+        "feedback": "This product is a game-changer for flagship device featuring.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0446",
+        "uid": "u0082",
+        "pid": "p0071",
+        "feedback": "It exceeded my expectations when it's dynamic amoled display.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0447",
+        "uid": "u0023",
+        "pid": "p0071",
+        "feedback": "The represents innovation is outstanding.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0448",
+        "uid": "u0003",
+        "pid": "p0071",
+        "feedback": "I\u00e2\u20ac\u2122d love it if it's flagship device featuring, but it's versatile camera system.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0449",
+        "uid": "u0125",
+        "pid": "p0072",
+        "feedback": "I love the design of this product, especially the vivo s1.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0450",
+        "uid": "u0063",
+        "pid": "p0072",
+        "feedback": "It's a poor investment because range smartphone offering.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0451",
+        "uid": "u0154",
+        "pid": "p0072",
+        "feedback": "It works great for capable camera system, but it struggles with capable camera system.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0452",
+        "uid": "u0020",
+        "pid": "p0074",
+        "feedback": "It exceeded my expectations when it's high.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0453",
+        "uid": "u0104",
+        "pid": "p0074",
+        "feedback": "The quality of this product is top-notch, especially the focus.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0454",
+        "uid": "u0026",
+        "pid": "p0074",
+        "feedback": "I\u00e2\u20ac\u2122m so happy I bought this; it's display fingerprint sensor just like I hoped.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0455",
+        "uid": "u0147",
+        "pid": "p0074",
+        "feedback": "I love the design of this product, especially the advanced camera capabilities.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0456",
+        "uid": "u0169",
+        "pid": "p0075",
+        "feedback": "It exceeded my expectations when it's tinted lenses.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0457",
+        "uid": "u0184",
+        "pid": "p0075",
+        "feedback": "It exceeded my expectations when it's black sun glasses.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0458",
+        "uid": "u0062",
+        "pid": "p0075",
+        "feedback": "This product does an excellent job of uv protection.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0459",
+        "uid": "u0007",
+        "pid": "p0075",
+        "feedback": "I\u00e2\u20ac\u2122m thoroughly impressed by how fashionable look.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0460",
+        "uid": "u0114",
+        "pid": "p0075",
+        "feedback": "Unfortunately, this product provide and didn't work as expected.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0461",
+        "uid": "u0026",
+        "pid": "p0075",
+        "feedback": "It does an excellent job of provide, though sleek black frame could be improved.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0462",
+        "uid": "u0157",
+        "pid": "p0075",
+        "feedback": "While the classic is great, it's unfashionable back.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0463",
+        "uid": "u0031",
+        "pid": "p0076",
+        "feedback": "I absolutely love how this product neutral frame.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0464",
+        "uid": "u0111",
+        "pid": "p0076",
+        "feedback": "This product failed to meet my expectations because versatile.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0465",
+        "uid": "u0164",
+        "pid": "p0076",
+        "feedback": "One of the biggest issues is the various occasions.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0466",
+        "uid": "u0052",
+        "pid": "p0076",
+        "feedback": "The product positive frame, making it not worth the price.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0467",
+        "uid": "u0027",
+        "pid": "p0077",
+        "feedback": "I\u00e2\u20ac\u2122m so happy I bought this; it's adding just like I hoped.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0468",
+        "uid": "u0091",
+        "pid": "p0077",
+        "feedback": "I\u00e2\u20ac\u2122m thoroughly impressed by how black glasses feature.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0469",
+        "uid": "u0115",
+        "pid": "p0077",
+        "feedback": "This product works exactly as described and eyewear collection.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0470",
+        "uid": "u0047",
+        "pid": "p0077",
+        "feedback": "The white colorlessness was a major letdown.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0471",
+        "uid": "u0185",
+        "pid": "p0077",
+        "feedback": "This product failed to meet my expectations because white colorlessness.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0472",
+        "uid": "u0033",
+        "pid": "p0077",
+        "feedback": "The product unhitch, making it not worth the price.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0473",
+        "uid": "u0007",
+        "pid": "p0077",
+        "feedback": "The product is almost perfect for touch, but ripe is a concern.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0474",
+        "uid": "u0074",
+        "pid": "p0077",
+        "feedback": "I\u00e2\u20ac\u2122m happy with how it's adding, but I can\u00e2\u20ac\u2122t ignore the timid combination.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0475",
+        "uid": "u0126",
+        "pid": "p0078",
+        "feedback": "Unfortunately, this product didn\u00e2\u20ac\u2122t last long because unique shapes.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0476",
+        "uid": "u0035",
+        "pid": "p0078",
+        "feedback": "It didn't perform as promised, and unplayful touch.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0477",
+        "uid": "u0067",
+        "pid": "p0078",
+        "feedback": "It does a good job of designed, but the party glasses is a letdown.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0478",
+        "uid": "u0077",
+        "pid": "p0078",
+        "feedback": "I\u00e2\u20ac\u2122m impressed by look, but celebrations should be fixed.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0479",
+        "uid": "u0092",
+        "pid": "p0078",
+        "feedback": "The designed is impressive, but the undesigned is a downside.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0480",
+        "uid": "u0067",
+        "pid": "p0078",
+        "feedback": "It does a good job of unique shapes, but the unique shapes is a letdown.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0481",
+        "uid": "u0060",
+        "pid": "p0079",
+        "feedback": "This product works exactly as described and simple design.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0482",
+        "uid": "u0112",
+        "pid": "p0079",
+        "feedback": "One of the biggest issues is the sunglasses provide essential uv protection.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0483",
+        "uid": "u0132",
+        "pid": "p0079",
+        "feedback": "It's a poor investment because nonclassical.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0484",
+        "uid": "u0015",
+        "pid": "p0079",
+        "feedback": "I was really disappointed because it's functionality.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0485",
+        "uid": "u0054",
+        "pid": "p0079",
+        "feedback": "I\u00e2\u20ac\u2122m unsatisfied because sunglasses provide essential uv protection.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0486",
+        "uid": "u0080",
+        "pid": "p0079",
+        "feedback": "I\u00e2\u20ac\u2122m happy with how it's sunglasses offer, but I can\u00e2\u20ac\u2122t ignore the timeless back.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0487",
+        "uid": "u0205",
+        "pid": "p0079",
+        "feedback": "I\u00e2\u20ac\u2122m happy with how it's simple design, but I can\u00e2\u20ac\u2122t ignore the blur.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0488",
+        "uid": "u0127",
+        "pid": "p0080",
+        "feedback": "I\u00e2\u20ac\u2122m unsatisfied because powerless tablet.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0489",
+        "uid": "u0031",
+        "pid": "p0081",
+        "feedback": "This product works exactly as described and large amoled display.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0490",
+        "uid": "u0195",
+        "pid": "p0081",
+        "feedback": "I\u00e2\u20ac\u2122m thoroughly impressed by how grey.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0491",
+        "uid": "u0141",
+        "pid": "p0081",
+        "feedback": "Using this product has entertainment my performance android tablet.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0492",
+        "uid": "u0135",
+        "pid": "p0081",
+        "feedback": "The high was exactly what I wanted, but entertainment holds it back.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0493",
+        "uid": "u0141",
+        "pid": "p0082",
+        "feedback": "I love the design of this product, especially the range.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0494",
+        "uid": "u0051",
+        "pid": "p0082",
+        "feedback": "This product didn't live up to the hype; it's great user experience.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0495",
+        "uid": "u0016",
+        "pid": "p0082",
+        "feedback": "While the samsung galaxy tab is great, it's various tasks.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0496",
+        "uid": "u0072",
+        "pid": "p0083",
+        "feedback": "The product roughen performance, which was frustrating.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0497",
+        "uid": "u0125",
+        "pid": "p0083",
+        "feedback": "Unfortunately, this product luxurious lack and didn't work as expected.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0498",
+        "uid": "u0065",
+        "pid": "p0083",
+        "feedback": "It does a good job of luxurious features, but the uncomfortable sedan is a letdown.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0499",
+        "uid": "u0066",
+        "pid": "p0083",
+        "feedback": "This product excels at comfortable sedan, but ignore is a downside.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0500",
+        "uid": "u0115",
+        "pid": "p0084",
+        "feedback": "The quality of this product is top-notch, especially the wheel.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0501",
+        "uid": "u0166",
+        "pid": "p0084",
+        "feedback": "The quality of this product is top-notch, especially the offering.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0502",
+        "uid": "u0056",
+        "pid": "p0084",
+        "feedback": "Using this product has practicality my charger sxt rwd.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0503",
+        "uid": "u0039",
+        "pid": "p0084",
+        "feedback": "Everything about this product is fantastic, especially practicality.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0504",
+        "uid": "u0206",
+        "pid": "p0084",
+        "feedback": "The product offering, making it not worth the price.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0505",
+        "uid": "u0077",
+        "pid": "p0085",
+        "feedback": "This product didn't live up to the hype; it's touch.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0506",
+        "uid": "u0133",
+        "pid": "p0086",
+        "feedback": "I absolutely love how this product durango sxt rwd.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0507",
+        "uid": "u0041",
+        "pid": "p0086",
+        "feedback": "The spacious makes it great, but the weak performance leaves room for improvement.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0508",
+        "uid": "u0047",
+        "pid": "p0086",
+        "feedback": "It does an excellent job of known, though spacious could be improved.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0509",
+        "uid": "u0203",
+        "pid": "p0086",
+        "feedback": "It does a good job of friendly features, but the durango sxt rwd is a letdown.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0510",
+        "uid": "u0136",
+        "pid": "p0086",
+        "feedback": "I\u00e2\u20ac\u2122d love it if it's spacious, but it's weak performance.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0511",
+        "uid": "u0075",
+        "pid": "p0087",
+        "feedback": "Everything about this product is fantastic, especially family journeys.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0512",
+        "uid": "u0106",
+        "pid": "p0087",
+        "feedback": "This product works exactly as described and convenience.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0513",
+        "uid": "u0133",
+        "pid": "p0087",
+        "feedback": "The well is outstanding.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0514",
+        "uid": "u0021",
+        "pid": "p0087",
+        "feedback": "I regret purchasing this product because it's unequipped minivan.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0515",
+        "uid": "u0080",
+        "pid": "p0087",
+        "feedback": "Unfortunately, this product didn\u00e2\u20ac\u2122t last long because unequipped minivan.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0516",
+        "uid": "u0205",
+        "pid": "p0087",
+        "feedback": "The ill was a major letdown.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0517",
+        "uid": "u0162",
+        "pid": "p0087",
+        "feedback": "I\u00e2\u20ac\u2122m happy with how it's pacifica touring, but I can\u00e2\u20ac\u2122t ignore the ill.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0518",
+        "uid": "u0090",
+        "pid": "p0087",
+        "feedback": "I\u00e2\u20ac\u2122d love it if it's convenience, but it's offering discomfort.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0519",
+        "uid": "u0103",
+        "pid": "p0087",
+        "feedback": "I\u00e2\u20ac\u2122m impressed by stylish, but pacifica touring should be fixed.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0520",
+        "uid": "u0091",
+        "pid": "p0088",
+        "feedback": "Unfortunately, this product didn\u00e2\u20ac\u2122t last long because everyday use.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0521",
+        "uid": "u0121",
+        "pid": "p0088",
+        "feedback": "It didn't perform as promised, and styleless.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0522",
+        "uid": "u0133",
+        "pid": "p0088",
+        "feedback": "I had high hopes, but it's styleless.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0523",
+        "uid": "u0173",
+        "pid": "p0089",
+        "feedback": "I\u00e2\u20ac\u2122m thoroughly impressed by how leather bag.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0524",
+        "uid": "u0053",
+        "pid": "p0089",
+        "feedback": "The performance of this product is flawless, especially when timeless design.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0525",
+        "uid": "u0121",
+        "pid": "p0089",
+        "feedback": "This product is perfect for sophisticated woman.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0526",
+        "uid": "u0111",
+        "pid": "p0089",
+        "feedback": "I absolutely love how this product quality leather bag.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0527",
+        "uid": "u0144",
+        "pid": "p0089",
+        "feedback": "I regret purchasing this product because it's luxurious.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0528",
+        "uid": "u0069",
+        "pid": "p0089",
+        "feedback": "It's a poor investment because low.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0529",
+        "uid": "u0200",
+        "pid": "p0089",
+        "feedback": "It has some great features like quality leather bag, but it still low.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0530",
+        "uid": "u0079",
+        "pid": "p0089",
+        "feedback": "The luxurious is amazing, but the quality leather bag is frustrating.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0531",
+        "uid": "u0103",
+        "pid": "p0090",
+        "feedback": "The quality of this product is top-notch, especially the prada women bag.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0532",
+        "uid": "u0008",
+        "pid": "p0090",
+        "feedback": "The product statement disassemble, making it not worth the price.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0533",
+        "uid": "u0190",
+        "pid": "p0090",
+        "feedback": "The exudes inelegance was a major letdown.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0534",
+        "uid": "u0146",
+        "pid": "p0090",
+        "feedback": "It's a poor investment because exudes inelegance.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0535",
+        "uid": "u0146",
+        "pid": "p0090",
+        "feedback": "I\u00e2\u20ac\u2122m unsatisfied because lack.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0536",
+        "uid": "u0196",
+        "pid": "p0090",
+        "feedback": "The product is almost perfect for prada women bag, but luxury is a concern.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0537",
+        "uid": "u0207",
+        "pid": "p0090",
+        "feedback": "It has some great features like luxury, but it still crafted.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0538",
+        "uid": "u0197",
+        "pid": "p0090",
+        "feedback": "I like fashion enthusiasts, but it's crafted too often.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0539",
+        "uid": "u0039",
+        "pid": "p0091",
+        "feedback": "I absolutely love how this product trendy.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0540",
+        "uid": "u0101",
+        "pid": "p0091",
+        "feedback": "I highly recommend this product for anyone who go styles.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0541",
+        "uid": "u0146",
+        "pid": "p0091",
+        "feedback": "It has made a huge difference in casual.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0542",
+        "uid": "u0024",
+        "pid": "p0091",
+        "feedback": "It has made a huge difference in sleek white design.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0543",
+        "uid": "u0160",
+        "pid": "p0091",
+        "feedback": "I\u00e2\u20ac\u2122m torn because it's perfect, but also casual.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0544",
+        "uid": "u0105",
+        "pid": "p0091",
+        "feedback": "It does an excellent job of white faux leather backpack, though casual could be improved.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0545",
+        "uid": "u0156",
+        "pid": "p0091",
+        "feedback": "The ample storage space was exactly what I wanted, but white faux leather backpack holds it back.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0546",
+        "uid": "u0101",
+        "pid": "p0092",
+        "feedback": "The performance of this product is flawless, especially when every woman.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0547",
+        "uid": "u0127",
+        "pid": "p0092",
+        "feedback": "This product is perfect for black.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0548",
+        "uid": "u0184",
+        "pid": "p0092",
+        "feedback": "This product is not worth the money; it's white.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0549",
+        "uid": "u0021",
+        "pid": "p0092",
+        "feedback": "The timeless white colorlessness was a major letdown.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0550",
+        "uid": "u0108",
+        "pid": "p0092",
+        "feedback": "This product is not worth the money; it's must.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0551",
+        "uid": "u0200",
+        "pid": "p0092",
+        "feedback": "The timeless black color is impressive, but the complements various outfits is a downside.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0552",
+        "uid": "u0015",
+        "pid": "p0092",
+        "feedback": "I\u00e2\u20ac\u2122m torn because it's functional design, but also timeless white colorlessness.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0553",
+        "uid": "u0124",
+        "pid": "p0092",
+        "feedback": "I\u00e2\u20ac\u2122m happy with how it's functional design, but I can\u00e2\u20ac\u2122t ignore the nonfunctional design.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0554",
+        "uid": "u0109",
+        "pid": "p0092",
+        "feedback": "I\u00e2\u20ac\u2122d love it if it's complements various outfits, but it's nonclassical.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0555",
+        "uid": "u0165",
+        "pid": "p0093",
+        "feedback": "I had high hopes, but it's naivete.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0556",
+        "uid": "u0042",
+        "pid": "p0093",
+        "feedback": "I expected better performance, but it's white.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0557",
+        "uid": "u0193",
+        "pid": "p0093",
+        "feedback": "The take_away made it unusable for me.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0558",
+        "uid": "u0058",
+        "pid": "p0094",
+        "feedback": "The performance of this product is flawless, especially when formal occasions.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0559",
+        "uid": "u0113",
+        "pid": "p0094",
+        "feedback": "This product works exactly as described and elegant.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0560",
+        "uid": "u0181",
+        "pid": "p0094",
+        "feedback": "I highly recommend this product for anyone who sophisticated.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0561",
+        "uid": "u0170",
+        "pid": "p0094",
+        "feedback": "The performance of this product is flawless, especially when formal occasions.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0562",
+        "uid": "u0129",
+        "pid": "p0094",
+        "feedback": "This product is not worth the money; it's styleless ensemble.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0563",
+        "uid": "u0077",
+        "pid": "p0094",
+        "feedback": "Unfortunately, this product nonclassical design and didn't work as expected.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0564",
+        "uid": "u0196",
+        "pid": "p0094",
+        "feedback": "On one hand, I love how it's elegant, but on the other hand, it's nonclassical design.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0565",
+        "uid": "u0161",
+        "pid": "p0095",
+        "feedback": "It exceeded my expectations when it's golden shoes.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0566",
+        "uid": "u0163",
+        "pid": "p0095",
+        "feedback": "The product special occasions, making it not worth the price.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0567",
+        "uid": "u0104",
+        "pid": "p0095",
+        "feedback": "I expected better performance, but it's outfit.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0568",
+        "uid": "u0065",
+        "pid": "p0095",
+        "feedback": "It didn't perform as promised, and luxury.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0569",
+        "uid": "u0146",
+        "pid": "p0095",
+        "feedback": "I\u00e2\u20ac\u2122d love it if it's add, but it's outfit.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0570",
+        "uid": "u0144",
+        "pid": "p0095",
+        "feedback": "It does an excellent job of add, though man could be improved.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0571",
+        "uid": "u0138",
+        "pid": "p0096",
+        "feedback": "I can't imagine going without this product now; it's style.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0572",
+        "uid": "u0036",
+        "pid": "p0096",
+        "feedback": "It's a poor investment because providing.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0573",
+        "uid": "u0173",
+        "pid": "p0096",
+        "feedback": "This product failed to meet my expectations because everyday use.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0574",
+        "uid": "u0205",
+        "pid": "p0096",
+        "feedback": "It's a poor investment because blend.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0575",
+        "uid": "u0056",
+        "pid": "p0096",
+        "feedback": "The blend was exactly what I wanted, but suitable holds it back.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0576",
+        "uid": "u0018",
+        "pid": "p0096",
+        "feedback": "On one hand, I love how it's pampi shoes offer, but on the other hand, it's discomfort.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0577",
+        "uid": "u0056",
+        "pid": "p0096",
+        "feedback": "It works great for versatile design, but it struggles with pampi shoes offer.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0578",
+        "uid": "u0149",
+        "pid": "p0097",
+        "feedback": "I\u00e2\u20ac\u2122m thoroughly impressed by how style.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0579",
+        "uid": "u0112",
+        "pid": "p0097",
+        "feedback": "I can't imagine going without this product now; it's whether.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0580",
+        "uid": "u0085",
+        "pid": "p0097",
+        "feedback": "The style makes this product stand out from others.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0581",
+        "uid": "u0124",
+        "pid": "p0097",
+        "feedback": "The party made it unusable for me.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0582",
+        "uid": "u0198",
+        "pid": "p0098",
+        "feedback": "This product works exactly as described and automatic movement.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0583",
+        "uid": "u0130",
+        "pid": "p0098",
+        "feedback": "It does a good job of iwc ingenieur automatic steel watch, but the durable is a letdown.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0584",
+        "uid": "u0028",
+        "pid": "p0099",
+        "feedback": "This product is perfect for elegance.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0585",
+        "uid": "u0123",
+        "pid": "p0099",
+        "feedback": "It exceeded my expectations when it's showcases.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0586",
+        "uid": "u0042",
+        "pid": "p0099",
+        "feedback": "The performance of this product is flawless, especially when horology.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0587",
+        "uid": "u0111",
+        "pid": "p0099",
+        "feedback": "The quality of this product is top-notch, especially the rolex cellini moonphase watch.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0588",
+        "uid": "u0011",
+        "pid": "p0099",
+        "feedback": "Unfortunately, this product masterpiece and didn't work as expected.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0589",
+        "uid": "u0101",
+        "pid": "p0099",
+        "feedback": "I had high hopes, but it's masterpiece.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0590",
+        "uid": "u0088",
+        "pid": "p0099",
+        "feedback": "One of the biggest issues is the showcases.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0591",
+        "uid": "u0047",
+        "pid": "p0099",
+        "feedback": "It does an excellent job of horology, though horology could be improved.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0592",
+        "uid": "u0192",
+        "pid": "p0099",
+        "feedback": "On one hand, I love how it's rolex cellini moonphase watch, but on the other hand, it's masterpiece.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0593",
+        "uid": "u0115",
+        "pid": "p0099",
+        "feedback": "I\u00e2\u20ac\u2122m impressed by elegance, but inelegance should be fixed.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0594",
+        "uid": "u0096",
+        "pid": "p0100",
+        "feedback": "I had high hopes, but it's iconic timepiece designed.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0595",
+        "uid": "u0149",
+        "pid": "p0100",
+        "feedback": "The iconic timepiece designed was exactly what I wanted, but rolex datejust women holds it back.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0596",
+        "uid": "u0151",
+        "pid": "p0101",
+        "feedback": "It exceeded my expectations when it's combines luxury.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0597",
+        "uid": "u0112",
+        "pid": "p0101",
+        "feedback": "Using this product has glamour my gold.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0598",
+        "uid": "u0057",
+        "pid": "p0101",
+        "feedback": "I absolutely love how this product combines luxury.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0599",
+        "uid": "u0004",
+        "pid": "p0101",
+        "feedback": "It\u00e2\u20ac\u2122s a solid product for touch, but I\u00e2\u20ac\u2122d prefer if it's stunning accessory.",
+        "sentiment": "POSITIVE"
+    },
+    {
+        "fid": "f0600",
+        "uid": "u0090",
+        "pid": "p0101",
+        "feedback": "The watch is amazing, but the plated case is frustrating.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0601",
+        "uid": "u0035",
+        "pid": "p0101",
+        "feedback": "The touch makes it great, but the style leaves room for improvement.",
+        "sentiment": "NEGATIVE"
+    },
+    {
+        "fid": "f0602",
+        "uid": "u0006",
+        "pid": "p0102",
+        "feedback": "This product does an excellent job of wrist watch.",
+        "sentiment": "POSITIVE"
+    }
+]
