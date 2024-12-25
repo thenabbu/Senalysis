@@ -4,16 +4,24 @@ import sqlite3
 conn = sqlite3.connect('senti.db')
 cursor = conn.cursor()
 
-# Create tables (adjust according to your actual schema)
+# Create tables (adjusted schema to keep id as autoincrementing primary key)
 cursor.execute('''
     CREATE TABLE IF NOT EXISTS users (
-        uid INTEGER PRIMARY KEY AUTOINCREMENT,
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        uid TEXT UNIQUE,
         fname TEXT,
         lname TEXT,
-        email TEXT,
-        pwd TEXT
+        email TEXT UNIQUE,
+        pwd TEXT,
+        gender TEXT,
+        height REAL,
+        weight REAL,
+        dob DATE,
+        state TEXT,
+        city TEXT
     )
 ''')
+
 cursor.execute('''
     CREATE TABLE IF NOT EXISTS companies (
         cid INTEGER PRIMARY KEY AUTOINCREMENT,

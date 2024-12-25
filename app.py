@@ -3,6 +3,13 @@ import sqlite3
 
 app = Flask(__name__)
 app.secret_key = 'yoyoyoyoyoyoyyo'  # For flash messages
+DATABASE = 'senti.db'
+
+# Helper function to connect to the database
+def get_db_connection():
+    conn = sqlite3.connect(DATABASE)
+    conn.row_factory = sqlite3.Row  # To access rows by column name
+    return conn
 
 # Home Route
 @app.route('/')
@@ -13,83 +20,93 @@ def index():
 @app.route('/register/user', methods=['GET', 'POST'])
 def register_user():
     if request.method == 'POST':
-        fname = request.form['fname']
-        lname = request.form['lname']
-        email = request.form['email']
-        password = request.form['password']
-        
-        # Connect to SQLite database
-        conn = sqlite3.connect('sentidb.sqlite')
-        cursor = conn.cursor()
+        user_data = {
+            'fname': request.form['fname'],
+            'lname': request.form['lname'],
+            'email': request.form['email'],
+            'password': request.form['password'],
+            'gender': request.form['gender'],
+            'height': float(request.form['height']),
+            'weight': float(request.form['weight']),
+            'dob': request.form['dob'],
+            'state': request.form['state'],
+            'city': request.form['city']
+        }
 
-        # Check if the email already exists
-        cursor.execute("SELECT email FROM users WHERE email = ?", (email,))
+        # Generate unique UID
+        conn = get_db_connection()
+        cursor = conn.cursor()
+        cursor.execute("SELECT COUNT(*) FROM users")
+        uid = f"u{cursor.fetchone()[0] + 1:04d}"
+
+        # Check if email already exists
+        cursor.execute("SELECT email FROM users WHERE email = ?", (user_data['email'],))
         if cursor.fetchone():
             flash("Email already registered!")
             return redirect(url_for('register_user'))
 
-        # Insert user details into the database
+        # Insert user data
         cursor.execute("""
-            INSERT INTO users (fname, lname, email, pwd)
-            VALUES (?, ?, ?, ?)
-        """, (fname, lname, email, password))
+            INSERT INTO users (uid, fname, lname, email, pwd, gender, height, weight, dob, state, city)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        """, (uid, user_data['fname'], user_data['lname'], user_data['email'], user_data['password'], 
+              user_data['gender'], user_data['height'], user_data['weight'], user_data['dob'], 
+              user_data['state'], user_data['city']))
         conn.commit()
         conn.close()
 
         flash("User registered successfully!")
         return redirect(url_for('index'))
 
-    return render_template('regUser.html')  # Form for user registration
+    return render_template('regUser.html')
 
 # Company Registration Route
 @app.route('/register/company', methods=['GET', 'POST'])
 def register_company():
     if request.method == 'POST':
-        company_name = request.form['company_name']
-        email = request.form['email']
-        password = request.form['password']
+        company_data = {
+            'company_name': request.form['company'],
+            'email': request.form['email'],
+            'password': request.form['password']
+        }
 
-        # Connect to SQLite database
-        conn = sqlite3.connect('sentidb.sqlite')
+        conn = get_db_connection()
         cursor = conn.cursor()
 
-        # Check if the email already exists
-        cursor.execute("SELECT email FROM companies WHERE email = ?", (email,))
+        # Check if company email already exists
+        cursor.execute("SELECT email FROM companies WHERE email = ?", (company_data['email'],))
         if cursor.fetchone():
-            flash("Email already registered!")
+            flash("Company with this email already registered!")
+            conn.close()
             return redirect(url_for('register_company'))
 
-        # Insert company details into the database
+        # Insert company data
         cursor.execute("""
             INSERT INTO companies (company, email, pwd)
             VALUES (?, ?, ?)
-        """, (company_name, email, password))
+        """, (company_data['company_name'], company_data['email'], company_data['password']))
         conn.commit()
         conn.close()
 
         flash("Company registered successfully!")
         return redirect(url_for('index'))
 
-    return render_template('regCompany.html')  # Form for company registration
+    return render_template('regCompany.html')
 
 # User Login Route
 @app.route('/login/user', methods=['POST'])
 def user_login():
     email = request.form['email']
     password = request.form['password']
-    
-    # Connect to SQLite database
-    conn = sqlite3.connect('sentidb.sqlite')
+
+    conn = get_db_connection()
     cursor = conn.cursor()
-    
-    # Fetch user ID and name
     cursor.execute("SELECT uid, fname FROM users WHERE email = ? AND pwd = ?", (email, password))
     result = cursor.fetchone()
-    
     conn.close()
 
     if result:
-        uid = result[0]  # User ID
+        uid = result['uid']
         return redirect(url_for('profile', uid=uid))
     else:
         flash("Invalid credentials, please try again.")
@@ -100,19 +117,15 @@ def user_login():
 def company_login():
     email = request.form['email']
     password = request.form['password']
-    
-    # Connect to SQLite database
-    conn = sqlite3.connect('sentidb.sqlite')
+
+    conn = get_db_connection()
     cursor = conn.cursor()
-    
-    # Fetch company ID and name
     cursor.execute("SELECT cid, company FROM companies WHERE email = ? AND pwd = ?", (email, password))
     result = cursor.fetchone()
-    
     conn.close()
 
     if result:
-        cid = result[0]  # Company ID
+        cid = result['cid']
         return redirect(url_for('company_profile', cid=cid))
     else:
         flash("Invalid credentials, please try again.")
@@ -121,11 +134,9 @@ def company_login():
 # User Profile Route
 @app.route('/user/<uid>')
 def profile(uid):
-    # Connect to SQLite database
-    conn = sqlite3.connect('sentidb.sqlite')
+    conn = get_db_connection()
     cursor = conn.cursor()
 
-    # Fetch user details using UID
     cursor.execute("SELECT fname, lname FROM users WHERE uid = ?", (uid,))
     user = cursor.fetchone()
 
@@ -133,11 +144,9 @@ def profile(uid):
         conn.close()
         return "User not found", 404
 
-    # Fetch available products for feedback
     cursor.execute("SELECT pid, product FROM products")
     products = cursor.fetchall()
 
-    # Fetch user's previous feedbacks
     cursor.execute("""
         SELECT f.feedback, f.sentiment, p.product
         FROM feedback f
@@ -148,12 +157,7 @@ def profile(uid):
 
     conn.close()
 
-    return render_template(
-        'user.html',
-        user=user,
-        products=products,
-        feedbacks=feedbacks
-    )
+    return render_template('user.html', user=user, products=products, feedbacks=feedbacks)
 
 # Submit Feedback Route
 @app.route('/submit_feedback', methods=['POST'])
@@ -162,20 +166,16 @@ def submit_feedback():
     pid = request.form['product']
     feedback = request.form['feedback']
 
-    # Analyze feedback sentiment (placeholder for now)
-    sentiment = "Neutral"  # Replace with actual sentiment analysis logic
+    sentiment = "Neutral"  # Placeholder for sentiment analysis logic
 
-    # Connect to SQLite database
-    conn = sqlite3.connect('sentidb.sqlite')
+    conn = get_db_connection()
     cursor = conn.cursor()
 
-    # Insert feedback into the database
     cursor.execute("""
         INSERT INTO feedback (uid, pid, feedback, sentiment)
         VALUES (?, ?, ?, ?)
     """, (uid, pid, feedback, sentiment))
     conn.commit()
-
     conn.close()
 
     flash("Feedback submitted successfully!")
@@ -184,19 +184,15 @@ def submit_feedback():
 # Company Profile Route
 @app.route('/company/<cid>')
 def company_profile(cid):
-    # Connect to SQLite database
-    conn = sqlite3.connect('sentidb.sqlite')
+    conn = get_db_connection()
     cursor = conn.cursor()
 
-    # Fetch company details using CID
     cursor.execute("SELECT company FROM companies WHERE cid = ?", (cid,))
     company = cursor.fetchone()
-
     conn.close()
 
     if company:
-        company_name = company[0]
-        return f"Welcome, {company_name}"
+        return f"Welcome, {company['company']}"
     else:
         return "Company not found", 404
 
