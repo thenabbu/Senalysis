@@ -9,6 +9,69 @@ app.secret_key = 'yoyoyoyoyoyoyyo'  # For flash messages
 def index():
     return render_template('index.html')
 
+# User Registration Route
+@app.route('/register/user', methods=['GET', 'POST'])
+def register_user():
+    if request.method == 'POST':
+        fname = request.form['fname']
+        lname = request.form['lname']
+        email = request.form['email']
+        password = request.form['password']
+        
+        # Connect to SQLite database
+        conn = sqlite3.connect('sentidb.sqlite')
+        cursor = conn.cursor()
+
+        # Check if the email already exists
+        cursor.execute("SELECT email FROM users WHERE email = ?", (email,))
+        if cursor.fetchone():
+            flash("Email already registered!")
+            return redirect(url_for('register_user'))
+
+        # Insert user details into the database
+        cursor.execute("""
+            INSERT INTO users (fname, lname, email, pwd)
+            VALUES (?, ?, ?, ?)
+        """, (fname, lname, email, password))
+        conn.commit()
+        conn.close()
+
+        flash("User registered successfully!")
+        return redirect(url_for('index'))
+
+    return render_template('regUser.html')  # Form for user registration
+
+# Company Registration Route
+@app.route('/register/company', methods=['GET', 'POST'])
+def register_company():
+    if request.method == 'POST':
+        company_name = request.form['company_name']
+        email = request.form['email']
+        password = request.form['password']
+
+        # Connect to SQLite database
+        conn = sqlite3.connect('sentidb.sqlite')
+        cursor = conn.cursor()
+
+        # Check if the email already exists
+        cursor.execute("SELECT email FROM companies WHERE email = ?", (email,))
+        if cursor.fetchone():
+            flash("Email already registered!")
+            return redirect(url_for('register_company'))
+
+        # Insert company details into the database
+        cursor.execute("""
+            INSERT INTO companies (company, email, pwd)
+            VALUES (?, ?, ?)
+        """, (company_name, email, password))
+        conn.commit()
+        conn.close()
+
+        flash("Company registered successfully!")
+        return redirect(url_for('index'))
+
+    return render_template('regCompany.html')  # Form for company registration
+
 # User Login Route
 @app.route('/login/user', methods=['POST'])
 def user_login():
