@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="flex min-h-screen">
+  <!-- Left Section: Feedback Form -->
+  <div class="w-2/5 p-6 border-r">
+    <h2 class="text-lg font-bold mb-4">Submit Feedback</h2>
+    <form action="/submit_feedback" method="post" class="space-y-4">
+      <div>
+        <label for="product" class="block font-medium mb-1">Select Product</label>
+        <select
+          id="product"
+          name="product"
+          class="select w-full max-w-full"
+          required
+        >
+          <option disabled selected>Choose a product</option>
+          {% for product in products %}
+          <option value="{{ product.pid }}">{{ product.product }}</option>
+          {% endfor %}
+        </select>
+      </div>
+      <div>
+        <label for="feedback" class="block font-medium mb-1">Your Feedback</label>
+        <textarea
+          id="feedback"
+          name="feedback"
+          class="textarea w-full max-w-full"
+          rows="4"
+          placeholder="Write your feedback here..."
+          required
+        ></textarea>
+      </div>
+      <button type="submit" class="btn w-full">
+        Submit
+      </button>
+    </form>
+  </div>
+
+  <!-- Right Section: Previous Feedbacks -->
+  <div class="w-3/5 p-6">
+    <h2 class="text-lg font-bold mb-4">Your Previous Feedbacks</h2>
+    <div class="grid grid-cols-3 gap-4">
+      {% for feedback in feedbacks %}
+      <div class="card bg-primary-content">
+        <div class="card-body">
+          <h2 class="text-base-content card-title">{{ feedback.product }}</h2>
+          <p class="text-primary">{{ feedback.feedback }}</p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-neutral-content">{{ feedback.sentiment }}</button>
+          </div>
+        </div>
+      </div>
+      {% else %}
+      <p class="text-gray-600 col-span-3">No feedback submitted yet.</p>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endblock %}

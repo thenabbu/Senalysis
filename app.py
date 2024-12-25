@@ -1,11 +1,8 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
-from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy import text
+import sqlite3
 
 app = Flask(__name__)
-app.secret_key = 'your_secret_key'  # For flash messages
-app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:navya@localhost/sentidb'
-db = SQLAlchemy(app)
+app.secret_key = 'yoyoyoyoyoyoyyo'  # For flash messages
 
 # Home Route
 @app.route('/')
@@ -18,11 +15,15 @@ def user_login():
     email = request.form['email']
     password = request.form['password']
     
+    # Connect to SQLite database
+    conn = sqlite3.connect('sentidb.sqlite')
+    cursor = conn.cursor()
+    
     # Fetch user ID and name
-    result = db.session.execute(
-        text("SELECT uid, fname FROM users WHERE email = :email AND pwd = :password"),
-        {"email": email, "password": password}
-    ).fetchone()
+    cursor.execute("SELECT uid, fname FROM users WHERE email = ? AND pwd = ?", (email, password))
+    result = cursor.fetchone()
+    
+    conn.close()
 
     if result:
         uid = result[0]  # User ID
@@ -37,11 +38,15 @@ def company_login():
     email = request.form['email']
     password = request.form['password']
     
+    # Connect to SQLite database
+    conn = sqlite3.connect('sentidb.sqlite')
+    cursor = conn.cursor()
+    
     # Fetch company ID and name
-    result = db.session.execute(
-        text("SELECT cid, company FROM companies WHERE email = :email AND pwd = :password"),
-        {"email": email, "password": password}
-    ).fetchone()
+    cursor.execute("SELECT cid, company FROM companies WHERE email = ? AND pwd = ?", (email, password))
+    result = cursor.fetchone()
+    
+    conn.close()
 
     if result:
         cid = result[0]  # Company ID
@@ -53,26 +58,78 @@ def company_login():
 # User Profile Route
 @app.route('/user/<uid>')
 def profile(uid):
-    # Fetch user details using UID
-    user = db.session.execute(
-        text("SELECT fname, lname FROM users WHERE uid = :uid"),
-        {"uid": uid}
-    ).fetchone()
+    # Connect to SQLite database
+    conn = sqlite3.connect('sentidb.sqlite')
+    cursor = conn.cursor()
 
-    if user:
-        fname, lname = user
-        return f"Welcome, {fname} {lname}"
-    else:
+    # Fetch user details using UID
+    cursor.execute("SELECT fname, lname FROM users WHERE uid = ?", (uid,))
+    user = cursor.fetchone()
+
+    if not user:
+        conn.close()
         return "User not found", 404
+
+    # Fetch available products for feedback
+    cursor.execute("SELECT pid, product FROM products")
+    products = cursor.fetchall()
+
+    # Fetch user's previous feedbacks
+    cursor.execute("""
+        SELECT f.feedback, f.sentiment, p.product
+        FROM feedback f
+        JOIN products p ON f.pid = p.pid
+        WHERE f.uid = ?
+    """, (uid,))
+    feedbacks = cursor.fetchall()
+
+    conn.close()
+
+    return render_template(
+        'user.html',
+        user=user,
+        products=products,
+        feedbacks=feedbacks
+    )
+
+# Submit Feedback Route
+@app.route('/submit_feedback', methods=['POST'])
+def submit_feedback():
+    uid = request.form['uid']
+    pid = request.form['product']
+    feedback = request.form['feedback']
+
+    # Analyze feedback sentiment (placeholder for now)
+    sentiment = "Neutral"  # Replace with actual sentiment analysis logic
+
+    # Connect to SQLite database
+    conn = sqlite3.connect('sentidb.sqlite')
+    cursor = conn.cursor()
+
+    # Insert feedback into the database
+    cursor.execute("""
+        INSERT INTO feedback (uid, pid, feedback, sentiment)
+        VALUES (?, ?, ?, ?)
+    """, (uid, pid, feedback, sentiment))
+    conn.commit()
+
+    conn.close()
+
+    flash("Feedback submitted successfully!")
+    return redirect(url_for('profile', uid=uid))
 
 # Company Profile Route
 @app.route('/company/<cid>')
 def company_profile(cid):
+    # Connect to SQLite database
+    conn = sqlite3.connect('sentidb.sqlite')
+    cursor = conn.cursor()
+
     # Fetch company details using CID
-    company = db.session.execute(
-        text("SELECT company FROM companies WHERE cid = :cid"),
-        {"cid": cid}
-    ).fetchone()
+    cursor.execute("SELECT company FROM companies WHERE cid = ?", (cid,))
+    company = cursor.fetchone()
+
+    conn.close()
 
     if company:
         company_name = company[0]
