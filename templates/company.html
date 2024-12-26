@@ -1,7 +1,5 @@
-{% extends "base.html" %}
-{% block content %}
+{% extends "base.html" %} {% block content %}
 <div class="flex flex-col lg:flex-row min-h-screen">
-  <!-- Left Section: Add Product Form -->
   <div class="lg:w-2/5 p-8">
     <h2 class="text-2xl font-semibold mb-6">Add New Product</h2>
     <form
@@ -41,7 +39,6 @@
 
   <div class="divider lg:divider-horizontal"></div>
 
-  <!-- Right Section: Products -->
   <div class="lg:w-3/5 p-8">
     <h2 class="text-2xl font-semibold mb-6 text-center">Your Products</h2>
     {% if products %}
@@ -58,31 +55,34 @@
           {% for product in products %}
           <tr>
             <td>
-                <div class="flex items-center gap-3">
-                    <div class="avatar">
-                        <div class="mask mask-squircle h-12 w-12">
-                            <img
-                                src="{{ product.thumbnail }}"
-                                alt="Product Thumbnail"
-                            />
-                        </div>
-                    </div>
-                    <div class="font-bold">
-                        <!-- Link to feedback page for the product -->
-                        <a href="{{ url_for('feedbacks', pid=product.pid) }}">
-                            {{ product.product }}
-                        </a>
-                    </div>
+              <div class="flex items-center gap-3">
+                <div class="avatar">
+                  <div class="mask mask-squircle h-12 w-12">
+                    <img
+                      src="{{ product.thumbnail }}"
+                      alt="Product Thumbnail"
+                    />
+                  </div>
                 </div>
+                <div class="font-bold">
+                  <a href="{{ url_for('feedbacks', pid=product.pid) }}">
+                    {{ product.product }}
+                  </a>
+                </div>
+              </div>
             </td>
             <td>{{ product.feedback_count }}</td>
             <td>
-                <progress class="progress w-40" value="{{ product.sentiment_score | round(2) }}" max="100">
-                    {{ product.sentiment_score | round(2) }}%
-                </progress>
+              <progress
+                class="progress w-40"
+                value="{{ product.sentiment_score | round(2) }}"
+                max="100"
+              >
+                {{ product.sentiment_score | round(2) }}%
+              </progress>
             </td>
-        </tr>
-        
+          </tr>
+
           {% endfor %}
         </tbody>
       </table>

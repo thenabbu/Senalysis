@@ -1,105 +1,120 @@
-{% extends "base.html" %}
-
-{% block content %}
+{% extends "base.html" %} {% block content %}
 <div class="flex justify-center items-center h-screen">
-    <div class="card w-96 shadow-xl mx-auto">
-        <div class="card-body">
-            <!-- Login Title -->
-            <h2 class="text-2xl font-semibold text-center mb-6" id="formTitle">Login</h2>
+  <div class="card w-96 shadow-xl mx-auto">
+    <div class="card-body">
+      <h2 class="text-2xl font-semibold text-center mb-6" id="formTitle">
+        Login
+      </h2>
 
-            <!-- Toggle Buttons using 'join' class -->
-            <div class="join mb-6 w-full">
-                <button id="userButton" class="btn join-item w-1/2" onclick="toggleForm('user')">User</button>
-                <button id="companyButton" class="btn join-item w-1/2" onclick="toggleForm('company')">Company</button>
-            </div>
+      <div class="join mb-6 w-full">
+        <button
+          id="userButton"
+          class="btn join-item w-1/2"
+          onclick="toggleForm('user')"
+        >
+          User
+        </button>
+        <button
+          id="companyButton"
+          class="btn join-item w-1/2"
+          onclick="toggleForm('company')"
+        >
+          Company
+        </button>
+      </div>
 
-            <!-- Login Form -->
-            <form id="loginForm" action="/login/user" method="post">
-                <!-- Email Field -->
-                <div class="form-control mb-4">
-                    <label class="label">
-                        <span class="label-text" id="emailLabel">Email</span>
-                    </label>
-                    <input type="email" name="email" class="input input-bordered" required />
-                </div>
-
-                <!-- Password Field -->
-                <div class="form-control mb-4">
-                    <label class="label">
-                        <span class="label-text">Password</span>
-                    </label>
-                    <input type="password" name="password" class="input input-bordered" required />
-                </div>
-
-                <!-- Login Button -->
-                <div class="form-control mt-4">
-                    <button type="submit" class="btn w-full">Login</button>
-                </div>
-            </form>
-
-            <!-- Registration Link -->
-            <p class="text-center text-sm mt-4" id="registerLink">Don't have an account? <a href="/register/user" class="text-blue-500">Register User</a></p>
+      <form id="loginForm" action="/login/user" method="post">
+        <div class="form-control mb-4">
+          <label class="label">
+            <span class="label-text" id="emailLabel">Email</span>
+          </label>
+          <input
+            type="email"
+            name="email"
+            class="input input-bordered"
+            required
+          />
         </div>
+
+        <div class="form-control mb-4">
+          <label class="label">
+            <span class="label-text">Password</span>
+          </label>
+          <input
+            type="password"
+            name="password"
+            class="input input-bordered"
+            required
+          />
+        </div>
+
+        <div class="form-control mt-4">
+          <button type="submit" class="btn w-full">Login</button>
+        </div>
+      </form>
+
+      <p class="text-center text-sm mt-4" id="registerLink">
+        Don't have an account?
+        <a href="/register/user" class="text-blue-500">Register User</a>
+      </p>
     </div>
+  </div>
 </div>
 
 <script>
-    // Function to toggle between User and Company login forms with smooth transitions
-    function toggleForm(type) {
-        const formTitle = document.getElementById("formTitle");
-        const emailLabel = document.getElementById("emailLabel");
-        const registerLink = document.getElementById("registerLink");
-        const loginForm = document.getElementById("loginForm");
+  function toggleForm(type) {
+    const formTitle = document.getElementById("formTitle");
+    const emailLabel = document.getElementById("emailLabel");
+    const registerLink = document.getElementById("registerLink");
+    const loginForm = document.getElementById("loginForm");
 
-        // Apply smooth transition effect
-        document.body.classList.add('transition-all', 'duration-300', 'ease-in-out');
-        
-        // Smooth content change based on selected form type
-        if (type === "user") {
-            // Set User form
-            formTitle.textContent = "Login";
-            emailLabel.textContent = "Email";
-            loginForm.action = "/login/user";
-            registerLink.innerHTML = `Don't have an account? <a href="/register/user" class="text-blue-500">Register User</a>`;
-            
-            // Add active button class
-            document.getElementById("userButton").classList.add("btn-active");
-            document.getElementById("companyButton").classList.remove("btn-active");
-        } else if (type === "company") {
-            // Set Company form
-            formTitle.textContent = "Login";
-            loginForm.action = "/login/company";
-            registerLink.innerHTML = `Don't have an account? <a href="/register/company" class="text-blue-500">Register Company</a>`;
-            
-            // Add active button class
-            document.getElementById("companyButton").classList.add("btn-active");
-            document.getElementById("userButton").classList.remove("btn-active");
-        }
+    document.body.classList.add(
+      "transition-all",
+      "duration-300",
+      "ease-in-out"
+    );
 
-        // Remove transition class after animation to make it snappy
-        setTimeout(() => {
-            document.body.classList.remove('transition-all', 'duration-300', 'ease-in-out');
-        }, 300); // Matches the duration of the transition
+    if (type === "user") {
+      formTitle.textContent = "Login";
+      emailLabel.textContent = "Email";
+      loginForm.action = "/login/user";
+      registerLink.innerHTML = `Don't have an account? <a href="/register/user" class="text-blue-500">Register User</a>`;
+
+      document.getElementById("userButton").classList.add("btn-active");
+      document.getElementById("companyButton").classList.remove("btn-active");
+    } else if (type === "company") {
+      formTitle.textContent = "Login";
+      loginForm.action = "/login/company";
+      registerLink.innerHTML = `Don't have an account? <a href="/register/company" class="text-blue-500">Register Company</a>`;
+
+      document.getElementById("companyButton").classList.add("btn-active");
+      document.getElementById("userButton").classList.remove("btn-active");
     }
 
-    // Initialize with User selected
-    toggleForm('user');
+    setTimeout(() => {
+      document.body.classList.remove(
+        "transition-all",
+        "duration-300",
+        "ease-in-out"
+      );
+    }, 300);
+  }
+
+  toggleForm("user");
 </script>
 
 <style>
-    /* Add transition to elements when switching between forms */
-    .transition-all {
-        transition: all 0.3s ease-in-out;
-    }
+  .transition-all {
+    transition: all 0.3s ease-in-out;
+  }
 
-    /* Optional: Add a fade effect for the text content */
-    .fade-in {
-        opacity: 0;
-        transition: opacity 0.3s ease-in-out;
-    }
+  .fade-in {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
 
-    .fade-in.active {
-        opacity: 1;
-    }
+  .fade-in.active {
+    opacity: 1;
+  }
 </style>
 {% endblock %}

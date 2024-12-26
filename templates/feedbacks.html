@@ -1,57 +1,54 @@
-{% extends "base.html" %}
-
-{% block content %}
+{% extends "base.html" %} {% block content %}
 <div class="container mx-auto">
-  <!-- Page Heading -->
-  <h2 class="text-2xl font-semibold text-center mb-6 bg-neutral text-white p-4 rounded-lg">
+  <h2
+    class="text-2xl font-semibold text-center mb-6 bg-neutral text-white p-4 rounded-lg"
+  >
     Feedbacks for {{ product_name }}
   </h2>
 
-<!-- Filters -->
-<div class="filters bg-base-200 p-4 rounded-box mb-4">
+  <div class="filters bg-base-200 p-4 rounded-box mb-4">
     <div class="grid grid-cols-5 gap-4">
-      <!-- Sentiment Filter -->
       <div>
         <select id="sentiment-filter" class="select select-bordered w-full">
           <option value="all" selected>All</option>
           <option value="positive">Positive</option>
           <option value="negative">Negative</option>
         </select>
-        
+
         <div class="label">
-            <span class="label-text-alt">Sentiment</span>
-          </div>
+          <span class="label-text-alt">Sentiment</span>
+        </div>
       </div>
-  
-      <!-- Start Date -->
+
       <div class="form-control w-full">
-        <input id="start-date" type="date" class="input input-bordered w-full">
+        <input
+          id="start-date"
+          type="date"
+          class="input input-bordered w-full"
+        />
         <div class="label">
           <span class="label-text-alt">Start Date</span>
         </div>
       </div>
-  
-      <!-- End Date -->
+
       <div class="form-control w-full">
-        <input id="end-date" type="date" class="input input-bordered w-full">
+        <input id="end-date" type="date" class="input input-bordered w-full" />
         <div class="label">
           <span class="label-text-alt">End Date</span>
         </div>
       </div>
-  
-      <!-- Sort Order -->
+
       <div>
         <select id="sort-order" class="select select-bordered w-full">
           <option value="desc" selected>Newest First</option>
           <option value="asc">Oldest First</option>
         </select>
-        
+
         <div class="label">
-            <span class="label-text-alt">Sort</span>
-          </div>
+          <span class="label-text-alt">Sort</span>
+        </div>
       </div>
-  
-      <!-- Clear Filters -->
+
       <div>
         <button id="clear-filters" class="btn btn-outline btn-error w-full">
           Clear Filters
@@ -59,10 +56,7 @@
       </div>
     </div>
   </div>
-  
-  
 
-  <!-- Feedbacks Table -->
   <table class="table w-full">
     <thead>
       <tr>
@@ -100,59 +94,61 @@
 </div>
 
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const sentimentFilter = document.getElementById('sentiment-filter');
-        const startDateInput = document.getElementById('start-date');
-        const endDateInput = document.getElementById('end-date');
-        const sortOrder = document.getElementById('sort-order');
-        const feedbacksTable = document.getElementById('feedbacks-table');
-        const clearFilters = document.getElementById('clear-filters');
-        const pid = "{{ pid }}";
+  document.addEventListener("DOMContentLoaded", function () {
+    const sentimentFilter = document.getElementById("sentiment-filter");
+    const startDateInput = document.getElementById("start-date");
+    const endDateInput = document.getElementById("end-date");
+    const sortOrder = document.getElementById("sort-order");
+    const feedbacksTable = document.getElementById("feedbacks-table");
+    const clearFilters = document.getElementById("clear-filters");
+    const pid = "{{ pid }}";
 
-        function fetchFeedbacks() {
-            const sentiment = sentimentFilter.value;
-            const startDate = startDateInput.value;
-            const endDate = endDateInput.value;
-            const sort = sortOrder.value;
+    function fetchFeedbacks() {
+      const sentiment = sentimentFilter.value;
+      const startDate = startDateInput.value;
+      const endDate = endDateInput.value;
+      const sort = sortOrder.value;
 
-            const url = new URL(`/api/feedbacks/${pid}`, window.location.origin);
-            url.searchParams.append('sentiment', sentiment);
-            if (startDate) url.searchParams.append('start_date', startDate);
-            if (endDate) url.searchParams.append('end_date', endDate);
-            url.searchParams.append('sort_order', sort);
+      const url = new URL(`/api/feedbacks/${pid}`, window.location.origin);
+      url.searchParams.append("sentiment", sentiment);
+      if (startDate) url.searchParams.append("start_date", startDate);
+      if (endDate) url.searchParams.append("end_date", endDate);
+      url.searchParams.append("sort_order", sort);
 
-            fetch(url)
-                .then(response => response.json())
-                .then(data => {
-                    feedbacksTable.innerHTML = '';
-                    data.forEach((feedback, index) => {
-                        const row = `
+      fetch(url)
+        .then((response) => response.json())
+        .then((data) => {
+          feedbacksTable.innerHTML = "";
+          data.forEach((feedback, index) => {
+            const row = `
                             <tr>
                                 <td>${index + 1}</td>
                                 <td>${feedback.fid}</td>
                                 <td>${feedback.uid}</td>
                                 <td>${feedback.feedback}</td>
-                                <td><kbd class="kbd">${feedback.sentiment}</kbd></td>
+                                <td><kbd class="kbd">${
+                                  feedback.sentiment
+                                }</kbd></td>
                                 <td>${feedback.email}</td>
                                 <td>${feedback.timestamp}</td>
                             </tr>
                         `;
-                        feedbacksTable.innerHTML += row;
-                    });
-                });
-        }
-
-        sentimentFilter.addEventListener('change', fetchFeedbacks);
-        startDateInput.addEventListener('change', fetchFeedbacks);
-        endDateInput.addEventListener('change', fetchFeedbacks);
-        sortOrder.addEventListener('change', fetchFeedbacks);
-        clearFilters.addEventListener('click', () => {
-            sentimentFilter.value = 'all';
-            startDateInput.value = '';
-            endDateInput.value = '';
-            sortOrder.value = 'desc';
-            fetchFeedbacks();
+            feedbacksTable.innerHTML += row;
+          });
         });
+    }
+
+    sentimentFilter.addEventListener("change", fetchFeedbacks);
+    startDateInput.addEventListener("change", fetchFeedbacks);
+    endDateInput.addEventListener("change", fetchFeedbacks);
+    sortOrder.addEventListener("change", fetchFeedbacks);
+    clearFilters.addEventListener("click", () => {
+      sentimentFilter.value = "all";
+      startDateInput.value = "";
+      endDateInput.value = "";
+      sortOrder.value = "desc";
+      fetchFeedbacks();
     });
+  });
 </script>
 {% endblock %}

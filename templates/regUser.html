@@ -1,19 +1,15 @@
-{% extends "base.html" %}
-{% block content %}
+{% extends "base.html" %} {% block content %}
 <div class="flex justify-center items-center h-screen">
   <div
     class="card w-11/12 sm:w-10/12 md:w-8/12 lg:w-6/12 xl:w-5/12 shadow-xl mx-auto"
   >
     <div class="card-body">
-      <!-- Registration Title -->
       <h2 class="text-2xl font-semibold text-center mb-6" id="formTitle">
         Register User
       </h2>
 
-      <!-- Registration Form -->
       <form id="registerForm" action="/register/user" method="post">
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-4">
-          <!-- Email Field -->
           <div class="form-control">
             <label class="label">
               <span class="label-text">Email</span>
@@ -26,7 +22,6 @@
             />
           </div>
 
-          <!-- First and Last Name in the same row (nested 2-column division) -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div class="form-control">
               <label class="label">
@@ -52,7 +47,6 @@
             </div>
           </div>
 
-          <!-- Password Field -->
           <div class="form-control">
             <label class="label">
               <span class="label-text">Password</span>
@@ -65,7 +59,6 @@
             />
           </div>
 
-          <!-- Gender and Date of Birth in the same row -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div class="form-control">
               <label class="label">
@@ -95,7 +88,6 @@
             </div>
           </div>
 
-          <!-- Height and Weight in the same row -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
             <div class="form-control">
               <label class="label">
@@ -127,7 +119,6 @@
             </div>
           </div>
 
-          <!-- State and City in the same row -->
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
             <div class="form-control">
               <label class="label">
@@ -159,12 +150,10 @@
           </div>
         </div>
 
-        <!-- Submit Button -->
         <div class="form-control mt-4">
           <button type="submit" class="btn w-full">Register</button>
         </div>
       </form>
-      <!-- Login Link -->
       <p class="text-center text-sm mt-4" id="registerLink">
         Already have an account?
         <a href="/" class="text-blue-500">Login</a>
@@ -174,50 +163,70 @@
 </div>
 
 <script>
-  // State-City JSON
   const stateCityData = {
-    "Andhra Pradesh": ["Visakhapatnam", "Vijayawada", "Tirupati", "Guntur", "Kurnool"],
+    "Andhra Pradesh": [
+      "Visakhapatnam",
+      "Vijayawada",
+      "Tirupati",
+      "Guntur",
+      "Kurnool",
+    ],
     "Arunachal Pradesh": ["Itanagar", "Tawang", "Ziro", "Bomdila", "Pasighat"],
-    "Assam": ["Guwahati", "Dibrugarh", "Silchar", "Jorhat", "Tezpur"],
-    "Bihar": ["Patna", "Gaya", "Bhagalpur", "Muzaffarpur", "Darbhanga"],
-    "Chhattisgarh": ["Raipur", "Bhilai", "Bilaspur", "Korba", "Durg"],
-    "Goa": ["Panaji", "Margao", "Vasco da Gama", "Mapusa", "Ponda"],
-    "Gujarat": ["Ahmedabad", "Surat", "Vadodara", "Rajkot", "Gandhinagar"],
-    "Haryana": ["Gurugram", "Faridabad", "Panipat", "Ambala", "Hisar"],
+    Assam: ["Guwahati", "Dibrugarh", "Silchar", "Jorhat", "Tezpur"],
+    Bihar: ["Patna", "Gaya", "Bhagalpur", "Muzaffarpur", "Darbhanga"],
+    Chhattisgarh: ["Raipur", "Bhilai", "Bilaspur", "Korba", "Durg"],
+    Goa: ["Panaji", "Margao", "Vasco da Gama", "Mapusa", "Ponda"],
+    Gujarat: ["Ahmedabad", "Surat", "Vadodara", "Rajkot", "Gandhinagar"],
+    Haryana: ["Gurugram", "Faridabad", "Panipat", "Ambala", "Hisar"],
     "Himachal Pradesh": ["Shimla", "Manali", "Dharamshala", "Mandi", "Kullu"],
-    "Jharkhand": ["Ranchi", "Jamshedpur", "Dhanbad", "Bokaro", "Hazaribagh"],
-    "Karnataka": ["Bengaluru", "Mysuru", "Hubballi", "Mangaluru", "Shivamogga"],
-    "Kerala": ["Thiruvananthapuram", "Kochi", "Kozhikode", "Thrissur", "Alappuzha"],
+    Jharkhand: ["Ranchi", "Jamshedpur", "Dhanbad", "Bokaro", "Hazaribagh"],
+    Karnataka: ["Bengaluru", "Mysuru", "Hubballi", "Mangaluru", "Shivamogga"],
+    Kerala: [
+      "Thiruvananthapuram",
+      "Kochi",
+      "Kozhikode",
+      "Thrissur",
+      "Alappuzha",
+    ],
     "Madhya Pradesh": ["Bhopal", "Indore", "Gwalior", "Jabalpur", "Ujjain"],
-    "Maharashtra": ["Mumbai", "Pune", "Nagpur", "Nashik", "Aurangabad"],
-    "Manipur": ["Imphal", "Bishnupur", "Thoubal", "Churachandpur", "Kakching"],
-    "Meghalaya": ["Shillong", "Tura", "Nongstoin", "Jowai", "Baghmara"],
-    "Mizoram": ["Aizawl", "Lunglei", "Champhai", "Saiha", "Kolasib"],
-    "Nagaland": ["Kohima", "Dimapur", "Mokokchung", "Wokha", "Zunheboto"],
-    "Odisha": ["Bhubaneswar", "Cuttack", "Rourkela", "Puri", "Sambalpur"],
-    "Punjab": ["Chandigarh", "Ludhiana", "Amritsar", "Jalandhar", "Patiala"],
-    "Rajasthan": ["Jaipur", "Jodhpur", "Udaipur", "Kota", "Ajmer"],
-    "Sikkim": ["Gangtok", "Namchi", "Mangan", "Ravangla", "Gyalshing"],
-    "Tamil Nadu": ["Chennai", "Coimbatore", "Madurai", "Tiruchirappalli", "Salem"],
-    "Telangana": ["Hyderabad", "Warangal", "Nizamabad", "Karimnagar", "Khammam"],
-    "Tripura": ["Agartala", "Udaipur", "Dharmanagar", "Kailashahar", "Ambassa"],
+    Maharashtra: ["Mumbai", "Pune", "Nagpur", "Nashik", "Aurangabad"],
+    Manipur: ["Imphal", "Bishnupur", "Thoubal", "Churachandpur", "Kakching"],
+    Meghalaya: ["Shillong", "Tura", "Nongstoin", "Jowai", "Baghmara"],
+    Mizoram: ["Aizawl", "Lunglei", "Champhai", "Saiha", "Kolasib"],
+    Nagaland: ["Kohima", "Dimapur", "Mokokchung", "Wokha", "Zunheboto"],
+    Odisha: ["Bhubaneswar", "Cuttack", "Rourkela", "Puri", "Sambalpur"],
+    Punjab: ["Chandigarh", "Ludhiana", "Amritsar", "Jalandhar", "Patiala"],
+    Rajasthan: ["Jaipur", "Jodhpur", "Udaipur", "Kota", "Ajmer"],
+    Sikkim: ["Gangtok", "Namchi", "Mangan", "Ravangla", "Gyalshing"],
+    "Tamil Nadu": [
+      "Chennai",
+      "Coimbatore",
+      "Madurai",
+      "Tiruchirappalli",
+      "Salem",
+    ],
+    Telangana: ["Hyderabad", "Warangal", "Nizamabad", "Karimnagar", "Khammam"],
+    Tripura: ["Agartala", "Udaipur", "Dharmanagar", "Kailashahar", "Ambassa"],
     "Uttar Pradesh": ["Lucknow", "Kanpur", "Varanasi", "Agra", "Meerut"],
-    "Uttarakhand": ["Dehradun", "Haridwar", "Nainital", "Haldwani", "Roorkee"],
+    Uttarakhand: ["Dehradun", "Haridwar", "Nainital", "Haldwani", "Roorkee"],
     "West Bengal": ["Kolkata", "Siliguri", "Durgapur", "Asansol", "Howrah"],
-    "Andaman and Nicobar Islands": ["Port Blair", "Car Nicobar", "Hut Bay", "Mayabunder", "Diglipur"],
-    "Chandigarh": ["Chandigarh"],
+    "Andaman and Nicobar Islands": [
+      "Port Blair",
+      "Car Nicobar",
+      "Hut Bay",
+      "Mayabunder",
+      "Diglipur",
+    ],
+    Chandigarh: ["Chandigarh"],
     "Dadra and Nagar Haveli and Daman and Diu": ["Daman", "Diu", "Silvassa"],
-    "Delhi": ["New Delhi", "Old Delhi", "Dwarka", "Saket", "Rohini"],
-    "Lakshadweep": ["Kavaratti", "Agatti", "Amini", "Kadmat", "Kalpeni"],
-    "Puducherry": ["Puducherry", "Karaikal", "Mahe", "Yanam"]
-}
-;
-
+    Delhi: ["New Delhi", "Old Delhi", "Dwarka", "Saket", "Rohini"],
+    Lakshadweep: ["Kavaratti", "Agatti", "Amini", "Kadmat", "Kalpeni"],
+    Puducherry: ["Puducherry", "Karaikal", "Mahe", "Yanam"],
+  };
   window.onload = function () {
     const stateSelect = document.getElementById("state");
     const citySelect = document.getElementById("city");
 
-    // Populate states
     for (let state in stateCityData) {
       let option = document.createElement("option");
       option.value = state;
@@ -225,7 +234,6 @@
       stateSelect.appendChild(option);
     }
 
-    // Handle state selection
     stateSelect.addEventListener("change", function () {
       const selectedState = this.value;
       citySelect.disabled = !selectedState;

@@ -1,14 +1,13 @@
-{% extends "base.html" %}
-
-{% block content %}
+{% extends "base.html" %} {% block content %}
 <div class="flex min-h-screen">
-  <!-- Left Section: Feedback Form -->
   <div class="w-2/5 p-8">
     <h2 class="text-lg font-bold mb-4">Submit Feedback</h2>
     <form action="/submit" method="post" class="space-y-4">
-      <input type="hidden" name="uid" value="{{ user_uid }}">
+      <input type="hidden" name="uid" value="{{ user_uid }}" />
       <div>
-        <label for="product" class="block font-medium mb-1">Select Product</label>
+        <label for="product" class="block font-medium mb-1"
+          >Select Product</label
+        >
         <select
           id="product"
           name="product"
@@ -22,7 +21,9 @@
         </select>
       </div>
       <div>
-        <label for="feedback" class="block font-medium mb-1">Your Feedback</label>
+        <label for="feedback" class="block font-medium mb-1"
+          >Your Feedback</label
+        >
         <textarea
           id="feedback"
           name="feedback"
@@ -32,20 +33,16 @@
           required
         ></textarea>
       </div>
-      <button type="submit" class="btn w-full">
-        Submit
-      </button>
+      <button type="submit" class="btn w-full">Submit</button>
     </form>
   </div>
 
   <div class="divider lg:divider-horizontal"></div>
 
-  <!-- Right Section: Previous Feedbacks -->
   <div class="w-3/5 p-6">
     <h2 class="text-lg font-bold mb-4">Your Previous Feedbacks</h2>
     <div class="overflow-x-auto">
       <table class="table w-full">
-        <!-- Table Head -->
         <thead>
           <tr>
             <th></th>
@@ -60,12 +57,13 @@
             <th>{{ loop.index }}</th>
             <td><b>{{ feedback.product }}</b></td>
             <td>{{ feedback.feedback }}</td>
-            <td><kbd class="kbd">{{ feedback.sentiment }}</kbd>
-            </td>
+            <td><kbd class="kbd">{{ feedback.sentiment }}</kbd></td>
           </tr>
           {% else %}
           <tr>
-            <td colspan="4" class="text-center text-gray-600">No feedback submitted yet.</td>
+            <td colspan="4" class="text-center text-gray-600">
+              No feedback submitted yet.
+            </td>
           </tr>
           {% endfor %}
         </tbody>
