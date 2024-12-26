@@ -5,20 +5,19 @@ from transformers import pipeline
 app = Flask(__name__)
 app.secret_key = "yoyoyoyoyoyoyyo"
 DATABASE = "senti.db"
-classifier = pipeline("sentiment-analysis", model="cardiffnlp/twitter-roberta-base-sentiment-latest")
+classifier = pipeline("sentiment-analysis")
+
 
 def dbConnection():
     conn = sqlite3.connect(DATABASE)
     conn.row_factory = sqlite3.Row
     return conn
 
-
 def sentiment(feedback_text):
     result = classifier(feedback_text)
     slabel = result[0]["label"]
-    if slabel == "Positive": return "POSITIVE"
-    elif slabel == "Negative": return "NEGATIVE"
-    else: return "NEUTRAL"
+    return "POSITIVE" if slabel == "POSITIVE" else "NEGATIVE"
+
 
 @app.route("/")
 def index():
