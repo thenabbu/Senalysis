@@ -5,8 +5,7 @@ from transformers import pipeline
 app = Flask(__name__)
 app.secret_key = "yoyoyoyoyoyoyyo"
 DATABASE = "senti.db"
-classifier = pipeline("sentiment-analysis")
-
+classifier = pipeline("sentiment-analysis", model="cardiffnlp/twitter-roberta-base-sentiment-latest")
 
 def dbConnection():
     conn = sqlite3.connect(DATABASE)
@@ -17,8 +16,9 @@ def dbConnection():
 def sentiment(feedback_text):
     result = classifier(feedback_text)
     slabel = result[0]["label"]
-    return "POSITIVE" if slabel == "POSITIVE" else "NEGATIVE"
-
+    if slabel == "Positive": return "POSITIVE"
+    elif slabel == "Negative": return "NEGATIVE"
+    else: return "NEUTRAL"
 
 @app.route("/")
 def index():
