@@ -1,0 +1,35 @@
+CREATE TABLE sqlite_sequence(name,seq);
+CREATE TABLE companies (
+    cid INTEGER PRIMARY KEY AUTOINCREMENT,
+    company TEXT,
+    email TEXT,
+    pwd TEXT
+);
+CREATE TABLE products (
+    pid INTEGER PRIMARY KEY AUTOINCREMENT,
+    cid INTEGER,
+    product TEXT,
+    thumbnail TEXT,
+    FOREIGN KEY (cid) REFERENCES companies (cid)
+);
+CREATE TABLE IF NOT EXISTS "feedback" (
+    fid INTEGER PRIMARY KEY AUTOINCREMENT,
+    uid INTEGER,
+    pid INTEGER,
+    feedback TEXT,
+    timestamp TEXT DEFAULT CURRENT_TIMESTAMP,
+    sentiment TEXT,
+    FOREIGN KEY (uid) REFERENCES users (uid),
+    FOREIGN KEY (pid) REFERENCES products (pid)
+);
+CREATE TABLE IF NOT EXISTS "users" (
+    uid INTEGER PRIMARY KEY AUTOINCREMENT,
+    fname TEXT,
+    lname TEXT,
+    email TEXT,
+    pwd TEXT,
+    gender TEXT,
+    dob TEXT,
+    state TEXT,
+    city TEXT
+);

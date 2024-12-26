@@ -88,36 +88,7 @@
             </div>
           </div>
 
-          <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div class="form-control">
-              <label class="label">
-                <span class="label-text">Height (in cm)</span>
-              </label>
-              <input
-                type="number"
-                step="0.01"
-                min="0"
-                name="height"
-                class="input input-bordered w-full"
-                required
-                onkeydown="return event.keyCode !== 38 && event.keyCode !== 40"
-              />
-            </div>
-            <div class="form-control">
-              <label class="label">
-                <span class="label-text">Weight (in kg)</span>
-              </label>
-              <input
-                type="number"
-                step="0.01"
-                min="0"
-                name="weight"
-                class="input input-bordered w-full"
-                required
-                onkeydown="return event.keyCode !== 38 && event.keyCode !== 40"
-              />
-            </div>
-          </div>
+          
 
           <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
             <div class="form-control">
@@ -148,11 +119,15 @@
               </select>
             </div>
           </div>
-        </div>
-
-        <div class="form-control mt-4">
+          
+        <div class="form-control">
+          <label class="label">
+            <span class="label-text">‎</span>
+          </label>
           <button type="submit" class="btn w-full">Register</button>
         </div>
+        </div>
+
       </form>
       <p class="text-center text-sm mt-4" id="registerLink">
         Already have an account?

@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request, redirect, url_for, flash
+from flask import Flask, render_template, request, redirect, url_for, flash, jsonify
 import sqlite3
 from transformers import pipeline
 
@@ -12,6 +12,7 @@ def dbConnection():
     conn = sqlite3.connect(DATABASE)
     conn.row_factory = sqlite3.Row
     return conn
+
 
 def sentiment(feedback_text):
     result = classifier(feedback_text)
@@ -33,8 +34,6 @@ def registerUser():
             "email": request.form["email"],
             "password": request.form["password"],
             "gender": request.form["gender"],
-            "height": float(request.form["height"]),
-            "weight": float(request.form["weight"]),
             "dob": request.form["dob"],
             "state": request.form["state"],
             "city": request.form["city"],
@@ -50,17 +49,15 @@ def registerUser():
 
         cursor.execute(
             """
-            INSERT INTO users (fname, lname, email, pwd, gender, height, weight, dob, state, city)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-        """,
+            INSERT INTO users (fname, lname, email, pwd, gender, dob, state, city)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+            """,
             (
                 data["fname"],
                 data["lname"],
                 data["email"],
                 data["password"],
                 data["gender"],
-                data["height"],
-                data["weight"],
                 data["dob"],
                 data["state"],
                 data["city"],
@@ -183,7 +180,7 @@ def profile(uid):
     conn.close()
 
     return render_template(
-        "user.html", user=user, products=products, feedbacks=feedbacks, user_uid=uid
+        "user.html", user=user, products=products, feedbacks=feedbacks, uid=uid
     )
 
 
@@ -193,7 +190,7 @@ def submitFeedback():
     pid = request.form["product"]
     feedback = request.form["feedback"]
 
-    sentiment = sentiment(feedback)
+    slabel = sentiment(feedback)
 
     conn = dbConnection()
     cursor = conn.cursor()
@@ -203,7 +200,7 @@ def submitFeedback():
         INSERT INTO feedback (uid, pid, feedback, sentiment)
         VALUES (?, ?, ?, ?)
     """,
-        (uid, pid, feedback, sentiment),
+        (uid, pid, feedback, slabel),
     )
     conn.commit()
     conn.close()
@@ -227,7 +224,7 @@ def companyProfile(cid):
     cursor.execute("SELECT pid, product, thumbnail FROM products WHERE cid = ?", (cid,))
     products = cursor.fetchall()
 
-    productList = []
+    plist = []
     for product in products:
 
         cursor.execute(
@@ -251,7 +248,7 @@ def companyProfile(cid):
         productDict["feedback_count"] = feedbackData["feedback_count"]
         productDict["sentiment_score"] = sentimentScore
 
-        productList.append(productDict)
+        plist.append(productDict)
 
     if request.method == "POST":
         productName = request.form["product_name"]
@@ -272,10 +269,7 @@ def companyProfile(cid):
         return redirect(url_for("companyProfile", cid=cid))
 
     conn.close()
-    return render_template("company.html", company=company, products=productList)
-
-
-from flask import jsonify
+    return render_template("company.html", company=company, products=plist)
 
 
 @app.route("/feedbacks/<pid>")
@@ -302,9 +296,9 @@ def feedbacks(pid):
 @app.route("/api/feedbacks/<pid>", methods=["GET"])
 def feedbacks_api(pid):
     sentiment = request.args.get("sentiment")
-    start_date = request.args.get("start_date")
-    end_date = request.args.get("end_date")
-    sort_order = request.args.get("sort_order", "desc")
+    sDate = request.args.get("start_date")
+    eDate = request.args.get("end_date")
+    order = request.args.get("sort_order", "desc")
 
     conn = dbConnection()
     cursor = conn.cursor()
@@ -321,11 +315,11 @@ def feedbacks_api(pid):
         query += " AND f.sentiment = ?"
         params.append(sentiment.upper())
 
-    if start_date and end_date:
+    if sDate and eDate:
         query += " AND f.timestamp BETWEEN ? AND ?"
-        params.extend([start_date, end_date])
+        params.extend([sDate, eDate])
 
-    query += f" ORDER BY f.timestamp {sort_order.upper()}"
+    query += f" ORDER BY f.timestamp {order.upper()}"
 
     cursor.execute(query, params)
     feedbacks = cursor.fetchall()

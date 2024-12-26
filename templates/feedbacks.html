@@ -9,7 +9,7 @@
   <div class="filters bg-base-200 p-4 rounded-box mb-4">
     <div class="grid grid-cols-5 gap-4">
       <div>
-        <select id="sentiment-filter" class="select select-bordered w-full">
+        <select id="sentiFilter" class="select select-bordered w-full">
           <option value="all" selected>All</option>
           <option value="positive">Positive</option>
           <option value="negative">Negative</option>
@@ -22,7 +22,7 @@
 
       <div class="form-control w-full">
         <input
-          id="start-date"
+          id="sDate"
           type="date"
           class="input input-bordered w-full"
         />
@@ -32,14 +32,14 @@
       </div>
 
       <div class="form-control w-full">
-        <input id="end-date" type="date" class="input input-bordered w-full" />
+        <input id="eDate" type="date" class="input input-bordered w-full" />
         <div class="label">
           <span class="label-text-alt">End Date</span>
         </div>
       </div>
 
       <div>
-        <select id="sort-order" class="select select-bordered w-full">
+        <select id="sort" class="select select-bordered w-full">
           <option value="desc" selected>Newest First</option>
           <option value="asc">Oldest First</option>
         </select>
@@ -50,7 +50,7 @@
       </div>
 
       <div>
-        <button id="clear-filters" class="btn btn-outline btn-error w-full">
+        <button id="clear" class="btn btn-outline btn-error w-full">
           Clear Filters
         </button>
       </div>
@@ -69,7 +69,7 @@
         <th>Timestamp</th>
       </tr>
     </thead>
-    <tbody id="feedbacks-table">
+    <tbody id="ftable">
       {% for feedback in feedbacks %}
       <tr>
         <td>{{ loop.index }}</td>
@@ -95,12 +95,12 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function () {
-    const sentimentFilter = document.getElementById("sentiment-filter");
-    const startDateInput = document.getElementById("start-date");
-    const endDateInput = document.getElementById("end-date");
-    const sortOrder = document.getElementById("sort-order");
-    const feedbacksTable = document.getElementById("feedbacks-table");
-    const clearFilters = document.getElementById("clear-filters");
+    const sentimentFilter = document.getElementById("sentiFilter");
+    const startDateInput = document.getElementById("sDate");
+    const endDateInput = document.getElementById("eDate");
+    const sortOrder = document.getElementById("sort");
+    const feedbacksTable = document.getElementById("ftable");
+    const clearFilters = document.getElementById("clear");
     const pid = "{{ pid }}";
 
     function fetchFeedbacks() {
