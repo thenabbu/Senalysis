@@ -5,7 +5,8 @@
   <!-- Left Section: Feedback Form -->
   <div class="w-2/5 p-8">
     <h2 class="text-lg font-bold mb-4">Submit Feedback</h2>
-    <form action="/submit_feedback" method="post" class="space-y-4">
+    <form action="/submit" method="post" class="space-y-4">
+      <input type="hidden" name="uid" value="{{ user_uid }}">
       <div>
         <label for="product" class="block font-medium mb-1">Select Product</label>
         <select

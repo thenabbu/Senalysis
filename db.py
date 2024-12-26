@@ -1,107 +1,57 @@
 import sqlite3
-import json
-import random
-from datetime import datetime, timedelta
 
-# Function to generate a random timestamp within the past 2 years
-def random_timestamp():
-    now = datetime.now()
-    two_years_ago = now - timedelta(days=730)
-    random_date = two_years_ago + timedelta(days=random.randint(0, 730))
-    random_time = datetime.strptime(f"{random.randint(7, 23)}:{random.randint(0, 59)}", "%H:%M").time()
-    return datetime.combine(random_date, random_time).strftime("%Y-%m-%d %H:%M:%S")
-
-# Load JSON data
-with open('userSQL.json', 'r') as file:
-    users = json.load(file)
-
-with open('companySQL.json', 'r') as file:
-    companies = json.load(file)
-
-with open('productSQL.json', 'r') as file:
-    products = json.load(file)
-
-with open('feedbackSQL.json', 'r') as file:
-    feedbacks = json.load(file)
-
-# Connect to SQLite database
+# Connect to the SQLite database
 conn = sqlite3.connect('senti.db')
 cursor = conn.cursor()
 
-# Create tables
+# 1. Create a new table with the correct schema (timestamp with default value CURRENT_TIMESTAMP)
 cursor.execute('''
-CREATE TABLE IF NOT EXISTS users (
-    uid TEXT PRIMARY KEY,
-    fname TEXT,
-    lname TEXT,
-    email TEXT,
-    pwd TEXT,
-    gender TEXT,
-    height REAL,
-    weight REAL,
-    dob TEXT,
-    state TEXT,
-    city TEXT
-)
-''')
-
-cursor.execute('''
-CREATE TABLE IF NOT EXISTS companies (
-    cid TEXT PRIMARY KEY,
-    company TEXT,
-    email TEXT,
-    pwd TEXT
-)
-''')
-
-cursor.execute('''
-CREATE TABLE IF NOT EXISTS products (
-    pid TEXT PRIMARY KEY,
-    cid TEXT,
-    product TEXT,
-    thumbnail TEXT,
-    FOREIGN KEY (cid) REFERENCES companies (cid)
-)
-''')
-
-cursor.execute('''
-CREATE TABLE IF NOT EXISTS feedback (
-    fid TEXT PRIMARY KEY,
-    uid TEXT,
-    pid TEXT,
+CREATE TABLE feedback_new (
+    fid INTEGER PRIMARY KEY AUTOINCREMENT,
+    uid INTEGER,
+    pid INTEGER,
     feedback TEXT,
-    timestamp TEXT,
+    timestamp TEXT DEFAULT CURRENT_TIMESTAMP,
     sentiment TEXT,
     FOREIGN KEY (uid) REFERENCES users (uid),
     FOREIGN KEY (pid) REFERENCES products (pid)
 )
 ''')
 
-# Insert data into tables
-for user in users:
-    cursor.execute('''
-    INSERT INTO users (uid, fname, lname, email, pwd, gender, height, weight, dob, state, city)
-    VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-    ''', (user['uid'], user['fname'], user['lname'], user['email'], user['pwd'], user['gender'], user['height'], user['weight'], user['dob'], user['state'], user['city']))
+# 2. Copy data from the old table to the new table
+cursor.execute('''
+INSERT INTO feedback_new (fid, uid, pid, feedback, timestamp, sentiment)
+SELECT fid, uid, pid, feedback, timestamp, sentiment FROM feedback
+''')
 
-for company in companies:
-    cursor.execute('''
-    INSERT INTO companies (cid, company, email, pwd)
-    VALUES (?, ?, ?, ?)
-    ''', (company['cid'], company['company'], company['email'], company['pwd']))
+# 3. Drop the old table
+cursor.execute('DROP TABLE feedback')
 
-for product in products:
-    cursor.execute('''
-    INSERT INTO products (pid, cid, product, thumbnail)
-    VALUES (?, ?, ?, ?)
-    ''', (product['pid'], product['cid'], product['product'], product['thumbnail']))
+# 4. Rename the new table to the original table name
+cursor.execute('ALTER TABLE feedback_new RENAME TO feedback')
 
-for feedback in feedbacks:
-    cursor.execute('''
-    INSERT INTO feedback (fid, uid, pid, feedback, timestamp, sentiment)
-    VALUES (?, ?, ?, ?, ?, ?)
-    ''', (feedback['fid'], feedback['uid'], feedback['pid'], feedback['feedback'], random_timestamp(), feedback['sentiment']))
-
-# Commit and close
+# Commit the changes
 conn.commit()
+
+# Example: Insert a new feedback entry (timestamp is automatically set)
+uid = 1
+pid = 1
+feedback = 'Great product!'
+sentiment = 'Positive'
+
+cursor.execute('''
+INSERT INTO feedback (uid, pid, feedback, sentiment) 
+VALUES (?, ?, ?, ?)
+''', (uid, pid, feedback, sentiment))
+
+# Commit the new insert
+conn.commit()
+
+# Fetch all records to verify the results
+cursor.execute('SELECT * FROM feedback')
+rows = cursor.fetchall()
+for row in rows:
+    print(row)
+
+# Close the connection
 conn.close()

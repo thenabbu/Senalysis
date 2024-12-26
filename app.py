@@ -1,22 +1,29 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
 import sqlite3
+from transformers import pipeline
 
 app = Flask(__name__)
-app.secret_key = 'yoyoyoyoyoyoyyo'  # For flash messages
+app.secret_key = 'yoyoyoyoyoyoyyo'
 DATABASE = 'senti.db'
+classifier = pipeline("sentiment-analysis")
 
-# Helper function to connect to the database
+
 def get_db_connection():
     conn = sqlite3.connect(DATABASE)
-    conn.row_factory = sqlite3.Row  # To access rows by column name
+    conn.row_factory = sqlite3.Row  
     return conn
 
-# Home Route
+def get_sentiment(feedback_text):
+    result = classifier(feedback_text)
+    sentiment_label = result[0]['label']
+    return "POSITIVE" if sentiment_label == "POSITIVE" else "NEGATIVE"
+
+
 @app.route('/')
 def index():
     return render_template('index.html')
 
-# User Registration Route
+
 @app.route('/register/user', methods=['GET', 'POST'])
 def registerUser():
     if request.method == 'POST':
@@ -33,23 +40,20 @@ def registerUser():
             'city': request.form['city']
         }
 
-        # Generate unique UID
+        
         conn = get_db_connection()
         cursor = conn.cursor()
-        cursor.execute("SELECT COUNT(*) FROM users")
-        uid = f"u{cursor.fetchone()[0] + 1:04d}"
-
-        # Check if email already exists
         cursor.execute("SELECT email FROM users WHERE email = ?", (userData['email'],))
         if cursor.fetchone():
             flash("Email already registered!")
+            conn.close()
             return redirect(url_for('registerUser'))
 
-        # Insert user data
+        
         cursor.execute("""
-            INSERT INTO users (uid, fname, lname, email, pwd, gender, height, weight, dob, state, city)
-            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-        """, (uid, userData['fname'], userData['lname'], userData['email'], userData['password'], 
+            INSERT INTO users (fname, lname, email, pwd, gender, height, weight, dob, state, city)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        """, (userData['fname'], userData['lname'], userData['email'], userData['password'], 
               userData['gender'], userData['height'], userData['weight'], userData['dob'], 
               userData['state'], userData['city']))
         conn.commit()
@@ -60,7 +64,7 @@ def registerUser():
 
     return render_template('regUser.html')
 
-# Company Registration Route
+
 @app.route('/register/company', methods=['GET', 'POST'])
 def registerCompany():
     if request.method == 'POST':
@@ -73,14 +77,14 @@ def registerCompany():
         conn = get_db_connection()
         cursor = conn.cursor()
 
-        # Check if company email already exists
+        
         cursor.execute("SELECT email FROM companies WHERE email = ?", (companyData['email'],))
         if cursor.fetchone():
             flash("Company with this email already registered!")
             conn.close()
             return redirect(url_for('registerCompany'))
 
-        # Insert company data
+        
         cursor.execute("""
             INSERT INTO companies (company, email, pwd)
             VALUES (?, ?, ?)
@@ -93,7 +97,7 @@ def registerCompany():
 
     return render_template('regCompany.html')
 
-# User Login Route
+
 @app.route('/login/user', methods=['POST'])
 def userLogin():
     email = request.form['email']
@@ -112,7 +116,7 @@ def userLogin():
         flash("Invalid credentials, please try again.")
         return redirect(url_for('index'))
 
-# Company Login Route
+
 @app.route('/login/company', methods=['POST'])
 def companyLogin():
     email = request.form['email']
@@ -131,7 +135,6 @@ def companyLogin():
         flash("Invalid credentials, please try again.")
         return redirect(url_for('index'))
 
-# User Profile Route
 @app.route('/user/<uid>')
 def profile(uid):
     conn = get_db_connection()
@@ -157,21 +160,23 @@ def profile(uid):
 
     conn.close()
 
-    return render_template('user.html', user=user, products=products, feedbacks=feedbacks)
+    return render_template('user.html', user=user, products=products, feedbacks=feedbacks, user_uid=uid)
 
-# Submit Feedback Route
-@app.route('/submit_feedback', methods=['POST'])
+
+@app.route('/submit', methods=['POST'])
 def submitFeedback():
     uid = request.form['uid']
     pid = request.form['product']
     feedback = request.form['feedback']
 
-    sentiment = "Neutral"  # Placeholder for sentiment analysis logic
+    
+    sentiment = get_sentiment(feedback)
 
     conn = get_db_connection()
     cursor = conn.cursor()
 
-    cursor.execute("""
+    
+    cursor.execute(""" 
         INSERT INTO feedback (uid, pid, feedback, sentiment)
         VALUES (?, ?, ?, ?)
     """, (uid, pid, feedback, sentiment))
@@ -181,13 +186,13 @@ def submitFeedback():
     flash("Feedback submitted successfully!")
     return redirect(url_for('profile', uid=uid))
 
-# Company Profile Route (with Product Viewing)
+
 @app.route('/company/<cid>', methods=['GET', 'POST'])
 def companyProfile(cid):
     conn = get_db_connection()
     cursor = conn.cursor()
 
-    # Get company info
+    
     cursor.execute("SELECT company FROM companies WHERE cid = ?", (cid,))
     company = cursor.fetchone()
 
@@ -195,14 +200,14 @@ def companyProfile(cid):
         conn.close()
         return "Company not found", 404
 
-    # Get products for this company
+    
     cursor.execute("SELECT pid, product, thumbnail FROM products WHERE cid = ?", (cid,))
     products = cursor.fetchall()
 
-    # If you need to add sentiment score and feedback count, create new list
+    
     productList = []
     for product in products:
-        # Fetch the feedbacks for this product
+        
         cursor.execute("""
             SELECT COUNT(*) as feedback_count, 
                    SUM(CASE WHEN sentiment = 'POSITIVE' THEN 1 ELSE 0 END) AS positive_count
@@ -210,30 +215,30 @@ def companyProfile(cid):
         """, (product['pid'],))
         feedbackData = cursor.fetchone()
 
-        # Compute sentiment score as percentage of positive feedback
+        
         totalFeedbacks = feedbackData['feedback_count']
         sentimentScore = (feedbackData['positive_count'] / totalFeedbacks) * 100 if totalFeedbacks > 0 else 0
 
-        # Add sentiment score and feedback count to the product data
-        productDict = dict(product)  # Convert Row to dict
+        
+        productDict = dict(product)  
         productDict['feedback_count'] = feedbackData['feedback_count']
         productDict['sentiment_score'] = sentimentScore
 
         productList.append(productDict)
 
-    # Handle new product addition form submission
+    
     if request.method == 'POST':
         productName = request.form['product_name']
         productThumbnail = request.form['thumbnail_url']
 
-        # Generate unique product ID
-        cursor.execute("SELECT COUNT(*) FROM products")
-        pid = f"p{cursor.fetchone()[0] + 1:04d}"
+        conn = get_db_connection()
+        cursor = conn.cursor()
 
+        
         cursor.execute("""
-            INSERT INTO products (pid, cid, product, thumbnail)
-            VALUES (?, ?, ?, ?)
-        """, (pid, cid, productName, productThumbnail))
+            INSERT INTO products (cid, product, thumbnail)
+            VALUES (?, ?, ?)
+        """, (cid, productName, productThumbnail))
         conn.commit()
         flash("Product added successfully!")
         return redirect(url_for('companyProfile', cid=cid))
@@ -248,7 +253,7 @@ def feedbacks(pid):
     conn = get_db_connection()
     cursor = conn.cursor()
 
-    # Get all feedback for the product
+    
     cursor.execute("""
         SELECT f.fid, f.uid, f.feedback, f.sentiment, f.timestamp, u.email
         FROM feedback f
@@ -261,13 +266,13 @@ def feedbacks(pid):
 
     return render_template('feedbacks.html', pid=pid, feedbacks=feedbacks)
 
-# API Endpoint for live updates
+
 @app.route('/api/feedbacks/<pid>', methods=['GET'])
 def feedbacks_api(pid):
-    sentiment = request.args.get('sentiment')  # Positive, Negative, or All
+    sentiment = request.args.get('sentiment')  
     start_date = request.args.get('start_date')
     end_date = request.args.get('end_date')
-    sort_order = request.args.get('sort_order', 'desc')  # asc or desc
+    sort_order = request.args.get('sort_order', 'desc')  
 
     conn = get_db_connection()
     cursor = conn.cursor()
@@ -280,7 +285,7 @@ def feedbacks_api(pid):
     """
     params = [pid]
 
-    # Add filters
+    
     if sentiment and sentiment.lower() != 'all':
         query += " AND f.sentiment = ?"
         params.append(sentiment.upper())
@@ -289,7 +294,7 @@ def feedbacks_api(pid):
         query += " AND f.timestamp BETWEEN ? AND ?"
         params.extend([start_date, end_date])
 
-    # Add sorting
+    
     query += f" ORDER BY f.timestamp {sort_order.upper()}"
 
     cursor.execute(query, params)
